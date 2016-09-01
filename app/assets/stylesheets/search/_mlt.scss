@@ -1,0 +1,269 @@
+
+.show-more-mlt{
+  display:       block;
+    font-weight:   bold;
+    text-align:	   right;
+}
+
+
+.js-carousel ul{
+  position: relative;
+}
+
+
+
+.js-carousel .js-carousel-item{
+
+  margin:					  0;
+  text-align:				center;
+
+  @media all and (min-width: $bp-med) {
+    float:					left;
+    text-align:			left;
+  }
+}
+
+
+.js-carousel.v .js-carousel-item{
+
+  margin:					1% 0;
+  text-align:			center;
+
+  @media all and (min-width: $bp-med) {
+    width:          auto;
+    float:					none;
+    text-align:			left;
+  }
+}
+
+
+.mlt-img-div{
+
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  background-color:    $gray-lighter;
+  background-position: center;
+  margin:              0 auto 0 auto;
+  position:				     relative;
+}
+
+
+/* technique to keep height the same as (dynamic) width used for large view
+
+  see here: http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+
+*/
+
+.height-to-width .inner{
+  position:	absolute;
+  top:		0;
+  bottom:		0;
+  left:		0;
+  right:		0;
+}
+
+
+.height-to-width .inner .link{
+  position:	absolute;
+  display:	block;
+  width:		100%;
+  height:		100%;
+}
+
+.js-carousel-title{
+  display:		 block;
+  //height:			 3.2em;
+  overflow:		 hidden;
+  //line-height: 1.6em;
+
+  height:			 3.1em;
+  margin-top:  0.5em;
+  line-height: 1.3em;
+}
+
+.js-carousel.v .js-carousel-title{
+  height:			  1.6em;
+}
+
+
+
+@media all and (min-width: $bp-large) {
+
+  .js-carousel .js-carousel-item{
+    width:					24%;
+    margin:					0;
+  }
+
+
+  .js-carousel.v .js-carousel-title{
+     text-align: center;
+  }
+
+  .height-to-width{
+    height:		auto;
+  }
+
+  .height-to-width:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+
+
+
+.js-carousel{
+
+  overflow: hidden;
+  position: relative;
+
+  .js-carousel-item{
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+
+    width:  auto;  // no override needed
+
+  }
+
+  .h{
+    margin: 0 3em;
+
+    @media all and (min-width: $bp-med) {
+      margin: 0 3em 0 0;
+    }
+  }
+
+  .v{
+    margin: 2em 0 2em 0;
+
+     .js-carousel-item{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+  }
+}
+
+.mlt .js-carousel-arrows.h{
+  .left,.right{
+    background-color: rgba(255,255,255,0.74);
+    &.arrow-hidden{
+      background-color: rgba(255,255,255,0.25);
+    }
+    &:hover{
+      background-color: rgba(255,255,255,0.9);
+    }
+  }
+}
+
+.js-carousel.loading ul:after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  min-height: $thumbnail_max_dimension_mlt;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(22, 118, 170, 0.4);
+  cursor: progress;
+}
+
+.js-carousel ul:after {
+  background: none;
+  -webkit-transition: background .25s ease-in-out;
+  -moz-transition:    background .25s ease-in-out;
+  -o-transition:      background .25s ease-in-out;
+  transition:         background .25s ease-in-out;
+}
+
+
+
+.js-carousel-arrows{
+
+  overflow: visible;
+  z-index: 2;
+
+  > a{
+    font-size: 3em;
+    float: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &.h{
+    position: relative;
+
+    .left{
+      left: 0;
+    }
+
+    .right{
+      right: 0;
+    }
+
+    .icon-next,
+    .icon-previous{
+      // fix arrows
+      display: inline-block;
+      width: 0.5em;
+      height: 0.5em;
+      margin-bottom: 0;
+      margin-right: 0.25em;
+      margin-left: 0.25em;
+      fill: currentColor;
+    }
+
+  }
+
+  &.v{
+    position: absolute;
+
+    height: 100%;
+
+    width: 100%;
+    left: 0;
+    right: o;
+
+    z-index: 0;
+
+    .right,
+    .left{
+      position: absolute;
+      text-align: center;
+      padding: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .right{
+      bottom: -1.2em;
+
+      // until the svgs are ready, rotate the caret (^) for a down arrow
+      -webkit-transform: rotate(180deg);
+      -moz-transform:    rotate(180deg);
+      -o-transform:      rotate(180deg);
+      -ms-transform:     rotate(180deg);
+      transform:         rotate(180deg);
+    }
+
+    .left{
+      top: -1.2em;
+    }
+
+    .icon icon-caret-down{
+      // fix arrows
+    }
+
+    .icon icon-caret-up{
+      // fix arrows
+    }
+  }
+
+}
+

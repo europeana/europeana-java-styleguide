@@ -1,0 +1,791 @@
+@import 'mlt';
+
+.search-object{
+     margin-bottom: 0;
+
+    .js-img-frame{
+      max-width:  100%;
+      max-height: 22em;
+      overflow-y: auto;
+      margin-bottom: $space;
+    }
+
+}
+
+.object-overview{
+    @media all and (min-width: $bp-med) {
+        @include span(18);
+    }
+}
+
+.object-actions{
+
+    @include fontSize(14px);
+
+    @media all and (min-width: $bp-med) {
+        @include span(last 6);
+    }
+
+    &>div{
+        margin-bottom: $space;
+    }
+
+    .object-origin{
+      .icon{
+        margin-right: 0;
+      }
+    }
+}
+
+.object-title{
+    word-break: normal;
+}
+
+.object-nav{
+    padding: 0.7rem $space-half;
+    background-color: $offwhite;
+    @include fontSize(14px);
+
+    .object-nav-search{
+      @media all and (min-width: $bp-med) {
+        @include span(last 6);
+      }
+    }
+
+
+    .object-nav-lists{
+      .js-next,
+      .js-previous{
+        display: none;
+      }
+
+      @media all and (min-width: $bp-med) {
+        @include span(first 18);
+      }
+    }
+
+    .next-previous, .breadcrumbs{
+        display: inline;
+        a {
+          font-size: $font-size-slightly-smaller;
+          &:after{
+          font-size: $font-size-norm;
+          top: 0.01em;
+          }
+        }
+        strong {
+          font-size: $font-size-slightly-smaller;}
+        .btn2{
+          background-color: $gray87;
+          font-size: 0.7em;
+        }
+    }
+
+    .breadcrumbs .js-channel,
+    .breadcrumbs .js-return{
+      display: none;
+    }
+
+    .item-nav-search{
+      position: relative;
+
+      @media all and (max-width: $bp-med) {
+      margin-top: $pad;
+    }
+    }
+
+   .item-search-input{
+      width: 100% !important;
+      padding: $pad-quarter $pad-and-half $pad-quarter $pad-half;
+      border-color: transparent;
+      box-shadow: none;
+      border-radius: 6px;
+      &:focus{
+        border-color: $textcolour_link;
+      }
+    }
+
+    .item-nav-submit{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: transparent;
+      color: $accent;
+      padding: $pad-quarter $pad-quarter;
+      &:hover{
+        $darker: darken($icon_primary, 15%);
+        color: $darker;
+      }
+    }
+}
+
+// main media display area
+
+#scroll-trigger-media-items:before{
+
+  // model for carousel
+  // - technique to get sass var into markup (and so to js)
+  // - breakpoint for vertical display, in pixels
+
+  // disabled because safari doesn't like parsing the escaped quotes in JSON
+  // content: '{ "bpVertical": "' + (($bp-js-carousel-to-v/1em)*16) + '"}';
+  // display: none;
+}
+
+.object-media-oembed.fullscreen{
+  height: 100%;
+  iframe{
+    height: 100%;
+  }
+}
+
+.object-display{
+    overflow-y: auto;
+    background-color: $media_bg;
+    position: relative;
+}
+
+
+.object-media-wrap{
+
+    text-align: center;
+
+    &:not(.empty){
+      padding: $pad;
+    }
+
+    position: relative;
+
+    .media-thumb-section{
+      overflow: hidden;
+      width: 100%;
+      max-width: $max-width;
+      margin: 0 auto 3.2rem;
+
+      .js-carousel-arrows{
+        &.left,
+        &.right{
+          top: -0.1em;
+        }
+        a{
+          color: white;
+          text-shadow: 0 0 1px #000;
+          font-weight: bold;
+
+          &.arrow-hidden{
+            color: $gray-lighter;
+            cursor: default;
+          }
+        }
+      }
+      .js-carousel{
+        .js-carousel-item{
+            width: $thumbnail_max_dimension_media;
+        }
+        &.h{
+          .height-to-width{
+            height: $thumbnail_max_dimension_media;
+          }
+        }
+        &.loading ul:after {
+          min-height: $thumbnail_max_dimension_media;
+        }
+      }
+    }
+
+    .media-viewer{
+      margin: auto;
+      position: relative;
+      width: 100%;
+      max-width: $max-width;
+
+      &.active{
+        padding-bottom: $space;
+      }
+      .object-media-audio{
+        position: relative;
+        width: 100%;
+      }
+      .object-media-image{
+        position: relative;
+        //z-index: 100; #839
+      }
+      .object-media-iiif{
+        position: relative;
+        z-index: 2;
+      }
+      .object-media-midi{
+        .midi-player{
+          position: relative;
+          top: 3.5em;
+        }
+      }
+
+      .multi-item-poster {
+        //max-width: 100%;
+        //width:     400px;
+        max-width: 400px;
+      }
+
+      .multi-item-poster > a > img{
+        max-width: 100%;
+      }
+
+    }
+
+}
+
+@media all and (min-width: $bp-js-carousel-to-v) {
+
+  .object-media-wrap{
+
+    width:100%;
+    max-width:100%;
+
+    &.single-item{
+
+    }
+
+    &.multi-item{
+
+      display: table-row;
+      table-layout: fixed;
+
+      .media-viewer,
+      .media-thumb-section{
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .media-thumb-section{
+
+        width:         $thumbnail_max_dimension_media;	// set width of thumbnail column here - thumbnail width and height (if left unset) will match it
+        min-width:     $thumbnail_max_dimension_media;	// (both needed - and should match the thumbnail width to keep arrows aligned)
+        padding-right: 1.6rem;
+
+
+        // override carousel default height for thumbnail list (margin allows space for arrows)
+        .media-thumbs{
+          height: 21em;
+          margin: 2 * $space 0 2 * $space 0;
+        }
+      }
+
+      .media-viewer{
+
+          &.active{
+            padding-top:    $space;
+          }
+
+         width: 100%;
+
+         padding-left:   $space;
+         padding-right:  $space;
+         box-sizing:     padding-box;
+      }
+    }
+  }
+}
+
+
+.media-thumb-section-inner{
+  position: relative;
+}
+
+
+// media thumbnails list
+
+.object-media-nav{
+    background-color: $media_bg;
+    a{
+      cursor: default;
+      &.playable,
+      &.external-media{
+        cursor: pointer;
+      }
+      &.loading{
+          cursor:progress
+      }
+    }
+}
+
+
+.single-item-thumb svg.icon.icon-play,
+.multi-item-poster svg.icon.icon-play,
+.object-media-nav svg.icon.icon-play{
+    font-size: 0.9em;
+    margin: 0.42em 0 0 0.2em;
+}
+
+.single-item-thumb svg.icon.icon-plus,
+.multi-item-poster svg.icon.icon-plus,
+.object-media-nav svg.icon.icon-plus{
+    margin: 0.35em 0 0 0;
+}
+
+.single-item-thumb svg.icon.icon-eye,
+.multi-item-poster svg.icon.icon-eye,
+.object-media-nav svg.icon.icon-eye{
+    margin: 0.35em 0 0 0;
+}
+
+.single-item-thumb svg.icon.icon-zoomin,
+.multi-item-poster svg.icon.icon-zoomin,
+.object-media-nav svg.icon.icon-zoomin{
+    margin: 0.27em 0 0 0;
+}
+
+.single-item-thumb svg.icon.icon-newspaper,
+.multi-item-poster svg.icon.icon-newspaper,
+.object-media-nav svg.icon.icon-newspaper	{
+    font-size: 0.9em;
+    margin: 0.4em 0 0 0.16em;
+}
+
+.single-item-thumb,
+.multi-item-poster{
+
+    display: inline-block;
+    position: relative;
+    margin: $space / 2 auto;
+    max-width: 100%;
+
+    a{
+      cursor: default;
+      &.playable,
+      &.external-media{
+        cursor: pointer;
+      }
+    }
+
+    &.contains-playable{
+      margin: $space auto;
+    }
+
+    &.open{
+      display: none;
+    }
+
+    @media all and (max-width: $bp-med) {
+      margin: $space * 2 auto;
+    }
+}
+
+.single-item .object-media-nav.open{
+    display: none;
+}
+
+.single-item{
+  .object-media-nav a{
+      box-shadow: none;
+      color:	white;
+      position:		relative;
+      display: inline-block;
+      margin-bottom: 1.6rem;
+      transition: box-shadow 0.25s ease-in-out;
+  }
+
+  .object-media-nav a.playable:hover{
+      box-shadow: 0px 0px 0.5em;
+  }
+}
+
+.media-clickable-indicator{
+    bottom: -0.9rem;
+    left:   -1.3rem;
+    color: white;
+    position: absolute;
+    font-weight: bolder;
+    box-sizing: content-box;
+    border-radius: 2em;
+    background-color: $accent;
+    border: 2px solid white;
+    font-size: 1.5em;
+    height: 2.5rem;
+    //line-height: 1.6em;
+    width: 2.5rem;
+}
+
+
+.object-media-info{
+    position: relative;
+    margin-bottom: 0;
+    background-color: $offwhite;
+    display:none;
+}
+
+.object-media-info.is-current{
+    display:block;
+}
+
+.media-info-tab{
+
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+
+    -webkit-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+
+    .is-expanded & {
+      max-height: 40em;
+    }
+
+    .lc > div{
+        padding: $pad 0;
+    }
+
+    .info-primary{
+        @media all and (min-width: $bp-med) {
+            @include span(4 of 24);
+        }
+    }
+
+    .info-secondary{
+
+        -moz-column-count: 2;
+        -moz-column-gap: $space;
+        -webkit-column-count: 2;
+        -webkit-column-gap: $space;
+        column-count: 2;
+        column-gap: $space;
+
+        @media all and (min-width: $bp-med) {
+            @include span(14 of 24);
+        }
+    }
+
+    .info-license{
+        @media all and (min-width: $bp-med) {
+            @include span(7 of 24);
+        }
+    }
+
+    .info-attribute{
+        @media all and (min-width: $bp-med) {
+            @include span(11 of 24);
+        }
+    }
+
+    .info-support{
+        @media all and (min-width: $bp-med) {
+            @include span(last 6);
+        }
+    }
+}
+
+
+// override default if we have a column of thumbnails on the right
+
+.object-techdata{
+
+    // these 3 indent it - is that design's intent?
+    max-width: $max-width;
+    position: relative;
+    margin: auto;
+
+
+    &>.show-button{
+        position: absolute;
+        bottom: 100%;
+        z-index: 1;
+        color: $offwhite;
+        &:hover{
+            color: $white;
+        }
+    }
+
+    .label{
+        font-weight: bold;
+        &:after{
+            content: ':'
+        }
+    }
+}
+.object-techdata-list li{
+    &.is-disabled{
+        display: none;
+    }
+    .val-rights a{
+      white-space: nowrap;
+    }
+}
+
+
+.object-downloads{
+
+    .btn{
+        background-color: $accent;
+        border: none;
+        position: absolute;
+        right: 11%;
+        bottom: 100%;
+        z-index: 1;
+    }
+
+    .is-disabled{
+        background: lighten($text_secondary, 10%);
+        color: darken($text_secondary, 20%);
+        pointer-events: none;
+        &:hover{
+            background: lighten($text_secondary, 10%);
+        }
+    }
+
+    p{
+        font-size: $font-size-slightly-smaller;
+        margin-bottom: 0;
+    }
+
+    .file-meta .label{
+        font-weight: bold;
+        &:after{
+            content: ': '
+        }
+    }
+}
+
+// when download drawer is open tech-data is pushed down onto a white background - create contrast here:
+
+.object-downloads.is-expanded + .object-techdata > a.show-button{
+   color: $gray30;
+   &:hover{
+    color: red;
+    color: $textcolour_link_hover;
+  }
+}
+
+#molecules-icons-licenses-js{
+  display: none;
+}
+
+.original_context{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.original_context_country{
+    display: block;
+    margin-top: 0.5em;
+}
+
+.object-details{
+  margin-top: $space;
+}
+
+
+.object-info{
+
+    padding-bottom: $space;
+
+    @media all and (min-width: $bp-med) {
+        width: span(14 of 18);
+        @include push(4 of 18);
+    }
+}
+
+.data-group{
+    .data-header{
+        text-transform: none;
+        text-transform: capitalize;
+        display: inline;
+    }
+    .data-group{
+        display: inline;
+    }
+}
+
+
+.map-section,
+.data-section,
+.object-extradata{
+    padding-top: $space;
+    padding-bottom: $space;
+    border-top: 1px solid $gray-lighter;
+
+    &.object-title{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+}
+.data-section.no-border{
+    border-top: none;
+}
+.data-border{
+    border-top: 1px solid $gray-lighter;
+}
+
+.map-section{
+    padding-bottom: 0;
+}
+
+
+#map{
+    height: 22em;
+    z-index: 1;
+    position: relative;
+}
+
+
+.subsection-label{
+    font-weight:    bold;
+    text-transform: capitalize;
+}
+
+
+// override carousel defaults for mlt
+
+.mlt{
+    .js-carousel{
+        .js-carousel-item{
+            width: $thumbnail_max_dimension_mlt;
+        }
+        .height-to-width{
+          height: $thumbnail_max_dimension_mlt;
+        }
+    }
+    .js-carousel-arrows{
+        &.h{
+            .left{
+                @media all and (min-width: $bp-med) {
+                  left: 0;
+                }
+            }
+        }
+         a{
+            line-height: $thumbnail_max_dimension_mlt;
+            &.arrow-hidden{
+              color: $gray-lighter;
+            }
+        }
+    }
+}
+
+
+.js-carousel.media-thumbs.h{
+    margin: 0 2.6rem;
+}
+.js-carousel-arrows.h{
+    line-height: $thumbnail_max_dimension_media;
+}
+
+.subsection-content>ul{
+    display: inline;
+}
+
+
+.eu-foldable .multi-val{
+  display: inline;
+}
+
+.named-entity-section{
+  width: 100%;
+  display: table-row;
+  table-layout: fixed;
+}
+
+.eu-foldable-url:not(.inline),
+.eu-foldable-title:not(.inline),
+.eu-foldable-data:not(.inline){
+  display: table-cell;
+}
+
+.eu-foldable-data{
+  padding-left: $space;
+  li{
+    padding-bottom: 1em;
+  }
+}
+
+.eu-foldable-url,
+.eu-foldable-title{
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+.eu-foldable-title{
+  &>a {
+    display: block;
+    word-wrap: normal;
+    white-space: normal;
+
+    position: relative;
+    padding-right: 1em;
+    &:after{
+      /* arrows closed */
+      content:' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      border-width: 5px; /* tweak size of the arrow */
+      margin-left:5px;
+
+      top: auto;
+
+      /* override these on opened */
+      bottom: 8%;
+      border-style:dashed dashed dashed solid;
+      border-color:transparent transparent transparent #a4cde1;
+    }
+  }
+  &.opened>a{
+   &:after{
+      /* arrows opened */
+      border-color: #a4cde1 transparent transparent transparent;
+      bottom: 2px;
+      border-style: solid dashed dashed dashed;
+   }
+  }
+  &.eu-foldable-top-level{
+    &>a{
+    margin-top: 0;
+    }
+  }
+}
+
+.eu-foldable-title.inline{
+  &>a {
+    whitespace: normal;
+    &:after{
+      bottom: 8%;
+      margin-top: 0;
+    }
+  }
+}
+
+.eu-foldable-subtitle{
+  margin: 1em 0 0;
+}
+
+
+
+
+@media all and (min-width: $bp-med) {
+
+    .subsection-label{
+        @include span(4);
+        .object-overview &{
+            @include span(4 of 18);
+        }
+    }
+
+    .subsection-content{
+        @include span(last 20);
+        .object-overview &{
+            @include span(last 14 of 18);
+        }
+    }
+
+}
+
+.colour-data{
+  font-size: 0;
+}
+
+.colour-datum{
+  border: 1px solid $gray-lighter;
+  margin-right: 2%;
+  position: relative;
+  width: 13%;
+}
