@@ -78,9 +78,21 @@ define(['jquery', 'mustache', 'smartmenus'], function ($, Mustache) {
         $('.user-profile-password').hide();
         $('.error_nonequal').hide();
         $('.error_missing').hide();
-        $('.user-profile-update-password').click(function() {
-      	  $('.user-profile-password').show();
+        $('.profile-select-orgs').hide();
+        $('.user-profile-choose_org_drpdwn').click(function() {
+        	if ($('.profile-select-orgs').is(":visible")) {
+        		$('.profile-select-orgs').hide();
+	        } else {
+				$('.profile-select-orgs').show();
+			}
         });
+        $('.user-profile-update-password').click(function() {
+        	if ($('.user-profile-password').is(":visible")) {
+        		$('.user-profile-password').hide();
+        	} else {
+        		$('.user-profile-password').show();        		
+        	}
+      });
   	  $('.metis-profile-form').submit(function(event) {
 //  		  var template = $('.metis-profile-form').html();
 //  		  var data = {error_nonequal_new_confirm_pwd: "Error: a new password and the confirmed password are not the same"};
@@ -91,7 +103,7 @@ define(['jquery', 'mustache', 'smartmenus'], function ($, Mustache) {
   			  $('.error_nonequal').show(); 
   			  valid = false;
   		  }
-  		  if (($('#password').val() == null || $('#password').val() == "") && ($('#password_new').val() != null && $('#password_new').val() != "")) {
+  		  if (($('#password_old').val() == null || $('#password_old').val() == "") && ($('#password_new').val() != null && $('#password_new').val() != "")) {
   			  $('.error_missing').show(); 
   			  valid = false;
   		  }
@@ -289,25 +301,36 @@ define(['jquery', 'mustache', 'smartmenus'], function ($, Mustache) {
 
     $('#btnRight').click(function(e) {
         $('select').moveToListAndDelete('#lstBox1', '#lstBox2');
+        updateOrgList();
         e.preventDefault();
     });
 
     $('#btnAllRight').click(function(e) {
         $('select').moveAllToListAndDelete('#lstBox1', '#lstBox2');
+        updateOrgList();
         e.preventDefault();
     });
 
     $('#btnLeft').click(function(e) {
         $('select').moveToListAndDelete('#lstBox2', '#lstBox1');
+        updateOrgList();
         e.preventDefault();
     });
 
     $('#btnAllLeft').click(function(e) {
         $('select').moveAllToListAndDelete('#lstBox2', '#lstBox1');
+        updateOrgList();
         e.preventDefault();
     });
     // END OF ORGANIZATION'S SELECTION BLOCK CODE.
 
+    function updateOrgList() {
+    	$('.org-list').empty();
+    	$("#lstBox2 option").each(function() {
+    		$('.org-list').append("\n" + $(this).text());
+    	});
+    }
+    
     function selectView() {
 		
 	}
