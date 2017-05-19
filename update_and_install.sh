@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 git checkout -b develop origin/develop 2>/dev/null
 #Add patternlab remote
-git remote add --no-tags patternlab git@github.com:europeana/Europeana-Patternlab.git 2>/dev/null
-git fetch patternlab
+git remote add --no-tags patternlab git@github.com:europeana/Europeana-Patternlab.git
+echo "Starting fetch, might take a while. Please wait..."
+git fetch --progress patternlab
 echo "Fetch completed"
 rm -rf source src target
 #Checkout branch for example patternlab/develop or replace with a specific commit SHA
@@ -14,6 +15,5 @@ fi
 echo "Checked out patterlab source"
 mvn clean install
 git remote remove patternlab
-git rm -r source
 
 exit 0
