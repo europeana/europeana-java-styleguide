@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+git checkout -b develop origin/develop 2>/dev/null
 #Add patternlab remote
 git remote add --no-tags patternlab git@github.com:europeana/Europeana-Patternlab.git 2>/dev/null
 git fetch patternlab
