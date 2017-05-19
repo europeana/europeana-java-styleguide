@@ -14,5 +14,6 @@ fi
 echo "Checked out patterlab source"
 mvn clean install
 git remote remove patternlab
+git rm -r source
 
 exit 0
