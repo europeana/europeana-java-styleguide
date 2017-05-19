@@ -21,10 +21,10 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/src/main/resources/app</outputDirectory>
+                            <outputDirectory>${basedir}/src/main/resources/source</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${basedir}/app</directory>
+                                    <directory>${basedir}/source</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
