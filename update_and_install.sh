@@ -12,5 +12,6 @@ if [ $? != 0 ]; then
 fi
 echo "Checked out patterlab source"
 mvn clean install
+git remote remove patternlab
 
 exit 0
