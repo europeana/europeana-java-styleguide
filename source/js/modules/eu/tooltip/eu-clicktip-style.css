@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/* line 7, eu-clicktip-style.scss */
+.eu-clicktip-container {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  position: relative;
+  text-align: left;
+}
+/* line 14, eu-clicktip-style.scss */
+.eu-clicktip-container.showing {
+  display: inline-block;
+  opacity: 1;
+  pointer-events: auto;
+  -moz-transition: opacity 0.4s ease-in;
+  -ms-transition: opacity 0.4s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+/* line 26, eu-clicktip-style.scss */
+.eu-clicktip-container:hover, .eu-clicktip-container:focus {
+  cursor: default;
+}
+/* line 29, eu-clicktip-style.scss */
+.eu-clicktip-container:hover .eu-clicktip, .eu-clicktip-container:focus .eu-clicktip {
+  display: block;
+}
+/* line 34, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip {
+  background-color: #1676aa;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.6;
+  min-width: 12em;
+  padding: 0.7em 0.8em;
+  position: absolute;
+  text-transform: none;
+  z-index: 1;
+}
+/* line 50, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.top {
+  box-shadow: 0.3em 0.3em 0.7em 0 rgba(0, 0, 0, 0.5);
+  top: 1em;
+}
+/* line 55, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.bottom {
+  bottom: 100%;
+  box-shadow: 0.3em -0.3em 0.7em 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 2em;
+}
+/* line 61, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.right {
+  bottom: 50%;
+  box-shadow: -0.4em 0.3em 0.7em 0 rgba(0, 0, 0, 0.5);
+  float: none;
+  margin-bottom: 0.4em;
+  right: 0;
+  transform: translate(-7px, 50%);
+}
+/* line 70, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.left {
+  bottom: 50%;
+  box-shadow: 0.3em 0.3em 0.7em 0 rgba(0, 0, 0, 0.5);
+  float: none;
+  margin-bottom: 0.4em;
+  transform: translate(7px, 50%);
+}
+/* line 78, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+/* line 83, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip a[href] {
+  border-bottom: 1px dotted #fff;
+}
+/* line 87, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip a[href]:hover {
+  border-bottom: 1px solid #fff;
+}
+/* line 91, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip a[data-role='remove'] {
+  color: #FFFFFF;
+  cursor: pointer;
+  height: 1em;
+  line-height: 1em;
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  width: 0.9em;
+}
+/* line 102, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip a[data-role='remove']:hover {
+  color: #FFFFFF;
+}
+/* line 106, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip a[data-role='remove']::after {
+  content: '✕';
+}
+/* line 110, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip::after {
+  border: solid transparent;
+  border-width: 8px;
+  content: ' ';
+  position: absolute;
+}
+/* line 118, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.top::after {
+  border-bottom-color: #1676aa;
+  bottom: 100%;
+  left: 5%;
+}
+/* line 124, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.right::after {
+  border-left-color: #1676aa;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 131, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.left::after {
+  border-right-color: #1676aa;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 138, eu-clicktip-style.scss */
+.eu-clicktip-container .eu-clicktip.bottom::after {
+  border-top-color: #1676aa;
+  bottom: -15px;
+  left: 5%;
+}
