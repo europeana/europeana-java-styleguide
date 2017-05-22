@@ -5,7 +5,6 @@ define(['jquery', 'ga', 'util_scrollEvents', 'purl'], function($, ga, scrollEven
   var $url            = $.url();
   var euSearchForm    = null;
   var masonry         = null;
-  // var results         = $('.search-results');
   var ellipsisObjects = [];
   var btnGrid         = $('.icon-view-grid').closest('a');
   var btnList         = $('.icon-view-list').closest('a');
@@ -113,7 +112,7 @@ define(['jquery', 'ga', 'util_scrollEvents', 'purl'], function($, ga, scrollEven
   };
 
   var loadFederatedSetting = function(){
-    return (typeof(Storage) == 'undefined') ? false : sessionStorage.getItem('eu_portal_federated');
+    return (typeof(Storage) == 'undefined') ? false : sessionStorage.getItem('eu_portal_federated') == 'true';
   };
 
   var saveFederatedSetting = function(setting){
@@ -367,7 +366,7 @@ define(['jquery', 'ga', 'util_scrollEvents', 'purl'], function($, ga, scrollEven
     $(window).bind('addAutocomplete', function(e, data){
       addAutocomplete(data);
     });
-    
+
     scrollEvents.fireAllVisible();
 
     if($('.eu-clicktip-container').length > 0){
@@ -406,6 +405,88 @@ define(['jquery', 'ga', 'util_scrollEvents', 'purl'], function($, ga, scrollEven
   }
 
   function initFederatedSearch(){
+    if($('.eu-accordion-tabs.parallel').length > 0){
+      initFederatedSearchParallel();
+    }
+    else{
+      initFederatedSearchSequential();
+    }
+  }
+
+  function initFederatedSearchParallel(){
+
+    log('init federated search parallel load...');
+
+    var accordionTabs = null;
+    var fedSearch     = null;
+    var btnExpand     = $('.fed-res-expand');
+
+    var initUI = function(){
+
+      require(['eu_accordion_tabs'], function(euAccordionTabs){
+
+        accordionTabs = euAccordionTabs;
+        fedSearch = $('.eu-accordion-tabs');
+
+        fedSearch.find('.tab-header').on('click', function(){
+          fedSearch.find('.tab-content').removeClass('collapsed');
+        });
+
+        accordionTabs.init(fedSearch, {
+          fnOpenTab: function(index){
+            $('.more-federated-results').hide();
+            $('.more-federated-results:eq(' + index + ')').show();
+            btnExpand.addClass('expanded');
+            fedSearch.addClass('expanded');
+          },
+          active: 0
+        });
+        accordionTabs.loadTabs(fedSearch, $('#template-federated-search-tab-content').find('noscript').text());
+
+        fedSearch.addClass('loaded');
+        btnExpand.removeClass('loading');
+      });
+    };
+
+    var fnClickExpand = function(save){
+
+      if(fedSearch){
+        if(btnExpand.hasClass('expanded')){
+          accordionTabs.deactivate(fedSearch);
+        }
+        else{
+          accordionTabs.activate(fedSearch, 0);
+        }
+        fedSearch.toggleClass('expanded');
+      }
+      btnExpand.toggleClass('expanded');
+
+      if(!btnExpand.hasClass('loaded')){
+        initUI();
+        btnExpand.addClass('loading, loaded');
+      }
+
+      if(save){
+        saveFederatedSetting(btnExpand.hasClass('expanded'));
+      }
+
+    };
+
+    $('.fed-res-expand').add('.title-federated-results').on('click', function(e){
+      e.stopPropagation();
+      fnClickExpand(true);
+    });
+
+    if(loadFederatedSetting()){
+      log('federated enabled');
+      fnClickExpand();
+    }
+  }
+
+
+  // the old way
+
+  function initFederatedSearchSequential(){
 
     var accordionTabs = null;
     var fedSearch     = null;
@@ -449,7 +530,7 @@ define(['jquery', 'ga', 'util_scrollEvents', 'purl'], function($, ga, scrollEven
     };
 
     var fnClickExpand = function(){
-   
+
       if(fedSearch){
         if(btnExpand.hasClass('expanded')){
           accordionTabs.deactivate(fedSearch);
