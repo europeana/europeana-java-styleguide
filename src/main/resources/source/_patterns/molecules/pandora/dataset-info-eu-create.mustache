@@ -1,5 +1,3 @@
-<h1>User role: {{user_role.value}}</h1>
-<h2>View mode: {{view_mode.value}}</h2>
 {{#dataset_form}}
   <div class="metis-form-container">
     <form action="#" data-role="{{user_role.value}}" data-view-mode="{{view_mode.value}}">
@@ -15,18 +13,28 @@
         {{/view_mode.create}}
         {{#provider}}
           <div>
-            <label for="provider">{{label}}</label>
-            <input type="text" value="{{value}}" {{^view_mode.create}}readonly{{/view_mode.create}} name="provider"
-                   id="provider" placeholder="{{placeholder}}">
+            <label for="data-provider">{{label}}</label>
+            <select name="data-provider" {{#view_mode.preview}}disabled{{/view_mode.preview}} class="eu prov">
+              <option value="" selected>{{start_value}}</option>
+              {{#items}}
+                <option data-identifier="{{identifier}}" value="{{altname}}">{{altname}}</option>
+              {{/items}}
+            </select>
           </div>
         {{/provider}}
+
         {{#data_provider}}
           <div>
             <label for="data-provider">{{label}}</label>
-            <input type="text" value="{{value}}" {{#view_mode.preview}}readonly{{/view_mode.preview}}
-                   name="data-provider" id="data-provider" class="eu prov" placeholder="{{placeholder}}">
+            <select name="data-provider" {{#view_mode.preview}}disabled{{/view_mode.preview}} class="eu prov">
+              <option value="" selected>{{start_value}}</option>
+              {{#items}}
+                <option data-identifier="{{identifier}}" value="{{altname}}">{{altname}}</option>
+              {{/items}}
+            </select>
           </div>
         {{/data_provider}}
+
         {{! DEA Signed checkbox }}
         {{#view_mode.create}}
           {{#user_role.europeana}}
@@ -134,35 +142,59 @@
         {{#language}}
           <div>
             <label for="language">{{label}}</label>
-            <input value="{{value}}" name="language" type="text" id="language" placeholder="{{placeholder}}"
-                   {{#view_mode.preview}}readonly{{/view_mode.preview}} class="eu prov">
+            <select name="language" {{#view_mode.preview}}disabled{{/view_mode.preview}} class="eu prov">
+              <option value="" selected>{{start_value}}</option>
+              {{#items}}
+                <option value="{{name}}">{{name}}</option>
+              {{/items}}
+            </select>
           </div>
         {{/language}}
+
         {{#harvest_protocol}}
           <div>
             <label for="harvest-radio">{{label_name}}</label>
             <div>
               {{#options}}
                 <div>
-                  <input id="{{name}}" name="{{group_name}}" type="radio" class="with-font eu prov" value="{{name}}"
-                    {{#checked}}checked{{/checked}} {{#view_mode.preview}}disabled{{/view_mode.preview}}/>
+                  <input id="{{name}}" name="{{group_name}}" type="radio" class="with-font eu prov {{name}}"
+                         value="{{name}}"
+                    {{#checked}}checked{{/checked}} {{#view_mode.preview}}disabled="disabled"{{/view_mode.preview}}/>
                   <label for="{{name}}">{{label}}</label>
                 </div>
               {{/options}}
             </div>
           </div>
+          {{#options}}
+            {{#protocol_controlled_list}}
+              <div class="sub-controlledList {{harvest_protocol_name}} {{^checked}}hide{{/checked}}"
+                   id="sub_{{harvest_protocol_name}}">
+                <label for="harvestProtocol{{name}}">{{label}}</label>
+                <select name="harvestProtocol{{name}}" {{^checked}}disabled{{/checked}}
+                        {{#view_mode.preview}}disabled{{/view_mode.preview}} class="eu prov">
+                  <option value="">{{start_value}}</option>
+                  {{#items}}
+                    <option value="{{name}}" {{#selected}}selected{{/selected}}>{{name}}</option>
+                  {{/items}}
+                </select>
+              </div>
+            {{/protocol_controlled_list}}
+          {{/options}}
         {{/harvest_protocol}}
+
         {{#harvest_url}}
           <div>
             <label for="havest-url">{{label}}</label>
-            <input value="{{value}}" name="harvest-url" type="url" id="harvest-url" placeholder="{{placeholder}}" class="eu prov"
+            <input value="{{value}}" name="harvest-url" type="url" id="harvest-url" placeholder="{{placeholder}}"
+                   class="eu prov"
                    {{#view_mode.preview}}readonly{{/view_mode.preview}}>
           </div>
         {{/harvest_url}}
         {{#setspec}}
           <div>
             <label for="setspec">{{label}}</label>
-            <input value="{{value}}" name="setspec" type="tel" id="setspec" placeholder="{{placeholder}}" class="eu prov"
+            <input value="{{value}}" name="setspec" type="tel" id="setspec" placeholder="{{placeholder}}"
+                   class="eu prov"
                    {{#view_mode.preview}}readonly{{/view_mode.preview}}>
           </div>
         {{/setspec}}
@@ -173,11 +205,16 @@
                    placeholder="{{placeholder}}" {{#view_mode.preview}}readonly{{/view_mode.preview}}>
           </div>
         {{/metadata_format}}
+
         {{#metadata_schema}}
           <div>
-            <label for="provider_url">{{label}}</label>
-            <input value="{{value}}" name="provider-url" type="url" id="provider_url" placeholder="{{placeholder}}" class="eu prov"
-                   {{#view_mode.preview}}readonly{{/view_mode.preview}}>
+            <label for="metadataSchema">{{label}}</label>
+            <select name="metadataSchema" {{#view_mode.preview}}disabled{{/view_mode.preview}} class="eu prov">
+              <option value="" selected>{{start_value}}</option>
+              {{#items}}
+                <option value="{{name}}">{{name}}</option>
+              {{/items}}
+            </select>
           </div>
         {{/metadata_schema}}
 

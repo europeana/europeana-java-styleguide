@@ -6,7 +6,6 @@
 html{
 
   background-color: #fff !important;
-
   body{
     font: 16px/1.6 "Open Sans", "Arial", sans-serif;
   }
@@ -16,4 +15,43 @@ html{
   padding-bottom: 0;
 }
 
+#content{
+  color:     $medium-gray;
+  margin:    0 auto;
+  max-width: 80rem;
+  padding:   $pad-half;
+
+  a{
+    color: $link-blue;
+  }
+  h2{
+    color:     $medium-gray;
+    font-size: 1.375rem;
+  }
+
+  @media all and (max-width: $bp-small-3) {
+    td,
+    tr{
+     display: block;
+    }
+  }
+  @media all and (max-width: $bp-xl) {
+    padding: $pad-half $space $pad-half $space;
+  }
+
+}
+
 @import "scss/base/forms";
+
+input[type="submit"],
+button{
+  background-color: $eu-blue;
+  border: none;
+  color: #fff;
+
+  &:focus,
+  &:hover{
+    background-color: #053048;
+    color: #fff;
+  }
+}

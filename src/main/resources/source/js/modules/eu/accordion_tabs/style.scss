@@ -88,7 +88,17 @@ $tabs-pad:           1.2em;
         }
       }
 
+      &.disabled{
+        cursor: default;
+        .tab-title,
+        .tab-subtitle{
+          color: $tabs-border-colour;
+        }
+      }
       &:not(.js-last){
+        border-right: 1px solid $tabs-border-colour;
+      }
+      &.js-first.js-last{
         border-right: 1px solid $tabs-border-colour;
       }
 
@@ -108,12 +118,37 @@ $tabs-pad:           1.2em;
         display:   block;
       }
     }
+
+    .only-with-tabs{
+      display: inline-block;
+    }
+
+    .only-without-tabs{
+      display: none;
+    }
   }
 
   &:not(.as-tabs){
     .tab-header:first-of-type,
     .tab-content.active + .tab-header{
       border-top:  1px solid $tabs-border-colour;
+    }
+
+    .only-with-tabs{
+      display: none;
+    }
+
+    .only-without-tabs{
+      display: block;
+    }
+
+    .tab-content{
+      &.loading{
+        background-image:    url('spinner.gif');
+        background-position: center;
+        background-repeat:   no-repeat;
+        height:              12em;
+      }
     }
   }
 }

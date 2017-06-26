@@ -22,37 +22,41 @@ define(['jquery', 'util_resize'], function($){
     $cmp.find('.tab-content.active').add($cmp.find('.tab-header.active')).removeClass('active');
   }
 
-  function loadTabs($cmp, template){
+  function loadTabs($cmp, preProcess, callback){
 
-    var getTabContent = function(Mustache, tab){
+    var totalCompleted = 0;
+    var totalExpected  = $cmp.find('.tab-header').length;
+
+    var getTabContent = function(tab, index){
+
+      $(tab).addClass('loading');
+      $(tab).next('.tab-content').addClass('loading');
 
       var url = $(tab).data('content-url');
 
-      $(tab).addClass('loading');
-
       $.getJSON(url).done(function(data) {
-
-        $(tab).find('.tab-subtitle').html(data.tab_subtitle);
-
-        $.each(data.search_results, function(i, item){
-          var rendered = Mustache.render(template, item);
-          $(tab).next('.tab-content').append(rendered);
-        });
+        totalCompleted ++;
+        if(preProcess){
+          data = preProcess(data, tab, index);
+        }
+        if(callback){
+          callback(data, tab, index, totalCompleted == totalExpected);
+        }
       })
       .fail(function(msg){
+        totalCompleted ++;
         log('failed to load data (' + JSON.stringify(msg) + ') from url: ' + url);
       })
       .always(function(){
         $(tab).removeClass('loading');
+        $(tab).next('.tab-content').removeClass('loading');
       });
     };
 
-    require(['mustache'], function(Mustache){
-      Mustache.tags = ['[[', ']]'];
-      $.each($cmp.find('.tab-header'), function(i, tabHeader){
-        getTabContent(Mustache, tabHeader);
-      });
+    $.each($cmp.find('.tab-header'), function(i, tabHeader){
+      getTabContent(tabHeader, i);
     });
+
   }
 
   function init($cmp, ops){
@@ -60,13 +64,8 @@ define(['jquery', 'util_resize'], function($){
     var active    = ops.active ? ops.active : 0;
     var fnOpenTab = ops.fnOpenTab;
 
-    applyMode($cmp);
-
-    $(window).europeanaResize(function(){
-      applyMode($cmp);
-    });
-
     $('.tab-header:eq(' + ($('.tab-header').length-1)  + ')').addClass('js-last');
+    $('.tab-header:eq(0)').addClass('js-first');
 
     if(active > -1){
       activate($cmp, active);
@@ -78,7 +77,19 @@ define(['jquery', 'util_resize'], function($){
       $('.tab-content:eq(0)').add('.tab-header:eq(0)').addClass('active');
     }
 
+    applyMode($cmp);
+
+    $(window).europeanaResize(function(){
+      applyMode($cmp);
+    });
+    $(window).on('eu-accordion-tabs-layout', function(){
+      applyMode($cmp);
+    });
     function headerClick(){
+
+      if($(this).hasClass('disabled')){
+        return;
+      }
       if($cmp.hasClass(tabsClass)){
         $cmp.find('.tab-content').add($cmp.find('.tab-header')).removeClass('active');
         $(this).addClass('active');
