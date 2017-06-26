@@ -1,11 +1,13 @@
 define(['jquery', 'util_resize'], function($){
 
-  var css_path  = require.toUrl('../../eu/accordion_tabs/style.css');
+  var css_path  = require.toUrl('../../eu/metis_accordion_tabs/style.css');
+  console.log('checking css ', css_path);
   var tabsClass = 'as-tabs';
 
   function log(msg){
     console.log(msg);
   }
+
 
   function applyMode($cmp){
     $cmp.addClass(tabsClass);
@@ -40,7 +42,7 @@ define(['jquery', 'util_resize'], function($){
           data = preProcess(data, tab, index);
         }
         if(callback){
-          callback(data, tab, index, totalCompleted == totalExpected);
+          callback(data, tab, index, totalCompleted === totalExpected);
         }
       })
       .fail(function(msg){
@@ -70,7 +72,7 @@ define(['jquery', 'util_resize'], function($){
     if(active > -1){
       activate($cmp, active);
       if(fnOpenTab){
-        fnOpenTab(active, $cmp.find('.tab-content:eq(' + active + ')'));
+        fnOpenTab(active);
       }
     }
     else{
@@ -107,7 +109,7 @@ define(['jquery', 'util_resize'], function($){
       if(fnOpenTab){
         $.each($cmp.find('.tab-content'), function(i, ob){
           if($(ob).hasClass('active')){
-            fnOpenTab(i, $(ob));
+            fnOpenTab(i);
           }
         });
       }

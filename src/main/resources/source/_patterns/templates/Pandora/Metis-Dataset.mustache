@@ -1,0 +1,52 @@
+{{#is_java}}
+    {{>atoms/meta/_head}}
+{{/is_java}}
+
+<!-- Start Metis Dashboard Header -->
+{{>organisms/global/navigation_top_metis}}
+<!-- End Metis Dashboard Header -->
+
+<div class="dashboard-wrapper">
+  {{>organisms/pandora/metis-collapse-info-block}}
+
+  <div aria-hidden="true">
+    <div id="js-template-tab-header">
+      <noscript>
+        {{>organisms/components/eu-accordion-tabs-metis-header.mustache}}
+      </noscript>
+    </div>
+    <div id="js-template-tab-create">
+      <noscript>
+        {{>organisms/components/eu-accordion-tabs-metis-dataset-info-create.mustache}}
+      </noscript>
+    </div>
+    <div id="js-template-tab-pandora">
+      <noscript>
+        {{>organisms/components/eu-accordion-tabs-metis-pandora}}
+      </noscript>
+    </div>
+    <div id="js-template-tab-processing">
+      <noscript>
+        {{>organisms/components/eu-accordion-tabs-metis-dataset-processing}}
+      </noscript>
+    </div>
+    <div id="js-template-tab-preview">
+      <noscript>
+        {{>organisms/components/eu-accordion-tabs-metis-dataset-preview}}
+      </noscript>
+    </div>
+    <div id="js-template-tab-data-quality">
+      <noscript>
+        {{>organisms/components/eu-accordion-tabs-metis-data-quality}}
+      </noscript>
+    </div>
+  </div>
+
+  <div class="metis-accordion-wrapper">
+    {{>organisms/components/eu-accordion-tabs}}
+  </div>
+</div>
+
+{{#is_java}}
+  {{>atoms/meta/_foot}}
+{{/is_java}}
