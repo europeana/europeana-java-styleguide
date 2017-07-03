@@ -13,6 +13,7 @@ if [ $? != 0 ]; then
   exit 1
 fi
 echo "Checked out patterlab source"
+
 git add .
 mvn clean install
 rm -rf source
