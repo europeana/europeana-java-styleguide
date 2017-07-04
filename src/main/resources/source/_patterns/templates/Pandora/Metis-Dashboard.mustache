@@ -1,0 +1,22 @@
+{{#is_java}}
+    {{>atoms/meta/_head}}
+{{/is_java}}
+
+<!-- Start Metis Dashboard Header -->
+{{>organisms/global/navigation_top_metis}}
+<!-- End Metis Dashboard Header -->
+
+<!-- Start Main page content -->
+<div class="dashboard-wrapper">
+    <div class="metis-dashboard">
+        {{> atoms/text/welcome-message }}
+    </div>
+    <div>
+        {{> atoms/buttons/double_btns }}
+    </div>
+</div>
+<!-- End main content -->
+
+{{#is_java}}
+    {{>atoms/meta/_foot}}
+{{/is_java}}

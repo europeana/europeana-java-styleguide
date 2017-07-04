@@ -1,0 +1,81 @@
+{{> atoms/iconography/svgicons-search }}
+
+{{> organisms/global/header_v2}}
+
+{{#content}}
+  <div role="main" class="page l-page">
+
+    <section>
+      <div class="object-nav cf">
+        <div class="object-nav-lists">
+          <ul class="breadcrumbs">
+            <li><a href="{{navigation.home_url}}"><span class="svg-icon-home"></span>{{i18n.site.navigation.breadcrumb.return_home}}</a></li>
+            <li><span class="lastitem"><strong>{{i18n.global.galleries}}</strong></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-hero galleries" id="maincontent" style="background-image:url('{{content.hero.url}}');">
+      <div class="hero-text">
+        <h1>{{content.hero.title}}</h1>
+        <br/>
+        <h3>{{i18n.site.galleries.description}}</h3>
+      </div>
+    </section>
+
+    <section class="lc">
+      <div class="gallery-header">
+        {{#gallery_filter_options}}
+          {{>molecules/forms/filterby}}
+        {{/gallery_filter_options}}
+        {{#social}}
+          <h4>{{social_title}}</h4>
+          {{>molecules/controls/share-social}}
+        {{/social}}
+      </div>
+    </section>
+
+    <section class="lc">
+      <div class="masonry-items gallery-foyer">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        {{#galleries}}
+          <div class="masonry-item image-set {{#is_channel}} item-channel{{/is_channel}}{{#is_exhibition}} item-exhibition{{/is_exhibition}}{{#is_new}} item-new{{/is_new}}{{#is_partner}} item-partner{{/is_partner}}{{#is_featured_site}} item-featuredsite{{/is_featured_site}}">
+            <div class="cf relative">
+              {{#images}}
+                <a class="img-link" href="{{link}}">
+                  <img src="{{url}}"/>
+                </a>
+              {{/images}}
+              {{#info}}
+                <span class="svg-icon-info"></span>
+                <span class="info"><span class="text">{{{.}}}</span></span>
+              {{/info}}
+              {{#info_clicktip}}
+                {{>atoms/text/clicktip}}
+              {{/info_clicktip}}
+            </div>
+            <div class="image-set-info">
+              <a class="image-set-title" href="{{link}}">{{title}}</a>
+              <span class="image-set-data cf">
+                {{count}} {{i18n.global.labels.images}}
+              </span>
+            </div>
+            {{#label}}<div class="category-flag">{{.}}</div>{{/label}}
+          </div>
+        {{/galleries}}
+      </div>
+    </section>
+
+    <section>
+      {{> molecules/navigation/pagination }}
+    </section>
+
+  </div>
+{{/content}}
+
+
+{{> organisms/sections/banner }}
+{{> organisms/global/footer_v2 }}
+{{> molecules/forms/feedback }}
