@@ -41,8 +41,7 @@
   }
 
   @media all and (min-width: $bp-med) {
-    background: $offwhite; // fallback
-    @include background(linear-gradient(to right, $offwhite 0%, $offwhite 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%));
+    background: linear-gradient(to right, $offwhite 0%, $offwhite 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
   }
 
   .container{
@@ -71,45 +70,73 @@
 }
 
 // Filters and secondary content
-.refine{
+.refine {
 
-  @media all and (max-width: $bp-med) {
-    background: #fff;
-    border: 1px solid $offwhite;
-    display: none;
-    width: 70%;
+  background: #fff;
+  border: 1px solid $offwhite;
+  display: none;
+  width: 70%;
 
-    &.open{
-      display: block;
+  &.open {
+    display: block;
+    position: absolute;
+    right: 0;
+    top:   4.5em;
+    z-index: 2;
+
+    &::before{
+      border-color: transparent transparent $offwhite;
+      border-style: solid;
+      border-width: 12px;
+      content: ' ';
+      display: inline-block;
       position: absolute;
-      right: 0;
-      top:   4.5em;
-      z-index: 2;
+      right: 40px;
+      top: -23px;
+    }
 
-      &::before{
-        border-color: transparent transparent $offwhite;
-        border-style: solid;
-        border-width: 12px;
-        content: ' ';
-        display: inline-block;
-        position: absolute;
-        right: 40px;
-        top: -23px;
+    .filter,
+    h2{
+      padding: $space / 2;
+    }
+    h2{
+      background: $offwhite;
+      border: 0;
+    }
+    >h2{
+      margin-bottom: 0;
+    }
+  }
+
+  @media all and (min-width: $bp-med) {
+    display: inline;
+
+    &.open {
+      position: static;
+      right: auto;
+      top: auto;
+
+      &::before {
+        display: none;
       }
 
       .filter,
       h2{
-        padding: $space / 2;
+        padding: 0;
       }
-      h2{
-        background: $offwhite;
-        border: 0;
+
+      h2 {
+        background: none;
       }
-      &>h2{
-        margin-bottom: 0;
+
+      >h2 {
+        margin-bottom: 1rem;
       }
+
     }
+
   }
+
   @media all and (max-width: $bp-small-3) {
     width: 90%;
     &.open{
@@ -127,8 +154,6 @@
     @include span(6);
 
     background: $offwhite;
-    margin-left: -$space;
-    margin-right: -$space;
     margin: 0;
     padding: $space-half + $space-quarter 0 $space-double 0;
 
@@ -151,10 +176,10 @@
   }
 
 
-  &>h2{
-    @include fontSize(16px);
-    color: $textcolour_body;
-    font-weight: bold;
+  >h2{
+    @include        fontSize(16px);
+    color:          $textcolour_body;
+    font-weight:    bold;
     text-transform: uppercase;
   }
 }
@@ -170,7 +195,8 @@
 }
 
 .refine .eu-tooltip{
-  transform: translate(-0.8em, -1.1em);
+  -webkit-transform: translate(-0.8em, -1.1em);
+  transform:         translate(-0.8em, -1.1em);
 }
 
 .action-select,
@@ -202,15 +228,15 @@
   }
 
   .dropdown{
-    min-width:   3.5em;
     margin-left: -1.2em;
+    min-width:   3.5em;
   }
   .dropdown-trigger{
-    text-transform: inherit;
-    font-weight: normal;
-    color: $linkblue;
     border-bottom: 1px dotted #1a8ac7;
+    color: $linkblue;
+    font-weight: normal;
     padding-right: 0;
+    text-transform: inherit;
   }
   .dropdown-trigger::after{
     display: none;
@@ -376,8 +402,8 @@
   }
 
   @media all and (min-width: $bp-small-3) {
-    top: 2.5em;
     margin-top: 2em;
+    top: 2.5em;
   }
 
   @media all and (min-width: $bp-med) {
@@ -440,6 +466,7 @@
 
 .action-select{
 
+  @include span(1 of 12 wide no-gutters);
   text-align: center;
 
   .search-list-item &{
@@ -453,9 +480,6 @@
     margin: 0;
   }
 
-
-  @include span(1 of 12 wide no-gutters);
-
   @media all and (min-width: $bp-small-3) {
     @include span(1 of 18 wide no-gutters);
   }
@@ -468,18 +492,19 @@
 
 
 .fed-res-expand{
-  border:       1px solid $medium-gray;
-  color:        $medium-gray;
-  display:      block;
-  float:        right;
-  font-size:    1.6rem;
-  height:       2rem;
-  position:     absolute;
-  right:        2em;
-  text-align:   center;
-  top:          50%;
-  transform:    translate(100%, -50%);
-  width:        2rem;
+  border:            1px solid $medium-gray;
+  color:             $medium-gray;
+  display:           block;
+  float:             right;
+  font-size:         1.6rem;
+  height:            2rem;
+  position:          absolute;
+  right:             2em;
+  text-align:        center;
+  top:               50%;
+  -webkit-transform: translate(100%, -50%);
+  transform:         translate(100%, -50%);
+  width:             2rem;
 
   &.loading{
     cursor: progress;
@@ -523,23 +548,25 @@
 
   @media all and (min-width: $bp-med) {
 
-    font-size:    1.2em;
-    height:       1.2em;
-    margin-right: 1em;
-    position:     relative;
-    right:        auto;
-    top:          auto;
-    transform:    translate(0, -0.18em);
-    width:        1.2em;
+    font-size:         1.2em;
+    height:            1.2em;
+    margin-right:      1em;
+    position:          relative;
+    right:             auto;
+    top:               auto;
+    -webkit-transform: translate(0, -0.18em);
+    transform:         translate(0, -0.18em);
+    width:             1.2em;
 
     .label-collapse,
     .label-expand{
-      display:     block;
-      font-size:   0.75em;
-      position:    absolute;
-      transform:   translateX(-120%);
-      top:         0.22em;
-      white-space: nowrap;
+      display:           block;
+      font-size:         0.75em;
+      position:          absolute;
+      top:               0.22em;
+      -webkit-transform: translateX(-120%);
+      transform:         translateX(-120%);
+      white-space:       nowrap;
     }
 
     .icon-label-collapse,
@@ -550,9 +577,10 @@
     }
 
     .icon-label-collapse{
-      transform: scale(0.6);
-      left:      -0.039em;
-      top:       -0.05em;
+      left:              -0.039em;
+      top:               -0.05em;
+      -webkit-transform: scale(0.6);
+      transform:         scale(0.6);
     }
 
     .icon-label-expand{
@@ -577,7 +605,7 @@
 .title-federated-results{
 
   line-height:      2rem;
-  margin:           3em 3.5em 2em 0em;
+  margin:           3em 3.5em 2em 0;
   padding:          $pad $pad * 4 $pad $pad;
   position:         relative;
   width:            100%;
@@ -753,33 +781,28 @@
     .search-list-item{
 
       &.default-img{
-        .item-preview{
-          .item-image{
-            a{
-              background-position: center center;
-              background-repeat:   no-repeat;
-              background-size:     contain;
+        .item-preview .item-image  a{
+          background-position: center center;
+          background-repeat:   no-repeat;
+          background-size:     contain;
 
-              &.canadiana{
-                background-image:url('../../images/foederati_logos/canadiana.png');
-              }
-              &.digitalnz{
-                background-image:url('../../images/foederati_logos/digitalnz.png');
-              }
-              &.dpla{
-                background-image:url('../../images/foederati_logos/dpla.png');
-              }
-              &.internetarchive{
-                background-image:url('../../images/foederati_logos/internetarchive.png');
-              }
-              &.trove{
-                background-image:url('../../images/foederati_logos/trove.png');
-              }
-            }
+          &.canadiana{
+            background-image: url('../../images/foederati_logos/canadiana.png');
+          }
+          &.digitalnz{
+            background-image: url('../../images/foederati_logos/digitalnz.png');
+          }
+          &.dpla{
+            background-image: url('../../images/foederati_logos/dpla.png');
+          }
+          &.internetarchive{
+            background-image: url('../../images/foederati_logos/internetarchive.png');
+          }
+          &.trove{
+            background-image: url('../../images/foederati_logos/trove.png');
+          }
           }
         }
-      }
-
       &.type-img{
 
         .item-image{
@@ -791,24 +814,28 @@
           }
 
           .svg-icon-image-grey-lighter{
-            height:    1.5em;
-            transform: scale(4) translateY(82%);
-            width:     1.4em;
+            height:            1.5em;
+            -webkit-transform: scale(4) translateY(82%);
+            transform:         scale(4) translateY(82%);
+            width:             1.4em;
           }
           .svg-icon-music-grey-lighter{
-            height:    1.8em;
-            transform: scale(3.5) translate(-5%, 83%);
-            width:     1.36em;
+            height:            1.8em;
+            -webkit-transform: scale(3.5) translate(-5%, 83%);
+            transform:         scale(3.5) translate(-5%, 83%);
+            width:             1.36em;
           }
           .svg-icon-openbook-grey-lighter{
-            height:    1.8em;
-            transform: scale(3.5) translateY(85%);
-            width:     1.36em;
+            height:            1.8em;
+            -webkit-transform: scale(3.5) translateY(85%);
+            transform:         scale(3.5) translateY(85%);
+            width:             1.36em;
           }
           .svg-icon-tv-grey-lighter{
-            height:    1.48em;
-            transform: scale(3.5) translateY(100%);
-            width:     1.4em;
+            height:            1.48em;
+            -webkit-transform: scale(3.5) translateY(100%);
+            transform:         scale(3.5) translateY(100%);
+            width:             1.4em;
           }
         }
       }
@@ -831,15 +858,15 @@
             line-height:   1.3em;
             max-height:    3.2em;
             position:      relative;
-
-            &:focus,
-            &:hover{
-              border-bottom: none;
-            }
-            &:hover span{
-              text-decoration: underline dotted $eu-blue;
-            }
           }
+          a:focus,
+          a:hover{
+            border-bottom: 0;
+          }
+          a:hover span{
+            text-decoration: underline dotted $eu-blue;
+          }
+
           a.svg-icon-external-eu-blue-after::after{
             bottom:   1px;
             position: absolute;
@@ -849,7 +876,8 @@
         }
 
         > h3{
-          transform: translateY(0.5em);
+          -webkit-transform: translateY(0.5em);
+          transform:         translateY(0.5em);
         }
 
         .svg-icon{

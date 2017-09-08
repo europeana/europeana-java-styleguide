@@ -73,7 +73,7 @@
                 {
                   "submenu": false,
                   "url": "url to foyer",
-                  "text": "All Exhibitions…",
+                  "text": "All Exhibitions???",
                   "is_morelink": true
                 }
               ]
@@ -210,7 +210,7 @@
             "section_title": "Another intro type",
             "subtitle": "The first chapter of this amazing virtual exhibition",
             "title": "Faces of Europe",
-            "intro_description": "<p>The alliance of the Kingdom of <a href=\"www.google.com\">Poland</a> and the Grand Duchy of <a href=\"www.google.com\">Lithuania</a>, led respectively by King Władysław II Jagiełło (Jogaila) and Grand Duke Vytautas (Witold; Vitaŭt), decisively defeated the German–Prussian Teutonic Knights, led by Grand Master Ulrich von Jungingen.</p><p>A haloed Jesus watches from the background.</p><p>It's not clear which side he's rooting for.</p>",
+            "intro_description": "<p>The alliance of the Kingdom of <a href=\"www.google.com\">Poland</a> and the Grand Duchy of <a href=\"www.google.com\">Lithuania</a>, led respectively by King W??adys??aw II Jagie????o (Jogaila) and Grand Duke Vytautas (Witold; Vita??t), decisively defeated the German???Prussian Teutonic Knights, led by Grand Master Ulrich von Jungingen.</p><p>A haloed Jesus watches from the background.</p><p>It's not clear which side he's rooting for.</p>",
             "image_credit": {
               "attribution_title": "Battle of Grunweald",
               "attribution_creator": "Jan Matejko",

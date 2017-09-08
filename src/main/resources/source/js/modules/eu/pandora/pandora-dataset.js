@@ -28,29 +28,29 @@ define(['jquery'], function ($) {
           'fnOpenTab': function(index, $tabContent){
 
             var header = $('.metis-accordion-wrapper .tab-header:eq(' + index + ')');
-
+            
             if(!header.hasClass('js-loaded')){
 
               var url    = header.data('content-url');
               var template;
 
               if(index == 0){
-                template = $('#js-template-tab-create noscript');
+                template = $('#js-template-tab-create');
               }
               else if(index == 1){
-                template = $('#js-template-tab-pandora noscript');
+                template = $('#js-template-tab-pandora');
               }
               else if(index == 2){
-                template = $('#js-template-tab-processing noscript');
+                template = $('#js-template-tab-processing');
               }
               else if(index == 3){
-                template = $('#js-template-tab-preview noscript');
+                template = $('#js-template-tab-preview');
               }
               else if(index == 4){
-                template = $('#js-template-tab-data-quality noscript');
+                template = $('#js-template-tab-data-quality');
               }
 
-              if(template.length > 0){
+              if(template.length > 0) {
                 header.addClass('loading');
                 $.getJSON(url, null).done(function(data){
                   $tabContent.append(Mustache.render(template.text(), data));
@@ -59,6 +59,11 @@ define(['jquery'], function ($) {
                   euAccordionTabs.fixTabContentHeight(cmpTabs);
                 });
               }
+
+              cmpTabs.find('.tab-header').on('click', function() {
+                euAccordionTabs.fixTabContentHeight(cmpTabs);
+              });
+
             }
           }
         }

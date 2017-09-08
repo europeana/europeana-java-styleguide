@@ -199,7 +199,7 @@
     },
     "hero_config": {
       "hero_image": "../../images/sample/channel_hero_fashion.jpg",
-      "attribution_title": "Stockholms mode-journal: Tidskrift för den eleganta werlden 1851,",
+      "attribution_title": "Stockholms mode-journal: Tidskrift f??r den eleganta werlden 1851,",
       "attribution_creator": "",
       "attribution_institution": "Stiftelsen Nordiska Museet",
       "attribution_url": "http://www.europeana.eu/portal/record/2048211/449.html",
@@ -348,7 +348,7 @@
             }
           },
           "excerpt": {
-            "short": "Netsuke, the small sculptural objects worn by men in Japan since the seventeenth century, first shot to fame in Europe with the publication of Edmund de Waal’s popular memoir, The Hare With Amber Eyes in 2010."
+            "short": "Netsuke, the small sculptural objects worn by men in Japan since the seventeenth century, first shot to fame in Europe with the publication of Edmund de Waal???s popular memoir, The Hare With Amber Eyes in 2010."
           }
         },
         {
@@ -363,12 +363,12 @@
             }
           },
           "excerpt": {
-            "short": "The years between 1900 and 1939 represent an extremely turbulent time in history with two World Wars and the rise of the suffrage movement. These unstable times clearly had an impact on women’s fashion, this was seen in the rise ..."
+            "short": "The years between 1900 and 1939 represent an extremely turbulent time in history with two World Wars and the rise of the suffrage movement. These unstable times clearly had an impact on women???s fashion, this was seen in the rise ..."
           }
         },
         {
           "headline": {
-            "medium": "Pitti Archive: “The Fourth Sex. Adolescent Extremes”"
+            "medium": "Pitti Archive: ???The Fourth Sex. Adolescent Extremes???"
           },
           "url": "http://www.europeanafashion.eu/portal/blogdetail.html?post=pitti-archive-the-fourth-sex-adolescent-extremes",
           "img": {
@@ -378,7 +378,7 @@
             }
           },
           "excerpt": {
-            "short": "The 2003 exhibition gives a meaningful insight in Simons’ world. Co-curated by Francesco Bonami and Simons himself, the exhibit reflected upon a central figure in the work of Simons, the teenager."
+            "short": "The 2003 exhibition gives a meaningful insight in Simons??? world. Co-curated by Francesco Bonami and Simons himself, the exhibit reflected upon a central figure in the work of Simons, the teenager."
           }
         }
       ]

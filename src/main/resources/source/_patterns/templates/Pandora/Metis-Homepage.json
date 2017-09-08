@@ -19,6 +19,10 @@
     {
       "name": "pageName",
       "value": "metisHomePage"
+    },
+    {
+      "name": "mock_ajax",
+      "value": "true"
     }
   ],
   "jQuery": false,
@@ -76,16 +80,22 @@
         }
       ],
       "user_fields": {
+        "autocomplete":{
+          "url":       "metis_autocomplete",
+          "min_chars": "1"
+        },
         "selectedOrganizations": {
           "label": "Selected Organizations",
           "organizations": [
             {
+              "index": 0,
               "organizationName": "Europeana",
               "organizationId": 12,
               "organizationRole": false,
               "rolesTypeId": 1
             },
             {
+              "index": 1,
               "organizationName": "BNF",
               "organizationId": 23,
               "organizationRole": "Provider Admin",
@@ -135,7 +145,7 @@
         },
         "notes": {
           "label": "Notes",
-          "placeholder": "I did a complex mapping for edm:rights",
+          "placeholder": "Mapping for edm:rights",
           "value": ""
         },
         "countries": {
@@ -419,7 +429,6 @@
         }
       },
       "view_mode": {
-        "XXXvalue": "preview",
         "value": "update"
       }
     }
@@ -434,7 +443,7 @@
         "email-address-required": "Please enter your email address.",
         "language-required": "Please choose a language for your newsletter."
       },
-      "mission": "We transform the world with culture! We want to build on Europe’s rich heritage and make it easier for people to use, whether for work, for learning or just for fun.",
+      "mission": "We transform the world with culture! We want to build on Europe???s rich heritage and make it easier for people to use, whether for work, for learning or just for fun.",
       "mission-title": "Our mission"
     }
   },

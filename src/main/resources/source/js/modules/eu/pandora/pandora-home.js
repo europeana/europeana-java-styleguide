@@ -12,9 +12,7 @@ define(['jquery'], function ($) {
     console.log('Pandora Home: ' + msg);
   };
 
-  function disableEditMode(){
-
-    log('disable edit mode');
+  function disableEditMode() {
 
     form.find('.js-editable').attr('readonly', true).attr('disabled', true);
     form.find('.cancel').toggleClass('update preview');
@@ -27,11 +25,11 @@ define(['jquery'], function ($) {
     previewBlockBtn.removeClass('hidden');
     editableBlockBtns.addClass('hidden');
 
-    $('.selectedOrganization, .removeOrganization').toggleClass('disableLink');
+    form.find('.tag').addClass('disable-tag');
 
   }
 
-  function enableEditMode(){
+  function enableEditMode() {
 
     form.find('.js-editable').attr('readonly', false).attr('disabled', false);
     form.find('.cancel').toggleClass('update preview');
@@ -39,23 +37,23 @@ define(['jquery'], function ($) {
     previewBlockBtn.addClass('hidden');
     editableBlockBtns.removeClass('hidden');
 
-    if(role === 'metisAdmin') {
-      eu.attr('readonly', false).attr('disabled', false);
-      $('.selectedOrganization, .removeOrganization').toggleClass('disableLink');
-    }
-    else {
-      prov.attr('readonly', false).attr('disabled', false);
-    }
+    form.find('.js-editable').attr('readonly', false).attr('disabled', false);
+    form.find('.tag').removeClass('disable-tag');
+
+    //if(role === 'metisAdmin') {
+    //  eu.attr('readonly', false).attr('disabled', false);
+    //  form.find('.tag').removeClass('disable-tag');
+    //}
+    //else {
+    //  prov.attr('readonly', false).attr('disabled', false);
+    //}
+
   }
-
-
 
   function initPage(){
 
-    log('initPage - user form ' + $('.user-profile-form form').length );
-
-    form              = $('.user-profile-form form');
-    previewBlockBtn   = $('.user-profile-preview-btn');
+    form = $('.user-profile-form form');
+    previewBlockBtn = $('.user-profile-preview-btn');
     editableBlockBtns = $('.user-profile-edit-btns');
 
     role = form.data('role');
@@ -76,6 +74,11 @@ define(['jquery'], function ($) {
     form.find('.submit').on('click', function(){
       $(this).closest('form').submit();
     });
+
+    require(['pandora_autocomplete'], function(p){
+      p.autoComplete();
+    });
+
   }
 
   return {

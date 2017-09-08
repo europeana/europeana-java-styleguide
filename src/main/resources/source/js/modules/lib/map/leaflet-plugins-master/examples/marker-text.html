@@ -11,7 +11,7 @@
 var map = new L.Map('map', {center: new L.LatLng(67.66904, 33.68595), zoom: 10});
 map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));
 
-var marker = new L.Marker.Text(map.getCenter(), 'Маркер');
+var marker = new L.Marker.Text(map.getCenter(), '????????????');
 map.addLayer(new L.Marker(map.getCenter(), {opacity: 0.5}));
 map.addLayer(marker);
 

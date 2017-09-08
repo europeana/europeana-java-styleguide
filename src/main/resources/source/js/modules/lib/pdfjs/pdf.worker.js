@@ -14818,7 +14818,7 @@ var serifFonts = {
   'Seagull': true, 'Sistina': true, 'Souvenir': true,
   'STIX': true, 'Stone Informal': true, 'Stone Serif': true,
   'Sylfaen': true, 'Times': true, 'Trajan': true,
-  'Trinité': true, 'Trump Mediaeval': true, 'Utopia': true,
+  'Trinit??': true, 'Trump Mediaeval': true, 'Utopia': true,
   'Vale Type': true, 'Bitstream Vera': true, 'Vera Serif': true,
   'Versailles': true, 'Wanted': true, 'Weiss': true,
   'Wide Latin': true, 'Windsor': true, 'XITS': true
@@ -18993,7 +18993,7 @@ var Font = (function FontClosure() {
         return new ToUnicodeMap(toUnicode);
       }
       // If the font is a composite font that uses one of the predefined CMaps
-      // listed in Table 118 (except Identity–H and Identity–V) or whose
+      // listed in Table 118 (except Identity???H and Identity???V) or whose
       // descendant CIDFont uses the Adobe-GB1, Adobe-CNS1, Adobe-Japan1, or
       // Adobe-Korea1 character collection:
       if (properties.composite && (
@@ -19006,15 +19006,15 @@ var Font = (function FontClosure() {
               properties.cidSystemInfo.ordering === 'Korea1')))) {
         // Then:
         // a) Map the character code to a character identifier (CID) according
-        // to the font’s CMap.
+        // to the font???s CMap.
         // b) Obtain the registry and ordering of the character collection used
-        // by the font’s CMap (for example, Adobe and Japan1) from its
+        // by the font???s CMap (for example, Adobe and Japan1) from its
         // CIDSystemInfo dictionary.
         var registry = properties.cidSystemInfo.registry;
         var ordering = properties.cidSystemInfo.ordering;
         // c) Construct a second CMap name by concatenating the registry and
-        // ordering obtained in step (b) in the format registry–ordering–UCS2
-        // (for example, Adobe–Japan1–UCS2).
+        // ordering obtained in step (b) in the format registry???ordering???UCS2
+        // (for example, Adobe???Japan1???UCS2).
         var ucs2CMapName = new Name(registry + '-' + ordering + '-UCS2');
         // d) Obtain the CMap with the name constructed in step (c) (available
         // from the ASN Web site; see the Bibliography).
@@ -54449,7 +54449,7 @@ var serifFonts = {
   'Seagull': true, 'Sistina': true, 'Souvenir': true,
   'STIX': true, 'Stone Informal': true, 'Stone Serif': true,
   'Sylfaen': true, 'Times': true, 'Trajan': true,
-  'Trinité': true, 'Trump Mediaeval': true, 'Utopia': true,
+  'Trinit??': true, 'Trump Mediaeval': true, 'Utopia': true,
   'Vale Type': true, 'Bitstream Vera': true, 'Vera Serif': true,
   'Versailles': true, 'Wanted': true, 'Weiss': true,
   'Wide Latin': true, 'Windsor': true, 'XITS': true
@@ -58624,7 +58624,7 @@ var Font = (function FontClosure() {
         return new ToUnicodeMap(toUnicode);
       }
       // If the font is a composite font that uses one of the predefined CMaps
-      // listed in Table 118 (except Identity–H and Identity–V) or whose
+      // listed in Table 118 (except Identity???H and Identity???V) or whose
       // descendant CIDFont uses the Adobe-GB1, Adobe-CNS1, Adobe-Japan1, or
       // Adobe-Korea1 character collection:
       if (properties.composite && (
@@ -58637,15 +58637,15 @@ var Font = (function FontClosure() {
               properties.cidSystemInfo.ordering === 'Korea1')))) {
         // Then:
         // a) Map the character code to a character identifier (CID) according
-        // to the font’s CMap.
+        // to the font???s CMap.
         // b) Obtain the registry and ordering of the character collection used
-        // by the font’s CMap (for example, Adobe and Japan1) from its
+        // by the font???s CMap (for example, Adobe and Japan1) from its
         // CIDSystemInfo dictionary.
         var registry = properties.cidSystemInfo.registry;
         var ordering = properties.cidSystemInfo.ordering;
         // c) Construct a second CMap name by concatenating the registry and
-        // ordering obtained in step (b) in the format registry–ordering–UCS2
-        // (for example, Adobe–Japan1–UCS2).
+        // ordering obtained in step (b) in the format registry???ordering???UCS2
+        // (for example, Adobe???Japan1???UCS2).
         var ucs2CMapName = new Name(registry + '-' + ordering + '-UCS2');
         // d) Obtain the CMap with the name constructed in step (c) (available
         // from the ASN Web site; see the Bibliography).

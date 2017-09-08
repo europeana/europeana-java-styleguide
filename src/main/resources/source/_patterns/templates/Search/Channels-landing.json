@@ -23,12 +23,22 @@
     {
       "name": "pageName",
       "value": "collections/show"
+    },
+    {
+      "name": "mock_ajax",
+      "value": "{ 'delays' : {'portal_autocomplete': 100}}"
     }
   ],
   "input_search": {
     "title": "Search Europeana Music",
     "input_name": "q",
     "placeholder": "Search Europeana Music"
+  },
+  "form_search": {
+    "autocomplete": {
+      "url": "portal_autocomplete",
+      "min_chars": "0"
+    }
   },
   "content": {
     "ugc_content": {
@@ -106,7 +116,7 @@
             "url": "#777"
           },
           {
-            "text": "Cité de la Musique",
+            "text": "Cit?? de la Musique",
             "url": "#777"
           }
         ]
@@ -229,7 +239,7 @@
             }
           },
           "excerpt": {
-            "short": "Netsuke, the small sculptural objects worn by men in Japan since the seventeenth century, first shot to fame in Europe with the publication of Edmund de Waal’s popular memoir, The Hare With Amber Eyes in 2010."
+            "short": "Netsuke, the small sculptural objects worn by men in Japan since the seventeenth century, first shot to fame in Europe with the publication of Edmund de Waal???s popular memoir, The Hare With Amber Eyes in 2010."
           }
         },
         {

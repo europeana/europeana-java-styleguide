@@ -24,8 +24,19 @@
     {
       "name": "pageName",
       "value": "home/index"
+    },
+    {
+      "name": "mock_ajax",
+      "value": "{ 'delays' : {'portal_autocomplete': 100}}"
     }
   ],
+  "form_search": {
+    "action": "javascript:alert('submit form');",
+    "autocomplete": {
+      "url": "portal_autocomplete",
+      "min_chars": "5"
+    }
+  },
   "input_search": {
     "title": "Search Europeana",
     "input_name": "search",
@@ -54,7 +65,7 @@
     "strapline": "Explore 44,725,949 artworks, artefacts, books, videos and sounds from across Europe.",
     "total_items": "44,725,949",
     "important_disabled": {
-      "text": "Europeana stories are now in Google’s Field Trip app",
+      "text": "Europeana stories are now in Google???s Field Trip app",
       "url": "http://blog.europeana.eu/2015/03/its-your-world-explore-it-europeana-stories-now-in-googles-field-trip-app/"
     },
     "promoted": [
@@ -85,7 +96,7 @@
         "bg_image": "../../images/sample/thumb-expo-film.jpg"
       },
       {
-        "title": "Europeana 1914—1918",
+        "title": "Europeana 1914???1918",
         "url": "urlhere",
         "is_featured_site": true,
         "bg_image": "../../images/sample/thumb-1418.jpg"
@@ -109,7 +120,7 @@
               "alt": "Japanese scroll with netsuke illustration"
           },
           "excerpt": {
-            "short": "Netsuke, the small sculptural objects worn by men in Japan since the seventeenth century, first shot to fame in Europe with the publication of Edmund de Waal’s popular memoir, The Hare With Amber Eyes in 2010."
+            "short": "Netsuke, the small sculptural objects worn by men in Japan since the seventeenth century, first shot to fame in Europe with the publication of Edmund de Waal???s popular memoir, The Hare With Amber Eyes in 2010."
           }
         },
         {

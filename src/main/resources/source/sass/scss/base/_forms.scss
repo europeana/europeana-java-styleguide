@@ -225,6 +225,7 @@ input[type="search"]::-webkit-search-decoration {
 
   .content{
     display: none;
+    position: relative;
     @media all and (max-width: $bp-med) {
       margin-top: $pad;
     }
@@ -246,6 +247,9 @@ input[type="search"]::-webkit-search-decoration {
     border-radius: 6px;
     &:focus{
       border-color: $textcolour_link;
+    }
+    &.mode-entity{
+      background-color: #e3e3e3;
     }
   }
 

@@ -185,7 +185,7 @@
                           <!--
                           <li {{^technical_metadata.fps}}class="is-disabled"{{/technical_metadata.fps}}            ><span class="label tech-meta-fps"       >{{i18n.site.object.meta-label.fps}}</span>        <span class="val">{{#technical_metadata}}{{fps}} {{fps_unit}}{{/technical_metadata}}</span></li>
                           -->
-                          <li {{^technical_metadata.width}}class="is-disabled"{{/technical_metadata.width}}        ><span class="label tech-meta-dimensions">{{i18n.site.object.meta-label.dimensions}}</span> <span class="val">{{#technical_metadata}}{{width}} × {{height}} {{size_unit}}{{/technical_metadata}}</span></li>
+                          <li {{^technical_metadata.width}}class="is-disabled"{{/technical_metadata.width}}        ><span class="label tech-meta-dimensions">{{i18n.site.object.meta-label.dimensions}}</span> <span class="val">{{#technical_metadata}}{{width}} ?? {{height}} {{size_unit}}{{/technical_metadata}}</span></li>
                           <li {{^technical_metadata.runtime}}class="is-disabled"{{/technical_metadata.runtime}}    ><span class="label tech-meta-runtime"   >{{i18n.site.object.meta-label.runtime}}</span>    <span class="val">{{#technical_metadata}}{{runtime}} {{runtime_unit}}{{/technical_metadata}}</span></li>
 
                           <li {{^technical_metadata.dc_source}}class="is-disabled"{{/technical_metadata.dc_source}}><span class="label tech-meta-source">{{i18n.site.object.meta-label.source}}</span>  <span class="val">{{#technical_metadata}}{{dc_description}}{{/technical_metadata}}</span></li>
@@ -262,7 +262,7 @@
             {{/places }}
 
             {{#annotations_later}}
-              <div class="js-hidden" id="js-template-object-data-section"><noscript>{{> organisms/sections/object-data-section-js }}</noscript></div>
+              <script id="js-template-object-data-section" type="text/x-mustache">{{> organisms/sections/object-data-section-js }}</script>
             {{/annotations_later}}
 
             {{#annotations}}
@@ -300,7 +300,7 @@
                                     {{#url }}<a href="{{.}}">{{/url }}{{ text }}{{#url }}</a>{{/url }}{{#extra_info}}
                                       {{#life}}
                                         <span class="life-dates">
-                                          ({{from.short}} {{#to.short}} — {{.}}{{/to.short}})
+                                          ({{from.short}} {{#to.short}} ??? {{.}}{{/to.short}})
                                         </span>
                                       {{/life}}
                                       {{#biography}}
@@ -428,7 +428,7 @@
                   <a class="scroll-trigger"
                       data-enabled="true"
                       data-fire-on-open="loadHierarchy"
-                      data-fire-on-open-params='{"label_up": "{{ i18n.site.object.hierarchy.view-items-above }}", "label_down": "{{i18n.site.object.hierarchy.view-items-below}}" {{#content.similar}}, "mlt": { "loadUrl": "{{more_items_load}}", "total_available": "{{more_items_total}}", "template": "mlt", "arrowClass": "linkblue-grey", "itemWidth": "400" } {{/content.similar}} }'
+                      data-fire-on-open-params='{"label_up": "{{ i18n.site.object.hierarchy.view-items-above }}", "label_down": "{{i18n.site.object.hierarchy.view-items-below}}" {{#content.similar}}, "mlt": { "loadUrl": "{{more_items_load}}", "total_available": "{{more_items_total}}", "template": "mlt", "arrowClass": "linkblue-grey", "itemWidth": "200" } {{/content.similar}} }'
                       id="scroll-trigger-hierarchy"
                   ></a>
                 </div>
@@ -465,7 +465,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="show-more-mlt"{{^more_items_total_formatted}} style="display:none;"{{/more_items_total_formatted}}><a href="{{more_items_query}}">{{ i18n.site.object.show-more-similar-items }}… (<span class="number">{{more_items_total_formatted}}</span>)</a></div>
+                <div class="show-more-mlt"{{^more_items_total_formatted}} style="display:none;"{{/more_items_total_formatted}}><a href="{{more_items_query}}">{{ i18n.site.object.show-more-similar-items }}??? (<span class="number">{{more_items_total_formatted}}</span>)</a></div>
               </div>
             </div>
           {{/content.similar}}

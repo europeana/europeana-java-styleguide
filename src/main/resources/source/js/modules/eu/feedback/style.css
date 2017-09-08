@@ -1,9 +1,6 @@
-/*------------------------------------*\
-    $VARIABLES
-\*------------------------------------*/
 /* line 3, style.scss */
 .feedback {
-  background: white none repeat scroll 0 0;
+  background: #fff none repeat scroll 0 0;
   bottom: 0;
   font-size: 16px;
   position: fixed;
@@ -27,8 +24,8 @@
     border-style: solid none solid solid;
     border-width: 1px medium 1px 1px;
     right: 0;
-    transform: translateX(100%);
     -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 /* line 26, style.scss */
@@ -46,9 +43,9 @@
 /* line 38, style.scss */
 .feedback .open,
 .feedback .close {
-  text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: 0.65em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 /* line 45, style.scss */
 .feedback .feedback-text {
@@ -80,33 +77,33 @@
     -webkit-transform: translateX(0);
   }
 }
-/* line 73, style.scss */
+/* line 72, style.scss */
 .feedback .feedback-toggle {
   color: #fff;
-  position: absolute;
   left: 0;
+  position: absolute;
 }
 @media all and (max-width: 50em) {
-  /* line 73, style.scss */
+  /* line 72, style.scss */
   .feedback .feedback-toggle {
-    width: 100%;
     top: 0;
+    width: 100%;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 73, style.scss */
+  /* line 72, style.scss */
   .feedback .feedback-toggle {
     bottom: 0;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 73, style.scss */
+  /* line 72, style.scss */
   .feedback .feedback-toggle {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
   }
 }
-/* line 92, style.scss */
+/* line 91, style.scss */
 .feedback .feedback-toggle a {
   border: 0 none;
   cursor: pointer;
@@ -116,29 +113,25 @@
   vertical-align: middle;
 }
 @media all and (min-width: 50em) {
-  /* line 92, style.scss */
+  /* line 91, style.scss */
   .feedback .feedback-toggle a {
+    left: 100%;
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
+    transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
   }
-  /* line 105, style.scss */
-  .feedback .feedback-toggle a.open {
-    left: 23px;
-    top: -23px;
-  }
-  /* line 108, style.scss */
+  /* line 109, style.scss */
   .feedback .feedback-toggle a.open:hover, .feedback .feedback-toggle a.open:focus {
     background: #212121;
   }
-  /* line 112, style.scss */
+  /* line 114, style.scss */
   .feedback .feedback-toggle a.close {
-    left: 23px;
-    top: -23px;
     background-color: #293745;
   }
 }
 @media all and (max-width: 50em) {
-  /* line 92, style.scss */
+  /* line 91, style.scss */
   .feedback .feedback-toggle a {
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
@@ -157,8 +150,8 @@
   .feedback .feedback-toggle a.close,
   .feedback .feedback-cancel.close,
   .feedback .feedback-send.close {
-    width: 100%;
     top: 0;
+    width: 100%;
   }
 }
 /* line 141, style.scss */
@@ -169,19 +162,19 @@
 .feedback .feedback-cancel,
 .feedback .feedback-send {
   color: #fff;
+  height: 2.45em;
   position: absolute;
   width: 2.45em;
-  height: 2.45em;
 }
 /* line 151, style.scss */
 .feedback .feedback-cancel svg.icon,
 .feedback .feedback-send svg.icon {
-  width: 1.4em;
   height: 1.4em;
+  width: 1.4em;
 }
 /* line 157, style.scss */
 .feedback .feedback-cancel {
-  background-color: #CCCCCC;
+  background-color: #ccc;
 }
 /* line 161, style.scss */
 .feedback .feedback-send {
@@ -198,9 +191,9 @@
 }
 /* line 172, style.scss */
 .feedback #feedback-form .step2 {
-  visibility: hidden;
   position: absolute;
   top: 0;
+  visibility: hidden;
 }
 /* line 178, style.scss */
 .feedback #feedback-form h2 .step2 {
@@ -222,7 +215,7 @@
   border-radius: 0 0 0.5em 0.5em;
   border-style: none solid solid;
   border-width: medium 1px 1px;
-  color: #CCCCCC;
+  color: #ccc;
   font-size: 0.875em;
   margin-bottom: 0.5em;
   padding: 0 0.5em 0.5em;
@@ -232,15 +225,15 @@
 }
 /* line 206, style.scss */
 .feedback #feedback-form .feedback-error {
-  color: red;
+  color: #f22f24;
   position: absolute;
-  visibility: hidden;
   top: 0;
+  visibility: hidden;
 }
 /* line 214, style.scss */
 .feedback #feedback-form .feedback-counter.error,
 .feedback #feedback-form .feedback-text.error {
-  border-color: red;
+  border-color: #f22f24;
 }
 /* line 219, style.scss */
 .feedback #feedback-form .feedback-text {
@@ -279,9 +272,9 @@
 /* line 255, style.scss */
 .feedback .feedback-spinner {
   background-color: rgba(0, 0, 0, 0.75);
-  background-image: url(spinner.gif);
-  background-repeat: no-repeat;
+  background-image: url("spinner.gif");
   background-position: center center;
+  background-repeat: no-repeat;
   bottom: 0;
   color: #fff;
   display: none;

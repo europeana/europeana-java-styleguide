@@ -120,8 +120,8 @@
       {
         "id": "featured_item",
         "image_credit": {
-          "attribution_title": "Painéis de S. Vicente de Fora",
-          "attribution_creator": "Nuno Gonçalves",
+          "attribution_title": "Pain??is de S. Vicente de Fora",
+          "attribution_creator": "Nuno Gon??alves",
           "attribution_institution": "Museu Nacional De Arte Antiga",
           "attribution_url": "http://www.europeana.eu/portal/record/2063606/POR_280_002.html",
           "license_public": true
@@ -161,7 +161,7 @@
           }
         },
         "partner_url": "javascript:alert('link to curator site')",
-        "intro_description": "<p>Victor Brauner was a major representative of Surrealism, the art movement that focuses on the world between dreams and reality.</p><p>He was born in the East Carpathians, in a town where half the population was Jewish. After an anti-Semitic peasants’ revolt in 1907, the family moved to Germany and later to Austria.</p><p>In 1919, five years after returning to Bucharest, they were granted Romanian citizenship.</p><p>That same year, Brauner enrolled at the National School of Fine Arts in Bucharest.</p>"
+        "intro_description": "<p>Victor Brauner was a major representative of Surrealism, the art movement that focuses on the world between dreams and reality.</p><p>He was born in the East Carpathians, in a town where half the population was Jewish. After an anti-Semitic peasants??? revolt in 1907, the family moved to Germany and later to Austria.</p><p>In 1919, five years after returning to Bucharest, they were granted Romanian citizenship.</p><p>That same year, Brauner enrolled at the National School of Fine Arts in Bucharest.</p>"
       },
       {
         "is_foyer_card": true,

@@ -35,7 +35,7 @@
             {{/entity_external_link}}
           </div>
         </div>
-        <span class="header-bio js-hidden"><h3>{{i18n.site.entities.labels.bio}}</h3></span>
+        <span class="header-bio js-hidden"><h3>{{entity_description_title}}</h3></span>
         {{#entity_description}}<p>{{.}}</p>{{/entity_description}}
 
         {{# social_share }}
@@ -70,14 +70,12 @@
           </div>
         </div>
 
-        <div id="js-template-entity-tab-content" class="js-hidden"><noscript>{{> molecules/components/search/search-listitem-js}}</noscript></div>
+        <script id="js-template-entity-tab-content" type="text/x-mustache">{{> molecules/components/search/search-listitem-js}}</script>
         <div class="eu-accordion-tabs cf">
           {{#tab_items}}
             {{> organisms/components/eu-accordion-tabs-entity}}
           {{/tab_items}}
         </div>
-
-        <div id="molecules-components-search-search-listitem-js"><noscript>{{> molecules/components/search/search-listitem-js }}</noscript></div>
       </div>
     {{/content}}
 
@@ -131,4 +129,3 @@
 {{> organisms/sections/banner }}
 {{> organisms/global/footer_v2 }}
 {{> molecules/forms/feedback }}
-

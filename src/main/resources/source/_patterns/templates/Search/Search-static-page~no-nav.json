@@ -122,7 +122,7 @@
                     {
                       "url": "url to all exhibitions",
                       "submenu": false,
-                      "text": "All Exhibitions…",
+                      "text": "All Exhibitions???",
                       "is_morelink": true
                     }
                   ]
@@ -141,12 +141,12 @@
                     {
                       "url": "#",
                       "submenu": false,
-                      "text": "Exploring Vienna’s historic Ringstrasse in Field Trip"
+                      "text": "Exploring Vienna???s historic Ringstrasse in Field Trip"
                     },
                     {
                       "url": "#",
                       "submenu": false,
-                      "text": "Choosing a country’s top 10 artworks for Europeana 280"
+                      "text": "Choosing a country???s top 10 artworks for Europeana 280"
                     },
                     {
                       "url": "#",
@@ -166,7 +166,7 @@
                     {
                       "url": "url to all blog posts",
                       "submenu": false,
-                      "text": "All Posts…",
+                      "text": "All Posts???",
                       "is_morelink": true
                     }
                   ]

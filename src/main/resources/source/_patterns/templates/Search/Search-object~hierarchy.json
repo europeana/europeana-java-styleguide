@@ -41,7 +41,11 @@
   ],
 
   "form_search": {
-    "action": "javascript:alert('submit form');"
+    "action": "javascript:alert('submit form');",
+    "autocomplete": {
+      "url": "portal_autocomplete",
+      "min_chars": "0"
+    }
   },
 
   "include_nav_searchbar": true,
@@ -181,7 +185,7 @@
                 },
                 {
                   "url": "url to all exhibitions",
-                  "text": "All Exhibitions…",
+                  "text": "All Exhibitions???",
                   "is_morelink": true,
                   "submenu": false
                 }
@@ -200,12 +204,12 @@
                 },
                 {
                   "url": "#",
-                  "text": "Exploring Vienna’s historic Ringstrasse in Field Trip",
+                  "text": "Exploring Vienna???s historic Ringstrasse in Field Trip",
                   "submenu": false
                 },
                 {
                   "url": "#",
-                  "text": "Choosing a country’s top 10 artworks for Europeana 280",
+                  "text": "Choosing a country???s top 10 artworks for Europeana 280",
                   "submenu": false
                 },
                 {
@@ -225,7 +229,7 @@
                 },
                 {
                   "url": "url to all blog posts",
-                  "text": "All Posts…",
+                  "text": "All Posts???",
                   "is_morelink": true,
                   "submenu": false
                 }
@@ -584,7 +588,7 @@
           "title": false,
           "items": [
             {"text": "Girl pouring milk into bowl", "url":false},
-            {"text": "A maidservant pours milk, entirely absorbed in her work. Except for the stream of milk, everything else is still. Vermeer took this simple everyday activity and made it the subject of an impressive painting – the woman stands like a statue in the brightly lit room. Vermeer also had an eye for how light by means of hundreds of colourful dots plays over the surface of objects.", "url":false}
+            {"text": "A maidservant pours milk, entirely absorbed in her work. Except for the stream of milk, everything else is still. Vermeer took this simple everyday activity and made it the subject of an impressive painting ??? the woman stands like a statue in the brightly lit room. Vermeer also had an eye for how light by means of hundreds of colourful dots plays over the surface of objects.", "url":false}
           ]
         }]
       },
@@ -810,9 +814,9 @@
               {
                   "key": "Period Term",
                   "vals": [
-                    {"key": "(fr)", "val": "[4e quart 18e siècle]"},
+                    {"key": "(fr)", "val": "[4e quart 18e si??cle]"},
                     {"key": "(en)", "val": "[4 quarter of the 18th century]"},
-                    {"key": "(ru)", "val": "[4-я четверть 18-го века]"}
+                    {"key": "(ru)", "val": "[4-?? ???????????????? 18-???? ????????]"}
                   ],
                   "multi": true
               }

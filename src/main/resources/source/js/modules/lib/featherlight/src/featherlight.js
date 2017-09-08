@@ -2,7 +2,7 @@
  * Featherlight - ultra slim jQuery lightbox
  * Version 1.3.5 - http://noelboss.github.io/featherlight/
  *
- * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * Copyright 2015, No??l Raoul Bossart (http://www.noelboss.com)
  * MIT Licensed.
 **/
 (function($) {

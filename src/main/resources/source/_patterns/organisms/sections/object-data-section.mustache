@@ -1,4 +1,4 @@
-<div class="data-section cf">
+<div class="data-section cf{{#extended_information}} closed{{/extended_information}}">
   <h3 class="subsection-label">
     {{ title }}
     {{#info}}
@@ -25,7 +25,7 @@
                   {{#extra_info}}
                     {{#life}}
                       <span class="life-dates">
-                        (<time>{{from.short}} {{#to.short}} — {{.}}{{/to.short}}</time>)
+                        (<time>{{from.short}} {{#to.short}} ??? {{.}}{{/to.short}}</time>)
                       </span>
                     {{/life}}
 
