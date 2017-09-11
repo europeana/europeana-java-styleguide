@@ -87,7 +87,7 @@
                           <li {{^technical_metadata.format}}class="is-disabled"{{/technical_metadata.format}}      ><span class="label tech-meta-format"    >{{i18n.site.object.meta-label.format}}</span>     <span class="val">{{#technical_metadata}}{{format}}{{/technical_metadata}}</span></li>
                           <li {{^technical_metadata.file_size}}class="is-disabled"{{/technical_metadata.file_size}}><span class="label tech-meta-filesize"  >{{i18n.site.object.meta-label.file-size}}</span>  <span class="val">{{#technical_metadata}}{{#file_size}}{{.}} {{file_unit}}{{/file_size}}{{/technical_metadata}}</span></li>
                           <li {{^technical_metadata.codec}}class="is-disabled"{{/technical_metadata.codec}}        ><span class="label tech-meta-codec"     >{{i18n.site.object.meta-label.codec}}</span>      <span class="val">{{#technical_metadata}}{{codec}}{{/technical_metadata}}</span></li>
-                          <li {{^technical_metadata.width}}class="is-disabled"{{/technical_metadata.width}}        ><span class="label tech-meta-dimensions">{{i18n.site.object.meta-label.dimensions}}</span> <span class="val">{{#technical_metadata}}{{width}} ?? {{height}} {{size_unit}}{{/technical_metadata}}</span></li>
+                          <li {{^technical_metadata.width}}class="is-disabled"{{/technical_metadata.width}}        ><span class="label tech-meta-dimensions">{{i18n.site.object.meta-label.dimensions}}</span> <span class="val">{{#technical_metadata}}{{width}} × {{height}} {{size_unit}}{{/technical_metadata}}</span></li>
                           <li {{^technical_metadata.runtime}}class="is-disabled"{{/technical_metadata.runtime}}    ><span class="label tech-meta-runtime"   >{{i18n.site.object.meta-label.runtime}}</span>    <span class="val">{{#technical_metadata}}{{runtime}} {{runtime_unit}}{{/technical_metadata}}</span></li>
 
                           <li {{^technical_metadata.dc_source}}class="is-disabled"{{/technical_metadata.dc_source}}><span class="label tech-meta-source">{{i18n.site.object.meta-label.source}}</span>  <span class="val">{{#technical_metadata}}{{dc_description}}{{/technical_metadata}}</span></li>
@@ -273,11 +273,13 @@
                         {{/description}}
                       </div>
 
+                      {{#view_more}}
                       <div class="channel-object-viewmore">
-                        <a href="#" class="viewmore-image" style="background-image: url('/images/sample/object_thumbnail.jpg');"></a>
-                        <h3>Johannes Vermeer</h3>
-                        <a href="">View more</a>
+                        <a href="{{url}}" class="viewmore-image" style="background-image: url('{{img_url}}');"></a>
+                        <h3>{{text}}</h3>
+                        <a href="{{url}}">{{label}}</a>
                       </div>
+                      {{/view_more}}
 
                     </div>
                   </div>
@@ -357,6 +359,8 @@
 
           <div class="channel-object-extended-information">
 
+            <h2 class="title" data-label-expand="[{{i18n.site.object.actions.expand-extended}}]" data-label-collapse="[{{i18n.site.object.actions.collapse-extended}}]">  Extended Information</h2>
+
             {{#properties }}
               {{> organisms/sections/object-data-section }}
             {{/properties }}
@@ -391,7 +395,7 @@
 
             {{#meta_additional}}
               {{#present}}
-                <div class="data-section cf closed">
+                <div class="data-section cf closed" {{#section_id}} data-section-id="{{.}}"{{/section_id}}>
                   <h3 class="subsection-label">
                     {{i18n.site.object.meta-label.location}}
                   </h3>
@@ -408,7 +412,7 @@
                                     {{#url }}<a href="{{.}}">{{/url }}{{ text }}{{#url }}</a>{{/url }}{{#extra_info}}
                                       {{#life}}
                                         <span class="life-dates">
-                                          ({{from.short}} {{#to.short}} ??? {{.}}{{/to.short}})
+                                          ({{from.short}} {{#to.short}} — {{.}}{{/to.short}})
                                         </span>
                                       {{/life}}
                                       {{#biography}}
@@ -451,7 +455,7 @@
               {{/present}}
             {{/meta_additional}}
 
-            <div class="data-section closed">
+            <div class="data-section closed" data-section-id="hierarchy">
               <div class="hierarchy cf">
                 <div class="subsection-label">
                   {{i18n.site.object.hierarchy.title}}
@@ -463,7 +467,7 @@
             </div>
 
             {{#content.named_entities}}
-              <div class="data-section closed">
+              <div class="data-section closed" data-section-id="named-entities">
                 <div class="cf">
                   <div class="subsection-label">
                     {{i18n.site.object.named-entities.title}}
@@ -548,7 +552,7 @@
                   </div>
                 </div>
               </div>
-              <div class="show-more-mlt"{{^more_items_total_formatted}} style="display:none;"{{/more_items_total_formatted}}><a href="{{more_items_query}}">{{ i18n.site.object.show-more-similar-items }}??? (<span class="number">{{more_items_total_formatted}}</span>)</a></div>
+              <div class="show-more-mlt"{{^more_items_total_formatted}} style="display:none;"{{/more_items_total_formatted}}><a href="{{more_items_query}}">{{ i18n.site.object.show-more-similar-items }}… (<span class="number">{{more_items_total_formatted}}</span>)</a></div>
             </div>
           </div>
         {{/content.similar}}

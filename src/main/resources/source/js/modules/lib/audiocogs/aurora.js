@@ -2554,61 +2554,61 @@ M4ADemuxer = (function(_super) {
     return this.metadata[field] = this.stream.readString(this.len, 'utf8');
   };
 
-  meta('??alb', 'album', string);
+  meta('©alb', 'album', string);
 
-  meta('??arg', 'arranger', string);
+  meta('©arg', 'arranger', string);
 
-  meta('??art', 'artist', string);
+  meta('©art', 'artist', string);
 
-  meta('??ART', 'artist', string);
+  meta('©ART', 'artist', string);
 
   meta('aART', 'albumArtist', string);
 
   meta('catg', 'category', string);
 
-  meta('??com', 'composer', string);
+  meta('©com', 'composer', string);
 
-  meta('??cpy', 'copyright', string);
+  meta('©cpy', 'copyright', string);
 
   meta('cprt', 'copyright', string);
 
-  meta('??cmt', 'comments', string);
+  meta('©cmt', 'comments', string);
 
-  meta('??day', 'releaseDate', string);
+  meta('©day', 'releaseDate', string);
 
   meta('desc', 'description', string);
 
-  meta('??gen', 'genre', string);
+  meta('©gen', 'genre', string);
 
-  meta('??grp', 'grouping', string);
+  meta('©grp', 'grouping', string);
 
-  meta('??isr', 'ISRC', string);
+  meta('©isr', 'ISRC', string);
 
   meta('keyw', 'keywords', string);
 
-  meta('??lab', 'recordLabel', string);
+  meta('©lab', 'recordLabel', string);
 
   meta('ldes', 'longDescription', string);
 
-  meta('??lyr', 'lyrics', string);
+  meta('©lyr', 'lyrics', string);
 
-  meta('??nam', 'title', string);
+  meta('©nam', 'title', string);
 
-  meta('??phg', 'recordingCopyright', string);
+  meta('©phg', 'recordingCopyright', string);
 
-  meta('??prd', 'producer', string);
+  meta('©prd', 'producer', string);
 
-  meta('??prf', 'performers', string);
+  meta('©prf', 'performers', string);
 
   meta('purd', 'purchaseDate', string);
 
   meta('purl', 'podcastURL', string);
 
-  meta('??swf', 'songwriter', string);
+  meta('©swf', 'songwriter', string);
 
-  meta('??too', 'encoder', string);
+  meta('©too', 'encoder', string);
 
-  meta('??wrt', 'composer', string);
+  meta('©wrt', 'composer', string);
 
   meta('covr', 'coverArt', function(field) {
     return this.metadata[field] = this.stream.readBuffer(this.len);

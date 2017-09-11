@@ -36,24 +36,105 @@ define(['jquery', 'util_scrollEvents', 'ga', 'mustache', 'util_foldable', 'black
   }
 
   function initExtendedInformation(addHandler){
-    $('.channel-object-extended-information .data-section').each(function(i, ob){
+
+    var ei     = $('.channel-object-extended-information');
+    var sClose = '<span class="ctrl close"><span class="icon svg-icon-minus"></span></span>';
+    var sOpen  = '<span class="ctrl  open"><span class="icon svg-icon-plus" ></span></span>';
+    var keyLS  = 'eu_portal_object_data_expanded';
+
+    var readUserPrefs = function(){
+
+      if(typeof(Storage) == 'undefined'){
+        return;
+      }
+
+      var prefs = JSON.parse(localStorage.getItem(keyLS));
+
+      if(!prefs){
+        return;
+      }
+
+      ei.find('.data-section').each(function(i, ob){
+        ob = $(ob);
+        var sectionId = ob.data('section-id');
+        if(prefs.indexOf(sectionId) > -1){
+          $(ob).addClass('closed');
+        }
+        else{
+          $(ob).removeClass('closed');
+        }
+      });
+    };
+
+    var writeUserPrefs = function(){
+
+      if(typeof(Storage) == 'undefined'){
+        return;
+      }
+
+      var closedItems = [];
+      ei.find('.data-section').each(function(i, ob){
+        ob = $(ob);
+        if(ob.hasClass('closed')){
+          closedItems.push(ob.data('section-id'));
+        }
+      });
+      log('write userPrefs ' + JSON.stringify(closedItems));
+      localStorage.setItem(keyLS, JSON.stringify(closedItems));
+    };
+
+    var checkAllClosed = function(){
+      var ac = true;
+      ei.find('.data-section').each(function(i, ob){
+        ob = $(ob);
+        if(!$(ob).hasClass('closed')){
+          ac = false;
+        }
+      });
+      if(ac){
+        ei.find('.title').addClass('closed');
+      }
+      else{
+        ei.find('.title').removeClass('closed');
+      }
+    };
+
+
+    if(ei.find('.title .ctrl').length == 0){
+      var elTitle = ei.find('.title');
+      $(sClose).appendTo(elTitle).attr('data-before', elTitle.data('label-collapse'));
+      $(sOpen).appendTo(elTitle).attr('data-before', elTitle.data('label-expand'));
+    }
+
+    ei.find('.data-section').each(function(i, ob){
       var $ob = $(ob);
       if($ob.find('.ctrl').length == 0){
-        $ob.append('<span class="ctrl close"><span class="icon svg-icon-minus"></span></span>');
-        $ob.append('<span class="ctrl  open"><span class="icon svg-icon-plus" ></span></span>');
+        $ob.append(sClose);
+        $ob.append(sOpen);
       }
     });
+
     if(addHandler){
       $(document).on('click', '.ctrl', function(){
         var btn = $(this);
+        var el  = btn.closest('.data-section');
+
+        if(el.length == 0){
+          el = ei.find('.data-section').add(ei.find('.title'));
+        }
         if(btn.hasClass('open')){
-          btn.closest('.data-section').removeClass('closed');
+          el.removeClass('closed');
         }
         else{
-          btn.closest('.data-section').addClass('closed');
+          el.addClass('closed');
         }
+        writeUserPrefs();
+        checkAllClosed();
       });
     }
+
+    readUserPrefs();
+    checkAllClosed();
   }
 
   function initMedia(index){
@@ -242,7 +323,7 @@ define(['jquery', 'util_scrollEvents', 'ga', 'mustache', 'util_foldable', 'black
         });
     });
     zoomImg.css('max-width', zoomImg.width() + 'px');
-  };
+  }
 
   function loadAnnotations(){
 
@@ -253,6 +334,7 @@ define(['jquery', 'util_scrollEvents', 'ga', 'mustache', 'util_foldable', 'black
         Mustache.tags = ['[[', ']]'];
         $.getJSON(location.href.split('.html')[0].split('?')[0] + '/annotations.json', null).done(function(data){
           data.extended_information = true;
+          data.section_id = 'annotations';
           template.after(Mustache.render(template.text(), data));
           initExtendedInformation();
         });

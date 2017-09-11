@@ -130,7 +130,7 @@ define(['jquery', 'ga'], function($, ga) {
     require(['leaflet'], function(){
 
       var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      var osmAttrib='Map data ?? <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+      var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
 
       var osmAttr = '<a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
 

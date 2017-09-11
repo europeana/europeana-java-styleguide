@@ -42,7 +42,7 @@ Configuration options and content model:
     {{! if it's the first page disable previous button }}
       <li class="arrow {{#is_first_page}}is-disabled{{/is_first_page}}">
         <a href="{{prev_url}}" >
-          ??? <span class="is-vishidden">{{i18n.global.actions.previous}}</span>
+          ← <span class="is-vishidden">{{i18n.global.actions.previous}}</span>
         </a>
       </li>
 
@@ -60,7 +60,7 @@ Configuration options and content model:
     {{! if it's the last page disable next button }}
     <li class="{{#is_last_page}}is-disabled{{/is_last_page}}">
         <a href="{{next_url}}">
-          <span class="is-vishidden">{{i18n.global.actions.next}}</span> ???
+          <span class="is-vishidden">{{i18n.global.actions.next}}</span> →
         </a>
     </li>
   </ol>

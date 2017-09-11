@@ -40,7 +40,7 @@
 
     <div data-ajax-modal="container">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">??</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 class="modal-title">Request Placed</h3>
       </div>
   
@@ -107,7 +107,7 @@ Blacklight.ajaxModal.modalCloseSelector   = "[data-ajax-modal~=close], span.ajax
 // network errors. 
 Blacklight.ajaxModal.onFailure = function(data) {
   var contents =  "<div class='modal-header'>" +
-           "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>??</button>" +
+           "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>" +
            "Network Error</div>";
   $(Blacklight.ajaxModal.modalSelector).find('.modal-content').html(contents);
   $(Blacklight.ajaxModal.modalSelector).modal('show'); 

@@ -97,7 +97,7 @@
 }
 /* line 106, eu-clicktip-style.scss */
 .eu-clicktip-container .eu-clicktip a[data-role='remove']::after {
-  content: '???';
+  content: '✕';
 }
 /* line 110, eu-clicktip-style.scss */
 .eu-clicktip-container .eu-clicktip::after {

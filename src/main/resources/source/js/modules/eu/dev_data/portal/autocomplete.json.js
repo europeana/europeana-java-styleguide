@@ -434,7 +434,7 @@ define([], function(){
       "id": "http://data.europeana.eu/concept/base/79",
       "prefLabel": {
         "en": "Biology",
-        "is": "L??ffr????i"
+        "is": "Líffræði"
       },
       "type": "Concept"
     }

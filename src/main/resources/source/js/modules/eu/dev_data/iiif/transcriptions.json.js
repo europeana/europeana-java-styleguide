@@ -1,38 +1,5 @@
 define([], function(){
 
-  var manifest = {
-    "sequences": [
-      {
-        "canvases": [
-          {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "http://iiif.europeana.eu//data-providers/TheEuropeanLibrary/records/3000119062998/representations/presentation_images/node-5/image/SBB/Berliner_B??rsenzeitung/1927/07/21/F_073_335_0/F_SBB_00007_19270721_073_335_0_001",
-            "label" : "image one",
-            "images" : [{
-              "resource": {
-                "service": {
-                  "@id" : "http://iiif.europeana.eu//data-providers/TheEuropeanLibrary/records/3000119062998/representations/presentation_images/node-5/image/SBB/Berliner_B??rsenzeitung/1927/07/21/F_073_335_0/F_SBB_00007_19270721_073_335_0_001",
-                }
-              }
-            }]
-          },
-          {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "http://iiif.europeana.eu//data-providers/TheEuropeanLibrary/records/3000096309638/representations/presentation_images/node-2/image/SBB/Berliner_Tageblatt/1926/12/12/0/F_SBB_00001_19261212_055_586_0_010",
-            "label" : "image two",
-            "images" : [{
-              "resource": {
-                "service": {
-                  "@id": "http://iiif.europeana.eu//data-providers/TheEuropeanLibrary/records/3000096309638/representations/presentation_images/node-2/image/SBB/Berliner_Tageblatt/1926/12/12/0/F_SBB_00001_19261212_055_586_0_010"
-                }
-              }
-            }]
-          }
-        ]
-      }
-    ]
-  };
-
   var transcript1 = [
     {
       "id": "fragment-0_293794",
@@ -69,7 +36,7 @@ define([], function(){
         "y": "1217.0",
         "w": "1213.0",
         "h": "461.0",
-        "txt": "M??rsen"
+        "txt": "Mörsen"
       },
       {
         "x": "1840.0",
@@ -149,7 +116,7 @@ define([], function(){
         "y": "1854.0",
         "w": "51.0",
         "h": "27.0",
-        "txt": "??ls"
+        "txt": "«ls"
       },
       {
         "x": "127.0",
@@ -177,7 +144,7 @@ define([], function(){
         "y": "1841.0",
         "w": "208.0",
         "h": "34.0",
-        "txt": "vollst??ndige"
+        "txt": "vollständige"
       },
       {
         "x": "899.0",
@@ -205,7 +172,7 @@ define([], function(){
         "y": "1835.0",
         "w": "101.0",
         "h": "32.0",
-        "txt": "B??rse,"
+        "txt": "Börse,"
       },
       {
         "x": "1447.0",
@@ -317,7 +284,7 @@ define([], function(){
         "y": "1791.0",
         "w": "192.0",
         "h": "35.0",
-        "txt": "??bersichten",
+        "txt": "Übersichten",
         "space-after": true
       },
       {
@@ -325,7 +292,7 @@ define([], function(){
         "y": "1911.0",
         "w": "37.0",
         "h": "22.0",
-        "txt": "(??t"
+        "txt": "(üt"
       },
       {
         "x": "113.0",
@@ -339,7 +306,7 @@ define([], function(){
         "y": "1902.0",
         "w": "168.0",
         "h": "26.0",
-        "txt": "??bernimmt"
+        "txt": "übernimmt"
       },
       {
         "x": "525.0",
@@ -402,7 +369,7 @@ define([], function(){
         "y": "1880.0",
         "w": "93.0",
         "h": "25.0",
-        "txt": "ne???e-"
+        "txt": "ne„e-"
       },
       {
         "x": "1666.0",
@@ -430,7 +397,7 @@ define([], function(){
         "y": "1863.0",
         "w": "108.0",
         "h": "32.0",
-        "txt": "???Kunst"
+        "txt": "„Kunst"
       },
       {
         "x": "2311.0",
@@ -458,7 +425,7 @@ define([], function(){
         "y": "1858.0",
         "w": "123.0",
         "h": "25.0",
-        "txt": "??Oman"
+        "txt": "«Oman"
       },
       {
         "x": "2784.0",
@@ -507,7 +474,7 @@ define([], function(){
         "y": "1849.0",
         "w": "202.0",
         "h": "33.0",
-        "txt": "der??cksichttgt",
+        "txt": "derücksichttgt",
         "space-after": true
       }
       ]
@@ -644,7 +611,7 @@ define([], function(){
         "y": "1974.0",
         "w": "93.0",
         "h": "25.0",
-        "txt": "k??ppen,"
+        "txt": "küppen,"
       },
       {
         "x": "711.0",
@@ -665,7 +632,7 @@ define([], function(){
         "y": "1971.0",
         "w": "115.0",
         "h": "25.0",
-        "txt": "Inseraten??",
+        "txt": "Inseraten»",
         "space-after": true
       },
       {
@@ -788,7 +755,7 @@ define([], function(){
         "y": "1938.0",
         "w": "369.0",
         "h": "67.0",
-        "txt": "Gesch??ftsstelle:"
+        "txt": "Geschäftsstelle:"
       },
       {
         "x": "2070.0",
@@ -847,7 +814,7 @@ define([], function(){
         "y": "1911.0",
         "w": "61.0",
         "h": "32.0",
-        "txt": "F??r"
+        "txt": "Für"
       },
       {
         "x": "3205.0",
@@ -875,7 +842,7 @@ define([], function(){
         "y": "1905.0",
         "w": "83.0",
         "h": "26.0",
-        "txt": "24??S"
+        "txt": "24öS"
       },
       {
         "x": "3668.0",
@@ -939,7 +906,7 @@ define([], function(){
         "y": "1937.0",
         "w": "50.0",
         "h": "32.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "3611.0",
@@ -982,7 +949,7 @@ define([], function(){
         "y": "1977.0",
         "w": "50.0",
         "h": "29.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "3313.0",
@@ -1076,7 +1043,7 @@ define([], function(){
         "y": "2061.0",
         "w": "240.0",
         "h": "36.0",
-        "txt": "Stellungsuchen??",
+        "txt": "Stellungsuchenä",
         "space-after": true
       },
       {
@@ -1084,7 +1051,7 @@ define([], function(){
         "y": "2103.0",
         "w": "203.0",
         "h": "34.0",
-        "txt": "Sesch??sisstelle"
+        "txt": "Seschäsisstelle"
       },
       {
         "x": "278.0",
@@ -1176,7 +1143,7 @@ define([], function(){
         "y": "2132.0",
         "w": "106.0",
         "h": "32.0",
-        "txt": "betr??gt"
+        "txt": "beträgt"
       },
       {
         "x": "909.0",
@@ -1197,7 +1164,7 @@ define([], function(){
         "y": "2131.0",
         "w": "90.0",
         "h": "26.0",
-        "txt": "??Quart",
+        "txt": "«Quart",
         "space-after": true
       },
       {
@@ -1212,7 +1179,7 @@ define([], function(){
         "y": "2171.0",
         "w": "148.0",
         "h": "30.0",
-        "txt": "Schwe??en"
+        "txt": "Schweäen"
       },
       {
         "x": "360.0",
@@ -1226,7 +1193,7 @@ define([], function(){
         "y": "2170.0",
         "w": "172.0",
         "h": "30.0",
-        "txt": "schwe??tsche"
+        "txt": "schweätsche"
       },
       {
         "x": "607.0",
@@ -1269,7 +1236,7 @@ define([], function(){
         "y": "2208.0",
         "w": "115.0",
         "h": "26.0",
-        "txt": "Miiret??."
+        "txt": "Miiret»."
       },
       {
         "x": "245.0",
@@ -1340,7 +1307,7 @@ define([], function(){
         "y": "2256.0",
         "w": "305.0",
         "h": "34.0",
-        "txt": "???B??rsenKrone\""
+        "txt": "„BürsenKrone\""
       },
       {
         "x": "818.0",
@@ -1361,14 +1328,14 @@ define([], function(){
         "y": "2254.0",
         "w": "115.0",
         "h": "32.0",
-        "txt": "h??herer"
+        "txt": "höherer"
       },
       {
         "x": "1087.0",
         "y": "2254.0",
         "w": "37.0",
         "h": "26.0",
-        "txt": "<??e",
+        "txt": "<öe",
         "space-after": true
       }
       ]
@@ -1455,7 +1422,7 @@ define([], function(){
         "y": "2029.0",
         "w": "146.0",
         "h": "31.0",
-        "txt": "zw??tsmal."
+        "txt": "zwötsmal."
       },
       {
         "x": "3092.0",
@@ -1476,14 +1443,14 @@ define([], function(){
         "y": "2018.0",
         "w": "304.0",
         "h": "34.0",
-        "txt": "Zeiiungsspe??iteure."
+        "txt": "Zeiiungsspeäiteure."
       },
       {
         "x": "3768.0",
         "y": "2016.0",
         "w": "97.0",
         "h": "32.0",
-        "txt": "unser??"
+        "txt": "unser«"
       },
       {
         "x": "1457.0",
@@ -1497,28 +1464,28 @@ define([], function(){
         "y": "2087.0",
         "w": "158.0",
         "h": "30.0",
-        "txt": "Streifban??"
+        "txt": "Streifbanä"
       },
       {
         "x": "1739.0",
         "y": "2087.0",
         "w": "66.0",
         "h": "25.0",
-        "txt": "o??er"
+        "txt": "oäer"
       },
       {
         "x": "1819.0",
         "y": "2082.0",
         "w": "266.0",
         "h": "33.0",
-        "txt": "post??derweisung."
+        "txt": "postüderweisung."
       },
       {
         "x": "2115.0",
         "y": "2075.0",
         "w": "292.0",
         "h": "36.0",
-        "txt": "post??derwetsungen"
+        "txt": "postüderwetsungen"
       },
       {
         "x": "2426.0",
@@ -1532,7 +1499,7 @@ define([], function(){
         "y": "2072.0",
         "w": "112.0",
         "h": "31.0",
-        "txt": "zul??ssig"
+        "txt": "zulässig"
       },
       {
         "x": "2639.0",
@@ -1553,14 +1520,14 @@ define([], function(){
         "y": "2063.0",
         "w": "168.0",
         "h": "30.0",
-        "txt": "D??nemark."
+        "txt": "Dänemark."
       },
       {
         "x": "3055.0",
         "y": "2060.0",
         "w": "119.0",
         "h": "33.0",
-        "txt": "Lstlan??,"
+        "txt": "Lstlanä,"
       },
       {
         "x": "3194.0",
@@ -1610,7 +1577,7 @@ define([], function(){
         "y": "2127.0",
         "w": "43.0",
         "h": "30.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "1322.0",
@@ -1729,7 +1696,7 @@ define([], function(){
         "y": "2092.0",
         "w": "125.0",
         "h": "29.0",
-        "txt": "ho.I??nd."
+        "txt": "ho.Iänd."
       },
       {
         "x": "3354.0",
@@ -1743,7 +1710,7 @@ define([], function(){
         "y": "2087.0",
         "w": "165.0",
         "h": "26.0",
-        "txt": "D??nemark"
+        "txt": "Dänemark"
       },
       {
         "x": "3684.0",
@@ -1779,14 +1746,14 @@ define([], function(){
         "y": "2159.0",
         "w": "129.0",
         "h": "33.0",
-        "txt": "Lnglan??"
+        "txt": "Lnglanä"
       },
       {
         "x": "1483.0",
         "y": "2160.0",
         "w": "32.0",
         "h": "24.0",
-        "txt": "3??"
+        "txt": "3ö"
       },
       {
         "x": "1534.0",
@@ -1821,7 +1788,7 @@ define([], function(){
         "y": "2149.0",
         "w": "156.0",
         "h": "28.0",
-        "txt": "Num??nten"
+        "txt": "Numänten"
       },
       {
         "x": "2179.0",
@@ -1835,7 +1802,7 @@ define([], function(){
         "y": "2144.0",
         "w": "168.0",
         "h": "31.0",
-        "txt": "rum??nische"
+        "txt": "rumänische"
       },
       {
         "x": "2451.0",
@@ -1927,7 +1894,7 @@ define([], function(){
         "y": "2199.0",
         "w": "33.0",
         "h": "24.0",
-        "txt": "3??"
+        "txt": "3ö"
       },
       {
         "x": "1252.0",
@@ -1962,7 +1929,7 @@ define([], function(){
         "y": "2189.0",
         "w": "121.0",
         "h": "26.0",
-        "txt": "Lettlan??"
+        "txt": "Lettlanä"
       },
       {
         "x": "1897.0",
@@ -2011,7 +1978,7 @@ define([], function(){
         "y": "2174.0",
         "w": "108.0",
         "h": "31.0",
-        "txt": "Lstlan??"
+        "txt": "Lstlanä"
       },
       {
         "x": "2671.0",
@@ -2025,7 +1992,7 @@ define([], function(){
         "y": "2169.0",
         "w": "172.0",
         "h": "32.0",
-        "txt": "est'.??n??ische"
+        "txt": "est'.änäische"
       },
       {
         "x": "2949.0",
@@ -2089,7 +2056,7 @@ define([], function(){
         "y": "2252.0",
         "w": "67.0",
         "h": "26.0",
-        "txt": "o??er"
+        "txt": "oäer"
       },
       {
         "x": "1294.0",
@@ -2152,7 +2119,7 @@ define([], function(){
         "y": "2235.0",
         "w": "65.0",
         "h": "25.0",
-        "txt": "o??er"
+        "txt": "oäer"
       },
       {
         "x": "2447.0",
@@ -2173,7 +2140,7 @@ define([], function(){
         "y": "2225.0",
         "w": "227.0",
         "h": "34.0",
-        "txt": "cntsprechen??en"
+        "txt": "cntsprechenäen"
       },
       {
         "x": "2966.0",
@@ -2260,7 +2227,7 @@ define([], function(){
         "y": "2414.0",
         "w": "890.0",
         "h": "218.0",
-        "txt": "rum??nifchen"
+        "txt": "rumönifchen"
       },
       {
         "x": "2215.0",
@@ -2282,14 +2249,14 @@ define([], function(){
         "y": "2665.0",
         "w": "97.0",
         "h": "85.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "960.0",
         "y": "2663.0",
         "w": "191.0",
         "h": "86.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "1178.0",
@@ -2370,7 +2337,7 @@ define([], function(){
         "y": "2836.0",
         "w": "122.0",
         "h": "34.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "433.0",
@@ -2391,7 +2358,7 @@ define([], function(){
         "y": "2829.0",
         "w": "168.0",
         "h": "36.0",
-        "txt": "f??nfj??hrige"
+        "txt": "fünfjährige"
       },
       {
         "x": "885.0",
@@ -2584,14 +2551,14 @@ define([], function(){
         "y": "3014.0",
         "w": "158.0",
         "h": "33.0",
-        "txt": "Rum??nien."
+        "txt": "Rumänien."
       },
       {
         "x": "238.0",
         "y": "3009.0",
         "w": "206.0",
         "h": "35.0",
-        "txt": "K??niginwitwe"
+        "txt": "Königinwitwe"
       },
       {
         "x": "458.0",
@@ -2698,7 +2665,7 @@ define([], function(){
         "y": "3096.0",
         "w": "142.0",
         "h": "34.0",
-        "txt": "Beh??rden"
+        "txt": "Behörden"
       },
       {
         "x": "440.0",
@@ -2734,7 +2701,7 @@ define([], function(){
         "y": "3150.0",
         "w": "25.0",
         "h": "26.0",
-        "txt": "I??"
+        "txt": "I«"
       },
       {
         "x": "107.0",
@@ -2762,7 +2729,7 @@ define([], function(){
         "y": "3139.0",
         "w": "89.0",
         "h": "35.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "448.0",
@@ -2884,7 +2851,7 @@ define([], function(){
         "y": "3289.0",
         "w": "104.0",
         "h": "33.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "377.0",
@@ -2898,7 +2865,7 @@ define([], function(){
         "y": "3281.0",
         "w": "186.0",
         "h": "33.0",
-        "txt": "Rum??nien"
+        "txt": "Rumänien"
       },
       {
         "x": "664.0",
@@ -2948,7 +2915,7 @@ define([], function(){
         "y": "3332.0",
         "w": "132.0",
         "h": "35.0",
-        "txt": "s??mtliche"
+        "txt": "sämtliche"
       },
       {
         "x": "817.0",
@@ -2970,7 +2937,7 @@ define([], function(){
         "y": "3384.0",
         "w": "203.0",
         "h": "36.0",
-        "txt": "K??nigshauses"
+        "txt": "Königshauses"
       },
       {
         "x": "349.0",
@@ -3155,7 +3122,7 @@ define([], function(){
         "y": "3502.0",
         "w": "253.0",
         "h": "37.0",
-        "txt": "programmgem????"
+        "txt": "programmgemäß"
       },
       {
         "x": "931.0",
@@ -3284,7 +3251,7 @@ define([], function(){
         "y": "3646.0",
         "w": "87.0",
         "h": "33.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "297.0",
@@ -3334,7 +3301,7 @@ define([], function(){
         "y": "3691.0",
         "w": "105.0",
         "h": "30.0",
-        "txt": "ft??lene,"
+        "txt": "ft«lene,"
       },
       {
         "x": "199.0",
@@ -3427,7 +3394,7 @@ define([], function(){
         "y": "3775.0",
         "w": "83.0",
         "h": "33.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "186.0",
@@ -3441,7 +3408,7 @@ define([], function(){
         "y": "3769.0",
         "w": "146.0",
         "h": "33.0",
-        "txt": "S??mtliche"
+        "txt": "Sämtliche"
       },
       {
         "x": "543.0",
@@ -3455,7 +3422,7 @@ define([], function(){
         "y": "3763.0",
         "w": "129.0",
         "h": "32.0",
-        "txt": "l??uteten,"
+        "txt": "läuteten,"
       },
       {
         "x": "942.0",
@@ -3527,7 +3494,7 @@ define([], function(){
         "y": "3848.0",
         "w": "261.0",
         "h": "36.0",
-        "txt": "Ministerpr??sident",
+        "txt": "Ministerpräsident",
         "space-after": true
       },
       {
@@ -3613,7 +3580,7 @@ define([], function(){
         "y": "3931.0",
         "w": "177.0",
         "h": "35.0",
-        "txt": "Pr??sidenten"
+        "txt": "Präsidenten"
       },
       {
         "x": "614.0",
@@ -3698,7 +3665,7 @@ define([], function(){
         "y": "3964.0",
         "w": "129.0",
         "h": "35.0",
-        "txt": "Gespr??ch",
+        "txt": "Gespräch",
         "space-after": true
       },
       {
@@ -3706,7 +3673,7 @@ define([], function(){
         "y": "4018.0",
         "w": "93.0",
         "h": "35.0",
-        "txt": "f??hrte.",
+        "txt": "führte.",
         "space-after": true
       },
       {
@@ -3728,7 +3695,7 @@ define([], function(){
         "y": "4070.0",
         "w": "238.0",
         "h": "35.0",
-        "txt": "ver??ffentlicht"
+        "txt": "veröffentlicht"
       },
       {
         "x": "694.0",
@@ -3742,7 +3709,7 @@ define([], function(){
         "y": "4067.0",
         "w": "69.0",
         "h": "34.0",
-        "txt": "l??sst"
+        "txt": "lässt"
       },
       {
         "x": "813.0",
@@ -3771,7 +3738,7 @@ define([], function(){
         "y": "4111.0",
         "w": "104.0",
         "h": "35.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "450.0",
@@ -3808,7 +3775,7 @@ define([], function(){
         "y": "4207.0",
         "w": "173.0",
         "h": "35.0",
-        "txt": ".??Rum??nen!"
+        "txt": ".»Rumänen!"
       },
       {
         "x": "285.0",
@@ -3829,14 +3796,14 @@ define([], function(){
         "y": "4203.0",
         "w": "122.0",
         "h": "35.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "615.0",
         "y": "4198.0",
         "w": "375.0",
         "h": "38.0",
-        "txt": "Grotz-Rum??niens",
+        "txt": "Grotz-Rumäniens",
         "space-after": true
       },
       {
@@ -3957,7 +3924,7 @@ define([], function(){
         "y": "4277.0",
         "w": "75.0",
         "h": "34.0",
-        "txt": "j??hes"
+        "txt": "jähes"
       },
       {
         "x": "918.0",
@@ -4079,7 +4046,7 @@ define([], function(){
         "y": "4402.0",
         "w": "84.0",
         "h": "35.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "187.0",
@@ -4221,7 +4188,7 @@ define([], function(){
         "y": "4475.0",
         "w": "170.0",
         "h": "30.0",
-        "txt": "Rum??ne"
+        "txt": "Rumäne"
       },
       {
         "x": "457.0",
@@ -4292,7 +4259,7 @@ define([], function(){
         "y": "4514.0",
         "w": "52.0",
         "h": "33.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "502.0",
@@ -4320,7 +4287,7 @@ define([], function(){
         "y": "4508.0",
         "w": "124.0",
         "h": "35.0",
-        "txt": "eingel??st",
+        "txt": "eingelöst",
         "space-after": true
       },
       {
@@ -4335,14 +4302,14 @@ define([], function(){
         "y": "4555.0",
         "w": "153.0",
         "h": "34.0",
-        "txt": "Untr??stlich"
+        "txt": "Untröstlich"
       },
       {
         "x": "364.0",
         "y": "4553.0",
         "w": "67.0",
         "h": "28.0",
-        "txt": "??ber"
+        "txt": "über"
       },
       {
         "x": "460.0",
@@ -4370,7 +4337,7 @@ define([], function(){
         "y": "4549.0",
         "w": "105.0",
         "h": "34.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "831.0",
@@ -4406,7 +4373,7 @@ define([], function(){
         "y": "4593.0",
         "w": "113.0",
         "h": "29.0",
-        "txt": "Tr??nen"
+        "txt": "Tränen"
       },
       {
         "x": "373.0",
@@ -4462,7 +4429,7 @@ define([], function(){
         "y": "4584.0",
         "w": "111.0",
         "h": "36.0",
-        "txt": "gr????ten",
+        "txt": "größten",
         "space-after": true
       },
       {
@@ -4484,7 +4451,7 @@ define([], function(){
         "y": "4631.0",
         "w": "161.0",
         "h": "29.0",
-        "txt": "Rum??nen!"
+        "txt": "Rumänen!"
       },
       {
         "x": "448.0",
@@ -4498,7 +4465,7 @@ define([], function(){
         "y": "4627.0",
         "w": "165.0",
         "h": "34.0",
-        "txt": "rum??nische"
+        "txt": "rumänische"
       },
       {
         "x": "712.0",
@@ -4534,7 +4501,7 @@ define([], function(){
         "y": "4671.0",
         "w": "51.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "327.0",
@@ -4576,7 +4543,7 @@ define([], function(){
         "y": "4663.0",
         "w": "87.0",
         "h": "34.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "845.0",
@@ -4640,7 +4607,7 @@ define([], function(){
         "y": "4699.0",
         "w": "182.0",
         "h": "35.0",
-        "txt": "Unersch??tter",
+        "txt": "Unerschütter",
         "space-after": true
       },
       {
@@ -4704,7 +4671,7 @@ define([], function(){
         "y": "4738.0",
         "w": "125.0",
         "h": "34.0",
-        "txt": "w??hrend",
+        "txt": "während",
         "space-after": true
       },
       {
@@ -4733,7 +4700,7 @@ define([], function(){
         "y": "4782.0",
         "w": "74.0",
         "h": "28.0",
-        "txt": "G??te"
+        "txt": "Güte"
       },
       {
         "x": "490.0",
@@ -4825,7 +4792,7 @@ define([], function(){
         "y": "4816.0",
         "w": "88.0",
         "h": "34.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "822.0",
@@ -4854,7 +4821,7 @@ define([], function(){
         "y": "4858.0",
         "w": "357.0",
         "h": "37.0",
-        "txt": "Zusammenschlu??"
+        "txt": "Zusammenschluß"
       },
       {
         "x": "554.0",
@@ -4875,7 +4842,7 @@ define([], function(){
         "y": "4853.0",
         "w": "153.0",
         "h": "27.0",
-        "txt": "rum??ni",
+        "txt": "rumäni",
         "space-after": true
       },
       {
@@ -4897,7 +4864,7 @@ define([], function(){
         "y": "4896.0",
         "w": "170.0",
         "h": "36.0",
-        "txt": "durchf??hrte"
+        "txt": "durchführte"
       },
       {
         "x": "540.0",
@@ -4918,7 +4885,7 @@ define([], function(){
         "y": "4893.0",
         "w": "100.0",
         "h": "35.0",
-        "txt": "gro??en"
+        "txt": "großen"
       },
       {
         "x": "788.0",
@@ -4940,7 +4907,7 @@ define([], function(){
         "y": "4938.0",
         "w": "156.0",
         "h": "30.0",
-        "txt": "Rum??nien"
+        "txt": "Rumänien"
       },
       {
         "x": "263.0",
@@ -5039,7 +5006,7 @@ define([], function(){
         "y": "4971.0",
         "w": "101.0",
         "h": "28.0",
-        "txt": "k??nnen"
+        "txt": "können"
       },
       {
         "x": "709.0",
@@ -5053,7 +5020,7 @@ define([], function(){
         "y": "4969.0",
         "w": "102.0",
         "h": "34.0",
-        "txt": "gro??en"
+        "txt": "großen"
       },
       {
         "x": "911.0",
@@ -5075,7 +5042,7 @@ define([], function(){
         "y": "5016.0",
         "w": "89.0",
         "h": "34.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "287.0",
@@ -5182,7 +5149,7 @@ define([], function(){
         "y": "5095.0",
         "w": "44.0",
         "h": "32.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "155.0",
@@ -5260,7 +5227,7 @@ define([], function(){
         "y": "5129.0",
         "w": "259.0",
         "h": "36.0",
-        "txt": "unersch??tterlicher"
+        "txt": "unerschütterlicher"
       },
       {
         "x": "582.0",
@@ -5274,7 +5241,7 @@ define([], function(){
         "y": "5125.0",
         "w": "149.0",
         "h": "35.0",
-        "txt": "gegen??ber"
+        "txt": "gegenüber"
       },
       {
         "x": "960.0",
@@ -5360,7 +5327,7 @@ define([], function(){
         "y": "5203.0",
         "w": "103.0",
         "h": "34.0",
-        "txt": "m??ssen"
+        "txt": "müssen"
       },
       {
         "x": "880.0",
@@ -5382,7 +5349,7 @@ define([], function(){
         "y": "5241.0",
         "w": "72.0",
         "h": "38.0",
-        "txt": "??iebe"
+        "txt": "Üiebe"
       },
       {
         "x": "184.0",
@@ -5438,7 +5405,7 @@ define([], function(){
         "y": "5241.0",
         "w": "121.0",
         "h": "35.0",
-        "txt": "K??nig",
+        "txt": "König",
         "space-after": true
       },
       {
@@ -5474,7 +5441,7 @@ define([], function(){
         "y": "5283.0",
         "w": "98.0",
         "h": "36.0",
-        "txt": "Kr??fte"
+        "txt": "Kräfte"
       },
       {
         "x": "655.0",
@@ -5503,7 +5470,7 @@ define([], function(){
         "y": "5328.0",
         "w": "146.0",
         "h": "33.0",
-        "txt": "gl??nzende"
+        "txt": "glänzende"
       },
       {
         "x": "321.0",
@@ -5517,7 +5484,7 @@ define([], function(){
         "y": "5322.0",
         "w": "268.0",
         "h": "36.0",
-        "txt": "Gro??-Rum??niens"
+        "txt": "Groß-Rumäniens"
       },
       {
         "x": "756.0",
@@ -5582,7 +5549,7 @@ define([], function(){
         "y": "5402.0",
         "w": "136.0",
         "h": "40.0",
-        "txt": "f??gungen"
+        "txt": "fügungen"
       },
       {
         "x": "250.0",
@@ -5596,7 +5563,7 @@ define([], function(){
         "y": "5402.0",
         "w": "53.0",
         "h": "27.0",
-        "txt": "??den"
+        "txt": "«den"
       },
       {
         "x": "491.0",
@@ -5653,7 +5620,7 @@ define([], function(){
         "y": "5436.0",
         "w": "46.0",
         "h": "34.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "334.0",
@@ -5667,7 +5634,7 @@ define([], function(){
         "y": "5431.0",
         "w": "263.0",
         "h": "37.0",
-        "txt": "Universit??tsst??dte"
+        "txt": "Universitätsstädte"
       },
       {
         "x": "696.0",
@@ -5738,7 +5705,7 @@ define([], function(){
         "y": "5465.0",
         "w": "105.0",
         "h": "34.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "872.0",
@@ -5825,7 +5792,7 @@ define([], function(){
         "y": "5632.0",
         "w": "161.0",
         "h": "72.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "490.0",
@@ -5890,7 +5857,7 @@ define([], function(){
         "y": "5760.0",
         "w": "105.0",
         "h": "36.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "621.0",
@@ -5904,7 +5871,7 @@ define([], function(){
         "y": "5758.0",
         "w": "159.0",
         "h": "29.0",
-        "txt": "Rum??nien"
+        "txt": "Rumänien"
       },
       {
         "x": "878.0",
@@ -5926,7 +5893,7 @@ define([], function(){
         "y": "5797.0",
         "w": "272.0",
         "h": "35.0",
-        "txt": "Cammuniqu??"
+        "txt": "Cammuniquö"
       },
       {
         "x": "385.0",
@@ -5961,14 +5928,14 @@ define([], function(){
         "y": "5793.0",
         "w": "80.0",
         "h": "34.0",
-        "txt": "hei??t,"
+        "txt": "heißt,"
       },
       {
         "x": "841.0",
         "y": "5793.0",
         "w": "51.0",
         "h": "33.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "910.0",
@@ -6011,7 +5978,7 @@ define([], function(){
         "y": "5830.0",
         "w": "106.0",
         "h": "34.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "591.0",
@@ -6068,7 +6035,7 @@ define([], function(){
         "y": "5866.0",
         "w": "82.0",
         "h": "34.0",
-        "txt": "M??rz"
+        "txt": "März"
       },
       {
         "x": "393.0",
@@ -6082,7 +6049,7 @@ define([], function(){
         "y": "5863.0",
         "w": "176.0",
         "h": "33.0",
-        "txt": "Luftr??hren-"
+        "txt": "Luftröhren-"
       },
       {
         "x": "815.0",
@@ -6104,14 +6071,14 @@ define([], function(){
         "y": "5901.0",
         "w": "169.0",
         "h": "37.0",
-        "txt": "entz??ndung"
+        "txt": "entzündung"
       },
       {
         "x": "296.0",
         "y": "5901.0",
         "w": "101.0",
         "h": "35.0",
-        "txt": "st??ndig"
+        "txt": "ständig"
       },
       {
         "x": "424.0",
@@ -6175,7 +6142,7 @@ define([], function(){
         "y": "5930.0",
         "w": "201.0",
         "h": "35.0",
-        "txt": "Herzt??tigkeit,"
+        "txt": "Herztätigkeit,"
       },
       {
         "x": "955.0",
@@ -6253,7 +6220,7 @@ define([], function(){
         "y": "5965.0",
         "w": "98.0",
         "h": "35.0",
-        "txt": "f??hrte,"
+        "txt": "führte,"
       },
       {
         "x": "978.0",
@@ -6289,7 +6256,7 @@ define([], function(){
         "y": "6004.0",
         "w": "88.0",
         "h": "34.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "505.0",
@@ -6346,7 +6313,7 @@ define([], function(){
         "y": "6039.0",
         "w": "170.0",
         "h": "36.0",
-        "txt": "K??nigin"
+        "txt": "Königin"
       },
       {
         "x": "379.0",
@@ -6367,7 +6334,7 @@ define([], function(){
         "y": "6035.0",
         "w": "88.0",
         "h": "34.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "801.0",
@@ -6424,7 +6391,7 @@ define([], function(){
         "y": "6069.0",
         "w": "174.0",
         "h": "35.0",
-        "txt": "Bewu??tsein"
+        "txt": "Bewußtsein"
       },
       {
         "x": "736.0",
@@ -6502,7 +6469,7 @@ define([], function(){
         "y": "6104.0",
         "w": "119.0",
         "h": "34.0",
-        "txt": "K??nigin"
+        "txt": "Königin"
       },
       {
         "x": "896.0",
@@ -6531,21 +6498,21 @@ define([], function(){
         "y": "6142.0",
         "w": "73.0",
         "h": "34.0",
-        "txt": "???Ich"
+        "txt": "„Ich"
       },
       {
         "x": "462.0",
         "y": "6141.0",
         "w": "108.0",
         "h": "34.0",
-        "txt": "f??hle"
+        "txt": "fühle"
       },
       {
         "x": "587.0",
         "y": "6140.0",
         "w": "81.0",
         "h": "32.0",
-        "txt": "m??ch"
+        "txt": "m«ch"
       },
       {
         "x": "684.0",
@@ -6559,7 +6526,7 @@ define([], function(){
         "y": "6136.0",
         "w": "128.0",
         "h": "32.0",
-        "txt": "m??de\".",
+        "txt": "müde\".",
         "space-after": true
       },
       {
@@ -6631,7 +6598,7 @@ define([], function(){
         "y": "6208.0",
         "w": "133.0",
         "h": "35.0",
-        "txt": "Anschlu??"
+        "txt": "Anschluß"
       },
       {
         "x": "678.0",
@@ -6674,7 +6641,7 @@ define([], function(){
         "y": "6248.0",
         "w": "103.0",
         "h": "33.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "294.0",
@@ -6716,7 +6683,7 @@ define([], function(){
         "y": "6239.0",
         "w": "142.0",
         "h": "33.0",
-        "txt": "??berf??hrt",
+        "txt": "überführt",
         "space-after": true
       },
       {
@@ -6887,7 +6854,7 @@ define([], function(){
         "y": "6343.0",
         "w": "86.0",
         "h": "33.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "858.0",
@@ -6909,7 +6876,7 @@ define([], function(){
         "y": "6382.0",
         "w": "75.0",
         "h": "37.0",
-        "txt": "Gru??"
+        "txt": "Gruß"
       },
       {
         "x": "211.0",
@@ -6966,14 +6933,14 @@ define([], function(){
         "y": "6416.0",
         "w": "97.0",
         "h": "38.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "227.0",
         "y": "6419.0",
         "w": "48.0",
         "h": "34.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "295.0",
@@ -7030,7 +6997,7 @@ define([], function(){
         "y": "6451.0",
         "w": "152.0",
         "h": "35.0",
-        "txt": "zug??nglich"
+        "txt": "zugänglich"
       },
       {
         "x": "435.0",
@@ -7153,7 +7120,7 @@ define([], function(){
         "y": "2777.0",
         "w": "153.0",
         "h": "36.0",
-        "txt": "Begr??bnis"
+        "txt": "Begräbnis"
       },
       {
         "x": "1468.0",
@@ -7174,7 +7141,7 @@ define([], function(){
         "y": "2774.0",
         "w": "154.0",
         "h": "35.0",
-        "txt": "k??niglichen"
+        "txt": "königlichen"
       },
       {
         "x": "1757.0",
@@ -7224,7 +7191,7 @@ define([], function(){
         "y": "2812.0",
         "w": "86.0",
         "h": "33.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "1473.0",
@@ -7245,7 +7212,7 @@ define([], function(){
         "y": "2807.0",
         "w": "116.0",
         "h": "34.0",
-        "txt": "K??nigin"
+        "txt": "Königin"
       },
       {
         "x": "1804.0",
@@ -7453,7 +7420,7 @@ define([], function(){
         "y": "2986.0",
         "w": "85.0",
         "h": "33.0",
-        "txt": "K??nig"
+        "txt": "König"
       },
       {
         "x": "1144.0",
@@ -7605,7 +7572,7 @@ define([], function(){
         "y": "3232.0",
         "w": "54.0",
         "h": "29.0",
-        "txt": "???Le"
+        "txt": "„Le"
       },
       {
         "x": "1267.0",
@@ -7740,7 +7707,7 @@ define([], function(){
         "y": "3291.0",
         "w": "286.0",
         "h": "36.0",
-        "txt": "zur??ckgekehrt"
+        "txt": "zurückgekehrt"
       },
       {
         "x": "1884.0",
@@ -7790,7 +7757,7 @@ define([], function(){
         "y": "3328.0",
         "w": "104.0",
         "h": "34.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "1660.0",
@@ -7861,7 +7828,7 @@ define([], function(){
         "y": "3361.0",
         "w": "52.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1728.0",
@@ -7933,7 +7900,7 @@ define([], function(){
         "y": "3432.0",
         "w": "113.0",
         "h": "29.0",
-        "txt": "erkl??rte"
+        "txt": "erklärte"
       },
       {
         "x": "1351.0",
@@ -7961,7 +7928,7 @@ define([], function(){
         "y": "3426.0",
         "w": "152.0",
         "h": "35.0",
-        "txt": "gegen??ber"
+        "txt": "gegenüber"
       },
       {
         "x": "1863.0",
@@ -7990,7 +7957,7 @@ define([], function(){
         "y": "3465.0",
         "w": "137.0",
         "h": "40.0",
-        "txt": "???Evening"
+        "txt": "„Evening"
       },
       {
         "x": "1536.0",
@@ -8004,7 +7971,7 @@ define([], function(){
         "y": "3463.0",
         "w": "53.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1799.0",
@@ -8061,7 +8028,7 @@ define([], function(){
         "y": "3496.0",
         "w": "125.0",
         "h": "34.0",
-        "txt": "w??nsche,"
+        "txt": "wünsche,"
       },
       {
         "x": "1847.0",
@@ -8271,7 +8238,7 @@ define([], function(){
         "y": "4055.0",
         "w": "116.0",
         "h": "28.0",
-        "txt": "3???4000"
+        "txt": "3—4000"
       },
       {
         "x": "1203.0",
@@ -8328,7 +8295,7 @@ define([], function(){
         "y": "4087.0",
         "w": "102.0",
         "h": "34.0",
-        "txt": "gro??en"
+        "txt": "großen"
       },
       {
         "x": "1436.0",
@@ -8478,7 +8445,7 @@ define([], function(){
         "y": "4202.0",
         "w": "116.0",
         "h": "35.0",
-        "txt": "S??rge,",
+        "txt": "Särge,",
         "space-after": true
       },
       {
@@ -8614,7 +8581,7 @@ define([], function(){
         "y": "4348.0",
         "w": "18.0",
         "h": "32.0",
-        "txt": "??"
+        "txt": "ß"
       },
       {
         "x": "1189.0",
@@ -8663,7 +8630,7 @@ define([], function(){
         "y": "4338.0",
         "w": "232.0",
         "h": "34.0",
-        "txt": "B??rgermeisters",
+        "txt": "Bürgermeisters",
         "space-after": true
       },
       {
@@ -8820,7 +8787,7 @@ define([], function(){
         "y": "4442.0",
         "w": "133.0",
         "h": "28.0",
-        "txt": "Gel??bnis"
+        "txt": "Gelöbnis"
       },
       {
         "x": "1850.0",
@@ -8835,7 +8802,7 @@ define([], function(){
         "y": "4484.0",
         "w": "51.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1129.0",
@@ -8856,7 +8823,7 @@ define([], function(){
         "y": "4479.0",
         "w": "263.0",
         "h": "36.0",
-        "txt": "Zur??ckbleibendcn,"
+        "txt": "Zurückbleibendcn,"
       },
       {
         "x": "1543.0",
@@ -8870,7 +8837,7 @@ define([], function(){
         "y": "4477.0",
         "w": "95.0",
         "h": "34.0",
-        "txt": "Kr??fte"
+        "txt": "Kräfte"
       },
       {
         "x": "1723.0",
@@ -8956,7 +8923,7 @@ define([], function(){
         "y": "4548.0",
         "w": "51.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1456.0",
@@ -9006,7 +8973,7 @@ define([], function(){
         "y": "4583.0",
         "w": "70.0",
         "h": "35.0",
-        "txt": "f??hlt"
+        "txt": "fühlt"
       },
       {
         "x": "1298.0",
@@ -9070,7 +9037,7 @@ define([], function(){
         "y": "4615.0",
         "w": "153.0",
         "h": "33.0",
-        "txt": "Ungl??ck"
+        "txt": "Unglück"
       },
       {
         "x": "1547.0",
@@ -9113,7 +9080,7 @@ define([], function(){
         "y": "4649.0",
         "w": "100.0",
         "h": "33.0",
-        "txt": "Schlu??"
+        "txt": "Schluß"
       },
       {
         "x": "1498.0",
@@ -9220,7 +9187,7 @@ define([], function(){
         "y": "4719.0",
         "w": "116.0",
         "h": "33.0",
-        "txt": "Kr??ften"
+        "txt": "Kräften"
       },
       {
         "x": "1290.0",
@@ -9234,14 +9201,14 @@ define([], function(){
         "y": "4731.0",
         "w": "33.0",
         "h": "5.0",
-        "txt": "???"
+        "txt": "—"
       },
       {
         "x": "1532.0",
         "y": "4715.0",
         "w": "58.0",
         "h": "34.0",
-        "txt": "F??r"
+        "txt": "Für"
       },
       {
         "x": "1614.0",
@@ -9341,7 +9308,7 @@ define([], function(){
         "y": "4782.0",
         "w": "83.0",
         "h": "34.0",
-        "txt": "m??ge,"
+        "txt": "möge,"
       },
       {
         "x": "1679.0",
@@ -9405,14 +9372,14 @@ define([], function(){
         "y": "4813.0",
         "w": "76.0",
         "h": "33.0",
-        "txt": "m??ge"
+        "txt": "möge"
       },
       {
         "x": "1879.0",
         "y": "4828.0",
         "w": "34.0",
         "h": "5.0",
-        "txt": "???"
+        "txt": "—"
       },
       {
         "x": "1936.0",
@@ -9498,7 +9465,7 @@ define([], function(){
         "y": "4887.0",
         "w": "83.0",
         "h": "33.0",
-        "txt": "m??sse"
+        "txt": "müsse"
       },
       {
         "x": "1401.0",
@@ -9563,7 +9530,7 @@ define([], function(){
         "y": "4971.0",
         "w": "98.0",
         "h": "35.0",
-        "txt": "H??tet"
+        "txt": "Hütet"
       },
       {
         "x": "1485.0",
@@ -9599,7 +9566,7 @@ define([], function(){
         "y": "5024.0",
         "w": "185.0",
         "h": "35.0",
-        "txt": "Bev??lkerung"
+        "txt": "Bevölkerung"
       },
       {
         "x": "1462.0",
@@ -9620,7 +9587,7 @@ define([], function(){
         "y": "5019.0",
         "w": "81.0",
         "h": "35.0",
-        "txt": "schlo??"
+        "txt": "schloß"
       },
       {
         "x": "1810.0",
@@ -9663,7 +9630,7 @@ define([], function(){
         "y": "5057.0",
         "w": "186.0",
         "h": "36.0",
-        "txt": "Rechtsgef??hl"
+        "txt": "Rechtsgefühl"
       },
       {
         "x": "1540.0",
@@ -9684,7 +9651,7 @@ define([], function(){
         "y": "5054.0",
         "w": "80.0",
         "h": "33.0",
-        "txt": "tr??gt,"
+        "txt": "trägt,"
       },
       {
         "x": "1743.0",
@@ -9748,7 +9715,7 @@ define([], function(){
         "y": "5086.0",
         "w": "196.0",
         "h": "35.0",
-        "txt": "Angeh??rigen.",
+        "txt": "Angehörigen.",
         "space-after": true
       },
       {
@@ -9756,7 +9723,7 @@ define([], function(){
         "y": "5145.0",
         "w": "33.0",
         "h": "6.0",
-        "txt": "???"
+        "txt": "—"
       },
       {
         "x": "1115.0",
@@ -9813,7 +9780,7 @@ define([], function(){
         "y": "5162.0",
         "w": "109.0",
         "h": "34.0",
-        "txt": "l??ngere"
+        "txt": "längere"
       },
       {
         "x": "1299.0",
@@ -9920,7 +9887,7 @@ define([], function(){
         "y": "5225.0",
         "w": "164.0",
         "h": "36.0",
-        "txt": "besch??ftigte"
+        "txt": "beschäftigte"
       },
       {
         "x": "1669.0",
@@ -9991,7 +9958,7 @@ define([], function(){
         "y": "5255.0",
         "w": "173.0",
         "h": "35.0",
-        "txt": "Vorg??ngen,"
+        "txt": "Vorgängen,"
       },
       {
         "x": "1939.0",
@@ -10020,14 +9987,14 @@ define([], function(){
         "y": "5297.0",
         "w": "112.0",
         "h": "34.0",
-        "txt": "Schlu??,"
+        "txt": "Schluß,"
       },
       {
         "x": "1369.0",
         "y": "5297.0",
         "w": "53.0",
         "h": "33.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1438.0",
@@ -10119,7 +10086,7 @@ define([], function(){
         "y": "5341.0",
         "w": "35.0",
         "h": "6.0",
-        "txt": "???"
+        "txt": "—"
       },
       {
         "x": "1788.0",
@@ -10133,7 +10100,7 @@ define([], function(){
         "y": "5325.0",
         "w": "101.0",
         "h": "34.0",
-        "txt": "Schlu??",
+        "txt": "Schluß",
         "space-after": true
       },
       {
@@ -10183,7 +10150,7 @@ define([], function(){
         "y": "5360.0",
         "w": "54.0",
         "h": "31.0",
-        "txt": "da??",
+        "txt": "daß",
         "space-after": true
       },
       {
@@ -10191,7 +10158,7 @@ define([], function(){
         "y": "5400.0",
         "w": "103.0",
         "h": "29.0",
-        "txt": "??berall"
+        "txt": "überall"
       },
       {
         "x": "1194.0",
@@ -10205,14 +10172,14 @@ define([], function(){
         "y": "5398.0",
         "w": "146.0",
         "h": "35.0",
-        "txt": "m??chtigste"
+        "txt": "mächtigste"
       },
       {
         "x": "1436.0",
         "y": "5396.0",
         "w": "148.0",
         "h": "36.0",
-        "txt": "Mitgef??hl"
+        "txt": "Mitgefühl"
       },
       {
         "x": "1605.0",
@@ -10262,7 +10229,7 @@ define([], function(){
         "y": "5434.0",
         "w": "52.0",
         "h": "33.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1387.0",
@@ -10341,7 +10308,7 @@ define([], function(){
         "y": "5500.0",
         "w": "106.0",
         "h": "35.0",
-        "txt": "Kr??nze"
+        "txt": "Kränze"
       },
       {
         "x": "1765.0",
@@ -10363,7 +10330,7 @@ define([], function(){
         "y": "5539.0",
         "w": "58.0",
         "h": "33.0",
-        "txt": "F??r"
+        "txt": "Für"
       },
       {
         "x": "1148.0",
@@ -10420,7 +10387,7 @@ define([], function(){
         "y": "5572.0",
         "w": "113.0",
         "h": "31.0",
-        "txt": "L??nder,"
+        "txt": "Länder,"
       },
       {
         "x": "1343.0",
@@ -10434,7 +10401,7 @@ define([], function(){
         "y": "5569.0",
         "w": "151.0",
         "h": "36.0",
-        "txt": "??berhaupt"
+        "txt": "überhaupt"
       },
       {
         "x": "1589.0",
@@ -10484,7 +10451,7 @@ define([], function(){
         "y": "5603.0",
         "w": "99.0",
         "h": "28.0",
-        "txt": "dr??ckte"
+        "txt": "drückte"
       },
       {
         "x": "1663.0",
@@ -10534,7 +10501,7 @@ define([], function(){
         "y": "5639.0",
         "w": "150.0",
         "h": "35.0",
-        "txt": "Mitgef??hl"
+        "txt": "Mitgefühl"
       },
       {
         "x": "1443.0",
@@ -10619,7 +10586,7 @@ define([], function(){
         "y": "5668.0",
         "w": "78.0",
         "h": "35.0",
-        "txt": "d??rfe"
+        "txt": "dürfe"
       },
       {
         "x": "1863.0",
@@ -10648,7 +10615,7 @@ define([], function(){
         "y": "5707.0",
         "w": "156.0",
         "h": "35.0",
-        "txt": "Gesch??ften"
+        "txt": "Geschäften"
       },
       {
         "x": "1419.0",
@@ -10705,7 +10672,7 @@ define([], function(){
         "y": "5742.0",
         "w": "83.0",
         "h": "33.0",
-        "txt": "m??sie"
+        "txt": "müsie"
       },
       {
         "x": "1426.0",
@@ -10748,7 +10715,7 @@ define([], function(){
         "y": "5793.0",
         "w": "189.0",
         "h": "36.0",
-        "txt": "bisherig????"
+        "txt": "bisherig««"
       },
       {
         "x": "1484.0",
@@ -10805,14 +10772,14 @@ define([], function(){
         "y": "5842.0",
         "w": "346.0",
         "h": "38.0",
-        "txt": "Verantwortungsgef??hl."
+        "txt": "Verantwortungsgefühl."
       },
       {
         "x": "1820.0",
         "y": "5855.0",
         "w": "33.0",
         "h": "7.0",
-        "txt": "???"
+        "txt": "—"
       },
       {
         "x": "1878.0",
@@ -10841,7 +10808,7 @@ define([], function(){
         "y": "5880.0",
         "w": "181.0",
         "h": "35.0",
-        "txt": "M??nnerchor"
+        "txt": "Männerchor"
       },
       {
         "x": "1422.0",
@@ -10855,7 +10822,7 @@ define([], function(){
         "y": "5880.0",
         "w": "79.0",
         "h": "31.0",
-        "txt": "???Lied"
+        "txt": "„Lied"
       },
       {
         "x": "1590.0",
@@ -10883,7 +10850,7 @@ define([], function(){
         "y": "5874.0",
         "w": "125.0",
         "h": "35.0",
-        "txt": "w??hrend",
+        "txt": "während",
         "space-after": true
       },
       {
@@ -10898,7 +10865,7 @@ define([], function(){
         "y": "5916.0",
         "w": "67.0",
         "h": "27.0",
-        "txt": "??ber"
+        "txt": "über"
       },
       {
         "x": "1223.0",
@@ -10912,7 +10879,7 @@ define([], function(){
         "y": "5914.0",
         "w": "111.0",
         "h": "35.0",
-        "txt": "S??rgen"
+        "txt": "Särgen"
       },
       {
         "x": "1425.0",
@@ -10962,7 +10929,7 @@ define([], function(){
         "y": "5950.0",
         "w": "93.0",
         "h": "35.0",
-        "txt": "S??rge"
+        "txt": "Särge"
       },
       {
         "x": "1238.0",
@@ -10983,7 +10950,7 @@ define([], function(){
         "y": "5948.0",
         "w": "125.0",
         "h": "35.0",
-        "txt": "Kl??ngen"
+        "txt": "Klängen"
       },
       {
         "x": "1538.0",
@@ -11111,7 +11078,7 @@ define([], function(){
         "y": "6013.0",
         "w": "126.0",
         "h": "33.0",
-        "txt": "w??hrend",
+        "txt": "während",
         "space-after": true
       },
       {
@@ -11119,7 +11086,7 @@ define([], function(){
         "y": "6054.0",
         "w": "41.0",
         "h": "28.0",
-        "txt": "di??"
+        "txt": "di«"
       },
       {
         "x": "1154.0",
@@ -11155,7 +11122,7 @@ define([], function(){
         "y": "6086.0",
         "w": "288.0",
         "h": "39.0",
-        "txt": "Zwischenf??lle"
+        "txt": "Zwischenfälle"
       },
       {
         "x": "1388.0",
@@ -11213,7 +11180,7 @@ define([], function(){
         "y": "6267.0",
         "w": "53.0",
         "h": "30.0",
-        "txt": "Di??"
+        "txt": "Di«"
       },
       {
         "x": "1235.0",
@@ -11263,14 +11230,14 @@ define([], function(){
         "y": "6302.0",
         "w": "191.0",
         "h": "36.0",
-        "txt": "sammenst????e"
+        "txt": "sammenstöße"
       },
       {
         "x": "1302.0",
         "y": "6302.0",
         "w": "158.0",
         "h": "33.0",
-        "txt": "erh??hte"
+        "txt": "erhöhte"
       },
       {
         "x": "1491.0",
@@ -11305,7 +11272,7 @@ define([], function(){
         "y": "6298.0",
         "w": "98.0",
         "h": "27.0",
-        "txt": "Korr??,",
+        "txt": "Korr«,",
         "space-after": true
       },
       {
@@ -11384,7 +11351,7 @@ define([], function(){
         "y": "6373.0",
         "w": "79.0",
         "h": "32.0",
-        "txt": "zw??lf"
+        "txt": "zwölf"
       },
       {
         "x": "1287.0",
@@ -11419,7 +11386,7 @@ define([], function(){
         "y": "6368.0",
         "w": "65.0",
         "h": "34.0",
-        "txt": "mu??"
+        "txt": "muß"
       },
       {
         "x": "1910.0",
@@ -11448,7 +11415,7 @@ define([], function(){
         "y": "6406.0",
         "w": "54.0",
         "h": "33.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "1449.0",
@@ -11498,7 +11465,7 @@ define([], function(){
         "y": "6438.0",
         "w": "149.0",
         "h": "40.0",
-        "txt": "H??hung"
+        "txt": "Höhung"
       },
       {
         "x": "1249.0",
@@ -11562,7 +11529,7 @@ define([], function(){
         "y": "6476.0",
         "w": "121.0",
         "h": "29.0",
-        "txt": "??beraus"
+        "txt": "überaus"
       },
       {
         "x": "1375.0",
@@ -11607,14 +11574,14 @@ define([], function(){
         "y": "2764.0",
         "w": "179.0",
         "h": "32.0",
-        "txt": "R??ckkehr"
+        "txt": "Rückkehr"
       },
       {
         "x": "2405.0",
         "y": "2757.0",
         "w": "507.0",
         "h": "45.0",
-        "txt": "nachRum??niengeftattet",
+        "txt": "nachRumäniengeftattet",
         "space-after": true
       },
       {
@@ -11622,7 +11589,7 @@ define([], function(){
         "y": "2803.0",
         "w": "131.0",
         "h": "29.0",
-        "txt": "w??rde."
+        "txt": "würde."
       },
       {
         "x": "2175.0",
@@ -11679,14 +11646,14 @@ define([], function(){
         "y": "2834.0",
         "w": "260.0",
         "h": "36.0",
-        "txt": "??bereinstimmend,"
+        "txt": "übereinstimmend,"
       },
       {
         "x": "2382.0",
         "y": "2833.0",
         "w": "51.0",
         "h": "38.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "2464.0",
@@ -11743,7 +11710,7 @@ define([], function(){
         "y": "2866.0",
         "w": "184.0",
         "h": "36.0",
-        "txt": "rum??nischen"
+        "txt": "rumänischen"
       },
       {
         "x": "2559.0",
@@ -11831,7 +11798,7 @@ define([], function(){
         "y": "3079.0",
         "w": "140.0",
         "h": "34.0",
-        "txt": "Anl????lich"
+        "txt": "Anläßlich"
       },
       {
         "x": "2230.0",
@@ -11859,7 +11826,7 @@ define([], function(){
         "y": "3074.0",
         "w": "103.0",
         "h": "35.0",
-        "txt": "K??nigs"
+        "txt": "Königs"
       },
       {
         "x": "2629.0",
@@ -11873,7 +11840,7 @@ define([], function(){
         "y": "3071.0",
         "w": "158.0",
         "h": "29.0",
-        "txt": "Rum??nien"
+        "txt": "Rumänien"
       },
       {
         "x": "2872.0",
@@ -12001,7 +11968,7 @@ define([], function(){
         "y": "3142.0",
         "w": "273.0",
         "h": "35.0",
-        "txt": "Reichspr??sidenten,"
+        "txt": "Reichspräsidenten,"
       },
       {
         "x": "2724.0",
@@ -12023,7 +11990,7 @@ define([], function(){
         "y": "3183.0",
         "w": "182.0",
         "h": "33.0",
-        "txt": "rum??nffchen"
+        "txt": "rumänffchen"
       },
       {
         "x": "2212.0",
@@ -12123,7 +12090,7 @@ define([], function(){
         "y": "3250.0",
         "w": "253.0",
         "h": "36.0",
-        "txt": "pr??sidenten"
+        "txt": "präsidenten"
       },
       {
         "x": "2303.0",
@@ -12166,14 +12133,14 @@ define([], function(){
         "y": "3280.0",
         "w": "201.0",
         "h": "29.0",
-        "txt": "??bermittelten"
+        "txt": "übermittelten"
       },
       {
         "x": "2703.0",
         "y": "3276.0",
         "w": "219.0",
         "h": "36.0",
-        "txt": "Staatssekret??r",
+        "txt": "Staatssekretär",
         "space-after": true
       },
       {
@@ -12330,7 +12297,7 @@ define([], function(){
         "y": "3386.0",
         "w": "192.0",
         "h": "37.0",
-        "txt": "Ausw??rtigen"
+        "txt": "Auswärtigen"
       },
       {
         "x": "2222.0",
@@ -12472,7 +12439,7 @@ define([], function(){
         "y": "3450.0",
         "w": "175.0",
         "h": "36.0",
-        "txt": "Ausw??rtige"
+        "txt": "Auswärtige"
       },
       {
         "x": "2588.0",
@@ -12710,7 +12677,7 @@ define([], function(){
         "y": "4074.0",
         "w": "132.0",
         "h": "33.0",
-        "txt": "anl????lich"
+        "txt": "anläßlich"
       },
       {
         "x": "2739.0",
@@ -12724,7 +12691,7 @@ define([], function(){
         "y": "4070.0",
         "w": "120.0",
         "h": "35.0",
-        "txt": "Vorf??lle",
+        "txt": "Vorfälle",
         "space-after": true
       },
       {
@@ -12810,7 +12777,7 @@ define([], function(){
         "y": "4145.0",
         "w": "173.0",
         "h": "35.0",
-        "txt": "anschlie??en."
+        "txt": "anschließen."
       },
       {
         "x": "2650.0",
@@ -12953,7 +12920,7 @@ define([], function(){
         "y": "4253.0",
         "w": "173.0",
         "h": "29.0",
-        "txt": "Bundesr??te"
+        "txt": "Bundesräte"
       },
       {
         "x": "2311.0",
@@ -12967,7 +12934,7 @@ define([], function(){
         "y": "4249.0",
         "w": "47.0",
         "h": "34.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "2512.0",
@@ -13046,7 +13013,7 @@ define([], function(){
         "y": "4318.0",
         "w": "181.0",
         "h": "35.0",
-        "txt": "b??rgerlichen"
+        "txt": "bürgerlichen"
       },
       {
         "x": "2578.0",
@@ -13161,7 +13128,7 @@ define([], function(){
         "y": "4424.0",
         "w": "248.0",
         "h": "37.0",
-        "txt": "??berfl??ssig"
+        "txt": "überflüssig"
       },
       {
         "x": "2303.0",
@@ -13218,7 +13185,7 @@ define([], function(){
         "y": "4457.0",
         "w": "111.0",
         "h": "26.0",
-        "txt": "w??rden"
+        "txt": "würden"
       },
       {
         "x": "2425.0",
@@ -13275,7 +13242,7 @@ define([], function(){
         "y": "4491.0",
         "w": "236.0",
         "h": "36.0",
-        "txt": "Polizeibeh??rden"
+        "txt": "Polizeibehörden"
       },
       {
         "x": "2438.0",
@@ -13318,7 +13285,7 @@ define([], function(){
         "y": "4532.0",
         "w": "53.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "2103.0",
@@ -13382,7 +13349,7 @@ define([], function(){
         "y": "4556.0",
         "w": "183.0",
         "h": "35.0",
-        "txt": "Begr??ndung"
+        "txt": "Begründung"
       },
       {
         "x": "2643.0",
@@ -13403,7 +13370,7 @@ define([], function(){
         "y": "4546.0",
         "w": "98.0",
         "h": "33.0",
-        "txt": "w??rde.",
+        "txt": "würde.",
         "space-after": true
       },
       {
@@ -13432,14 +13399,14 @@ define([], function(){
         "y": "4617.0",
         "w": "262.0",
         "h": "38.0",
-        "txt": "??sterreichischen"
+        "txt": "österreichischen"
       },
       {
         "x": "2664.0",
         "y": "4611.0",
         "w": "287.0",
         "h": "37.0",
-        "txt": "Rechtsverb??nde.",
+        "txt": "Rechtsverbände.",
         "space-after": true
       },
       {
@@ -13454,21 +13421,21 @@ define([], function(){
         "y": "4673.0",
         "w": "214.0",
         "h": "36.0",
-        "txt": "??sterreichischen"
+        "txt": "österreichischen"
       },
       {
         "x": "2430.0",
         "y": "4669.0",
         "w": "236.0",
         "h": "35.0",
-        "txt": "Rechtsverb??nde,"
+        "txt": "Rechtsverbände,"
       },
       {
         "x": "2696.0",
         "y": "4664.0",
         "w": "255.0",
         "h": "37.0",
-        "txt": "???Nationalistischer",
+        "txt": "„Nationalistischer",
         "space-after": true
       },
       {
@@ -13483,7 +13450,7 @@ define([], function(){
         "y": "4706.0",
         "w": "159.0",
         "h": "34.0",
-        "txt": "???Deutscher"
+        "txt": "„Deutscher"
       },
       {
         "x": "2543.0",
@@ -13497,7 +13464,7 @@ define([], function(){
         "y": "4698.0",
         "w": "98.0",
         "h": "33.0",
-        "txt": "???Bund",
+        "txt": "„Bund",
         "space-after": true
       },
       {
@@ -13512,7 +13479,7 @@ define([], function(){
         "y": "4742.0",
         "w": "189.0",
         "h": "33.0",
-        "txt": "???Alldeutscher"
+        "txt": "„Alldeutscher"
       },
       {
         "x": "2490.0",
@@ -13526,7 +13493,7 @@ define([], function(){
         "y": "4733.0",
         "w": "265.0",
         "h": "34.0",
-        "txt": "???Nationalverband",
+        "txt": "„Nationalverband",
         "space-after": true
       },
       {
@@ -13555,7 +13522,7 @@ define([], function(){
         "y": "4771.0",
         "w": "252.0",
         "h": "37.0",
-        "txt": "???Oesterreichischer"
+        "txt": "„Oesterreichischer"
       },
       {
         "x": "2700.0",
@@ -13577,7 +13544,7 @@ define([], function(){
         "y": "4814.0",
         "w": "170.0",
         "h": "35.0",
-        "txt": "??ffentlichen"
+        "txt": "öffentlichen"
       },
       {
         "x": "2229.0",
@@ -13612,7 +13579,7 @@ define([], function(){
         "y": "4801.0",
         "w": "245.0",
         "h": "36.0",
-        "txt": "???Deutsch-Oester-",
+        "txt": "„Deutsch-Oester-",
         "space-after": true
       },
       {
@@ -13677,7 +13644,7 @@ define([], function(){
         "y": "4882.0",
         "w": "217.0",
         "h": "36.0",
-        "txt": "Gr??ndung"
+        "txt": "Gründung"
       },
       {
         "x": "2310.0",
@@ -13790,7 +13757,7 @@ define([], function(){
         "y": "4932.0",
         "w": "34.0",
         "h": "4.0",
-        "txt": "???"
+        "txt": "—"
       },
       {
         "x": "2178.0",
@@ -13825,14 +13792,14 @@ define([], function(){
         "y": "4906.0",
         "w": "117.0",
         "h": "34.0",
-        "txt": "v??lkische"
+        "txt": "völkische"
       },
       {
         "x": "2843.0",
         "y": "4903.0",
         "w": "111.0",
         "h": "34.0",
-        "txt": "???Volks-",
+        "txt": "„Volks-",
         "space-after": true
       },
       {
@@ -13840,14 +13807,14 @@ define([], function(){
         "y": "4952.0",
         "w": "102.0",
         "h": "34.0",
-        "txt": "k??mpf\""
+        "txt": "kämpf\""
       },
       {
         "x": "2171.0",
         "y": "4948.0",
         "w": "193.0",
         "h": "36.0",
-        "txt": "ver??ffentlicht"
+        "txt": "veröffentlicht"
       },
       {
         "x": "2387.0",
@@ -13918,14 +13885,14 @@ define([], function(){
         "y": "4982.0",
         "w": "53.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "2460.0",
         "y": "4976.0",
         "w": "229.0",
         "h": "37.0",
-        "txt": "B??rgermei"
+        "txt": "Bürgermei"
       },
       {
         "x": "2699.0",
@@ -13982,7 +13949,7 @@ define([], function(){
         "y": "5015.0",
         "w": "52.0",
         "h": "34.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "2516.0",
@@ -14053,7 +14020,7 @@ define([], function(){
         "y": "5043.0",
         "w": "150.0",
         "h": "36.0",
-        "txt": "Aufl??sung"
+        "txt": "Auflösung"
       },
       {
         "x": "2908.0",
@@ -14104,7 +14071,7 @@ define([], function(){
         "y": "5151.0",
         "w": "294.0",
         "h": "53.0",
-        "txt": "B??rgermeister"
+        "txt": "Bürgermeister"
       },
       {
         "x": "2655.0",
@@ -14184,7 +14151,7 @@ define([], function(){
         "y": "5319.0",
         "w": "330.0",
         "h": "39.0",
-        "txt": "B??rgermeisters",
+        "txt": "Bürgermeisters",
         "space-after": true
       },
       {
@@ -14199,7 +14166,7 @@ define([], function(){
         "y": "5364.0",
         "w": "183.0",
         "h": "29.0",
-        "txt": "??bermittelte"
+        "txt": "übermittelte"
       },
       {
         "x": "2360.0",
@@ -14305,7 +14272,7 @@ define([], function(){
         "y": "5396.0",
         "w": "202.0",
         "h": "36.0",
-        "txt": "ausl??ndischen"
+        "txt": "ausländischen"
       },
       {
         "x": "2527.0",
@@ -14334,7 +14301,7 @@ define([], function(){
         "y": "5434.0",
         "w": "201.0",
         "h": "36.0",
-        "txt": "Aeu??erungen"
+        "txt": "Aeußerungen"
       },
       {
         "x": "2274.0",
@@ -14348,7 +14315,7 @@ define([], function(){
         "y": "5429.0",
         "w": "239.0",
         "h": "36.0",
-        "txt": "B??rgermeisters."
+        "txt": "Bürgermeisters."
       },
       {
         "x": "2624.0",
@@ -14362,7 +14329,7 @@ define([], function(){
         "y": "5427.0",
         "w": "73.0",
         "h": "32.0",
-        "txt": "hei??t"
+        "txt": "heißt"
       },
       {
         "x": "2780.0",
@@ -14455,7 +14422,7 @@ define([], function(){
         "y": "5502.0",
         "w": "97.0",
         "h": "32.0",
-        "txt": "t??richt,"
+        "txt": "töricht,"
       },
       {
         "x": "2328.0",
@@ -14690,7 +14657,7 @@ define([], function(){
         "y": "5641.0",
         "w": "62.0",
         "h": "35.0",
-        "txt": "Fu??"
+        "txt": "Fuß"
       },
       {
         "x": "2130.0",
@@ -14796,7 +14763,7 @@ define([], function(){
         "y": "5665.0",
         "w": "384.0",
         "h": "38.0",
-        "txt": "Entr??stungskund-",
+        "txt": "Entrüstungskund-",
         "space-after": true
       },
       {
@@ -14839,7 +14806,7 @@ define([], function(){
         "y": "5709.0",
         "w": "66.0",
         "h": "27.0",
-        "txt": "??ber"
+        "txt": "über"
       },
       {
         "x": "2314.0",
@@ -14896,14 +14863,14 @@ define([], function(){
         "y": "5742.0",
         "w": "151.0",
         "h": "34.0",
-        "txt": "unges??hnt"
+        "txt": "ungesühnt"
       },
       {
         "x": "2428.0",
         "y": "5739.0",
         "w": "63.0",
         "h": "35.0",
-        "txt": "lie??,"
+        "txt": "ließ,"
       },
       {
         "x": "2532.0",
@@ -15017,7 +14984,7 @@ define([], function(){
         "y": "5804.0",
         "w": "215.0",
         "h": "38.0",
-        "txt": "Ausn??tzen"
+        "txt": "Ausnützen"
       },
       {
         "x": "2911.0",
@@ -15068,7 +15035,7 @@ define([], function(){
         "y": "5879.0",
         "w": "73.0",
         "h": "34.0",
-        "txt": "h??tte"
+        "txt": "hätte"
       },
       {
         "x": "2408.0",
@@ -15089,7 +15056,7 @@ define([], function(){
         "y": "5874.0",
         "w": "158.0",
         "h": "37.0",
-        "txt": "Emp??rung"
+        "txt": "Empörung"
       },
       {
         "x": "2877.0",
@@ -15104,7 +15071,7 @@ define([], function(){
         "y": "5914.0",
         "w": "186.0",
         "h": "36.0",
-        "txt": "??bergesehen,"
+        "txt": "übergesehen,"
       },
       {
         "x": "2262.0",
@@ -15189,7 +15156,7 @@ define([], function(){
         "y": "5946.0",
         "w": "85.0",
         "h": "34.0",
-        "txt": "f??hlte"
+        "txt": "fühlte"
       },
       {
         "x": "2606.0",
@@ -15296,7 +15263,7 @@ define([], function(){
         "y": "6017.0",
         "w": "191.0",
         "h": "35.0",
-        "txt": "gew??hnlichen"
+        "txt": "gewöhnlichen"
       },
       {
         "x": "2326.0",
@@ -15338,7 +15305,7 @@ define([], function(){
         "y": "6011.0",
         "w": "113.0",
         "h": "29.0",
-        "txt": "erkl??rte",
+        "txt": "erklärte",
         "space-after": true
       },
       {
@@ -15346,7 +15313,7 @@ define([], function(){
         "y": "6051.0",
         "w": "212.0",
         "h": "36.0",
-        "txt": "B??rgermeister"
+        "txt": "Bürgermeister"
       },
       {
         "x": "2296.0",
@@ -15410,7 +15377,7 @@ define([], function(){
         "y": "6083.0",
         "w": "167.0",
         "h": "35.0",
-        "txt": "besch??nigen"
+        "txt": "beschönigen"
       },
       {
         "x": "2605.0",
@@ -15424,7 +15391,7 @@ define([], function(){
         "y": "6082.0",
         "w": "51.0",
         "h": "32.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "2778.0",
@@ -15474,7 +15441,7 @@ define([], function(){
         "y": "6119.0",
         "w": "155.0",
         "h": "41.0",
-        "txt": "Gro??stadt,"
+        "txt": "Großstadt,"
       },
       {
         "x": "2427.0",
@@ -15559,14 +15526,14 @@ define([], function(){
         "y": "6152.0",
         "w": "155.0",
         "h": "35.0",
-        "txt": "Oberfl??che"
+        "txt": "Oberfläche"
       },
       {
         "x": "2674.0",
         "y": "6150.0",
         "w": "120.0",
         "h": "34.0",
-        "txt": "dr??ngen"
+        "txt": "drängen"
       },
       {
         "x": "2812.0",
@@ -15673,14 +15640,14 @@ define([], function(){
         "y": "6221.0",
         "w": "118.0",
         "h": "35.0",
-        "txt": "sch??rfste"
+        "txt": "schärfste"
       },
       {
         "x": "2610.0",
         "y": "6218.0",
         "w": "219.0",
         "h": "36.0",
-        "txt": "zur??ckgewiesen"
+        "txt": "zurückgewiesen"
       },
       {
         "x": "2853.0",
@@ -15716,7 +15683,7 @@ define([], function(){
         "y": "6256.0",
         "w": "165.0",
         "h": "36.0",
-        "txt": "Vorg??ngen"
+        "txt": "Vorgängen"
       },
       {
         "x": "2519.0",
@@ -15773,7 +15740,7 @@ define([], function(){
         "y": "6292.0",
         "w": "67.0",
         "h": "33.0",
-        "txt": "mu??"
+        "txt": "muß"
       },
       {
         "x": "2444.0",
@@ -15987,7 +15954,7 @@ define([], function(){
         "y": "6429.0",
         "w": "149.0",
         "h": "36.0",
-        "txt": "R??umung"
+        "txt": "Räumung"
       },
       {
         "x": "2605.0",
@@ -16113,7 +16080,7 @@ define([], function(){
         "y": "2713.0",
         "w": "126.0",
         "h": "28.0",
-        "txt": "T??nzler.",
+        "txt": "Tänzler.",
         "space-after": true
       },
       {
@@ -16163,7 +16130,7 @@ define([], function(){
         "y": "2759.0",
         "w": "69.0",
         "h": "28.0",
-        "txt": "??ber"
+        "txt": "über"
       },
       {
         "x": "3854.0",
@@ -16199,7 +16166,7 @@ define([], function(){
         "y": "2819.0",
         "w": "67.0",
         "h": "28.0",
-        "txt": "??ber"
+        "txt": "über"
       },
       {
         "x": "3393.0",
@@ -16284,14 +16251,14 @@ define([], function(){
         "y": "2866.0",
         "w": "111.0",
         "h": "34.0",
-        "txt": "f??hlbar"
+        "txt": "fühlbar"
       },
       {
         "x": "3782.0",
         "y": "2864.0",
         "w": "116.0",
         "h": "31.0",
-        "txt": "dr??cken,",
+        "txt": "drücken,",
         "space-after": true
       },
       {
@@ -16412,7 +16379,7 @@ define([], function(){
         "y": "2970.0",
         "w": "55.0",
         "h": "28.0",
-        "txt": "Be??",
+        "txt": "Be«",
         "space-after": true
       },
       {
@@ -16441,7 +16408,7 @@ define([], function(){
         "y": "3029.0",
         "w": "48.0",
         "h": "26.0",
-        "txt": "de??"
+        "txt": "de»"
       },
       {
         "x": "3377.0",
@@ -16612,7 +16579,7 @@ define([], function(){
         "y": "3184.0",
         "w": "151.0",
         "h": "31.0",
-        "txt": "Verb??nde,"
+        "txt": "Verbände,"
       },
       {
         "x": "3489.0",
@@ -16690,7 +16657,7 @@ define([], function(){
         "y": "3237.0",
         "w": "137.0",
         "h": "35.0",
-        "txt": "sinnf??llig"
+        "txt": "sinnfällig"
       },
       {
         "x": "3487.0",
@@ -16711,7 +16678,7 @@ define([], function(){
         "y": "3240.0",
         "w": "43.0",
         "h": "21.0",
-        "txt": "er??",
+        "txt": "er»",
         "space-after": true
       },
       {
@@ -16719,14 +16686,14 @@ define([], function(){
         "y": "3296.0",
         "w": "136.0",
         "h": "34.0",
-        "txt": "sch??pften,"
+        "txt": "schöpften,"
       },
       {
         "x": "3144.0",
         "y": "3292.0",
         "w": "119.0",
         "h": "35.0",
-        "txt": "sch??rfen"
+        "txt": "schürfen"
       },
       {
         "x": "3284.0",
@@ -16825,7 +16792,7 @@ define([], function(){
         "y": "3338.0",
         "w": "70.0",
         "h": "28.0",
-        "txt": "??ber",
+        "txt": "über",
         "space-after": true
       },
       {
@@ -16833,7 +16800,7 @@ define([], function(){
         "y": "3398.0",
         "w": "156.0",
         "h": "36.0",
-        "txt": "st??rzenden"
+        "txt": "stürzenden"
       },
       {
         "x": "3165.0",
@@ -16868,7 +16835,7 @@ define([], function(){
         "y": "3389.0",
         "w": "240.0",
         "h": "37.0",
-        "txt": "gegen??bevstand,",
+        "txt": "gegenübevstand,",
         "space-after": true
       },
       {
@@ -16904,7 +16871,7 @@ define([], function(){
         "y": "3445.0",
         "w": "129.0",
         "h": "34.0",
-        "txt": "F??hlung"
+        "txt": "Fühlung"
       },
       {
         "x": "3567.0",
@@ -16989,7 +16956,7 @@ define([], function(){
         "y": "3495.0",
         "w": "144.0",
         "h": "35.0",
-        "txt": "F??hrung.",
+        "txt": "Führung.",
         "space-after": true
       },
       {
@@ -17004,14 +16971,14 @@ define([], function(){
         "y": "3556.0",
         "w": "147.0",
         "h": "35.0",
-        "txt": "f??hrenden"
+        "txt": "führenden"
       },
       {
         "x": "3239.0",
         "y": "3553.0",
         "w": "85.0",
         "h": "34.0",
-        "txt": "K??pfe"
+        "txt": "Köpfe"
       },
       {
         "x": "3346.0",
@@ -17054,7 +17021,7 @@ define([], function(){
         "y": "3608.0",
         "w": "188.0",
         "h": "36.0",
-        "txt": "schr??nkenden"
+        "txt": "schränkenden"
       },
       {
         "x": "3219.0",
@@ -17139,7 +17106,7 @@ define([], function(){
         "y": "3652.0",
         "w": "154.0",
         "h": "36.0",
-        "txt": "stre??eitdcn"
+        "txt": "streüeitdcn"
       },
       {
         "x": "3752.0",
@@ -17253,7 +17220,7 @@ define([], function(){
         "y": "3760.0",
         "w": "92.0",
         "h": "34.0",
-        "txt": "au??en"
+        "txt": "außen"
       },
       {
         "x": "3509.0",
@@ -17281,7 +17248,7 @@ define([], function(){
         "y": "3758.0",
         "w": "163.0",
         "h": "34.0",
-        "txt": "ergr??nden.",
+        "txt": "ergründen.",
         "space-after": true
       },
       {
@@ -17460,7 +17427,7 @@ define([], function(){
         "y": "3974.0",
         "w": "118.0",
         "h": "35.0",
-        "txt": "Schl??sse"
+        "txt": "Schlüsse"
       },
       {
         "x": "3164.0",
@@ -17517,7 +17484,7 @@ define([], function(){
         "y": "4027.0",
         "w": "96.0",
         "h": "34.0",
-        "txt": "dr??ngt"
+        "txt": "drängt"
       },
       {
         "x": "3125.0",
@@ -17574,7 +17541,7 @@ define([], function(){
         "y": "4079.0",
         "w": "168.0",
         "h": "34.0",
-        "txt": "Er??rterung"
+        "txt": "Erörterung"
       },
       {
         "x": "3201.0",
@@ -17588,7 +17555,7 @@ define([], function(){
         "y": "4073.0",
         "w": "345.0",
         "h": "37.0",
-        "txt": "bev??lkerungspolitischen"
+        "txt": "bevölkerungspolitischen"
       },
       {
         "x": "3707.0",
@@ -17624,7 +17591,7 @@ define([], function(){
         "y": "4127.0",
         "w": "186.0",
         "h": "36.0",
-        "txt": "Ergr??ndung"
+        "txt": "Ergründung"
       },
       {
         "x": "3462.0",
@@ -17652,7 +17619,7 @@ define([], function(){
         "y": "4125.0",
         "w": "218.0",
         "h": "37.0",
-        "txt": "weltpolitische??",
+        "txt": "weltpolitische»",
         "space-after": true
       },
       {
@@ -17725,14 +17692,14 @@ define([], function(){
         "y": "4286.0",
         "w": "263.0",
         "h": "37.0",
-        "txt": "Lebensm??glichkeit"
+        "txt": "Lebensmöglichkeit"
       },
       {
         "x": "3303.0",
         "y": "4285.0",
         "w": "46.0",
         "h": "35.0",
-        "txt": "f??r"
+        "txt": "für"
       },
       {
         "x": "3376.0",
@@ -17746,7 +17713,7 @@ define([], function(){
         "y": "4283.0",
         "w": "185.0",
         "h": "36.0",
-        "txt": "Bev??lkerung"
+        "txt": "Bevölkerung"
       },
       {
         "x": "3707.0",
@@ -17782,7 +17749,7 @@ define([], function(){
         "y": "4340.0",
         "w": "82.0",
         "h": "31.0",
-        "txt": "???Volk"
+        "txt": "„Volk"
       },
       {
         "x": "3180.0",
@@ -17853,7 +17820,7 @@ define([], function(){
         "y": "4390.0",
         "w": "109.0",
         "h": "34.0",
-        "txt": "gr????ter"
+        "txt": "größter"
       },
       {
         "x": "3545.0",
@@ -17889,7 +17856,7 @@ define([], function(){
         "y": "4442.0",
         "w": "246.0",
         "h": "36.0",
-        "txt": "Betriebsz??hlung"
+        "txt": "Betriebszählung"
       },
       {
         "x": "3422.0",
@@ -17953,7 +17920,7 @@ define([], function(){
         "y": "4492.0",
         "w": "271.0",
         "h": "38.0",
-        "txt": "Bev??lkerung"
+        "txt": "Bevölkerung"
       },
       {
         "x": "3659.0",
@@ -17974,7 +17941,7 @@ define([], function(){
         "y": "4499.0",
         "w": "53.0",
         "h": "27.0",
-        "txt": "vo??",
+        "txt": "vo»",
         "space-after": true
       },
       {
@@ -18003,7 +17970,7 @@ define([], function(){
         "y": "4542.0",
         "w": "430.0",
         "h": "44.0",
-        "txt": "Bev??lkerungsziffer",
+        "txt": "Bevölkerungsziffer",
         "space-after": true
       },
       {
@@ -18039,7 +18006,7 @@ define([], function(){
         "y": "4597.0",
         "w": "264.0",
         "h": "38.0",
-        "txt": "Sterbef??lle."
+        "txt": "Sterbefälle."
       },
       {
         "x": "3784.0",
@@ -18118,7 +18085,7 @@ define([], function(){
         "y": "4707.0",
         "w": "106.0",
         "h": "34.0",
-        "txt": "K??pfen"
+        "txt": "Köpfen"
       },
       {
         "x": "3145.0",
@@ -18445,7 +18412,7 @@ define([], function(){
         "y": "4967.0",
         "w": "282.0",
         "h": "37.0",
-        "txt": "burten??berschusses."
+        "txt": "burtenüberschusses."
       },
       {
         "x": "3340.0",
@@ -18473,7 +18440,7 @@ define([], function(){
         "y": "4966.0",
         "w": "184.0",
         "h": "36.0",
-        "txt": "besch??ftigten"
+        "txt": "beschäftigten"
       },
       {
         "x": "3813.0",
@@ -18544,7 +18511,7 @@ define([], function(){
         "y": "5021.0",
         "w": "68.0",
         "h": "28.0",
-        "txt": "??ber"
+        "txt": "über"
       },
       {
         "x": "3901.0",
@@ -18559,7 +18526,7 @@ define([], function(){
         "y": "5073.0",
         "w": "168.0",
         "h": "36.0",
-        "txt": "Sterbcf??lle"
+        "txt": "Sterbcfälle"
       },
       {
         "x": "3229.0",
@@ -18594,14 +18561,14 @@ define([], function(){
         "y": "5072.0",
         "w": "208.0",
         "h": "37.0",
-        "txt": "Er??rterungen"
+        "txt": "Erörterungen"
       },
       {
         "x": "3875.0",
         "y": "5075.0",
         "w": "68.0",
         "h": "29.0",
-        "txt": "??ber",
+        "txt": "über",
         "space-after": true
       },
       {
@@ -18623,7 +18590,7 @@ define([], function(){
         "y": "5125.0",
         "w": "116.0",
         "h": "35.0",
-        "txt": "??hnliche"
+        "txt": "ähnliche"
       },
       {
         "x": "3537.0",
@@ -18708,7 +18675,7 @@ define([], function(){
         "y": "5181.0",
         "w": "104.0",
         "h": "33.0",
-        "txt": "zur??ck-",
+        "txt": "zurück-",
         "space-after": true
       },
       {
@@ -18716,7 +18683,7 @@ define([], function(){
         "y": "5231.0",
         "w": "131.0",
         "h": "36.0",
-        "txt": "gedr??ngt"
+        "txt": "gedrängt"
       },
       {
         "x": "3186.0",
@@ -18751,7 +18718,7 @@ define([], function(){
         "y": "5232.0",
         "w": "196.0",
         "h": "36.0",
-        "txt": ",er??hrenden,",
+        "txt": ",erührenden,",
         "space-after": true
       },
       {
@@ -18801,7 +18768,7 @@ define([], function(){
         "y": "5283.0",
         "w": "197.0",
         "h": "37.0",
-        "txt": "gegenw??rtige"
+        "txt": "gegenwärtige"
       },
       {
         "x": "3733.0",
@@ -18830,7 +18797,7 @@ define([], function(){
         "y": "5337.0",
         "w": "97.0",
         "h": "29.0",
-        "txt": "b??rten"
+        "txt": "bürten"
       },
       {
         "x": "3148.0",
@@ -18844,7 +18811,7 @@ define([], function(){
         "y": "5337.0",
         "w": "164.0",
         "h": "36.0",
-        "txt": "Sterbef??lle"
+        "txt": "Sterbefälle"
       },
       {
         "x": "3412.0",
@@ -18887,7 +18854,7 @@ define([], function(){
         "y": "5388.0",
         "w": "142.0",
         "h": "37.0",
-        "txt": "??berschu??"
+        "txt": "überschuß"
       },
       {
         "x": "3191.0",
@@ -18958,7 +18925,7 @@ define([], function(){
         "y": "5441.0",
         "w": "112.0",
         "h": "36.0",
-        "txt": "D??rfen"
+        "txt": "Dürfen"
       },
       {
         "x": "3489.0",
@@ -19001,14 +18968,14 @@ define([], function(){
         "y": "5494.0",
         "w": "131.0",
         "h": "35.0",
-        "txt": "schlie??en,"
+        "txt": "schließen,"
       },
       {
         "x": "3325.0",
         "y": "5495.0",
         "w": "52.0",
         "h": "34.0",
-        "txt": "da??"
+        "txt": "daß"
       },
       {
         "x": "3411.0",
@@ -19058,7 +19025,7 @@ define([], function(){
         "y": "5547.0",
         "w": "102.0",
         "h": "29.0",
-        "txt": "k??nnen"
+        "txt": "können"
       },
       {
         "x": "3264.0",
@@ -19122,7 +19089,7 @@ define([], function(){
         "y": "5598.0",
         "w": "284.0",
         "h": "39.0",
-        "txt": "Geburten??berschu??"
+        "txt": "Geburtenüberschuß"
       },
       {
         "x": "3413.0",
@@ -19250,14 +19217,14 @@ define([], function(){
         "y": "5705.0",
         "w": "136.0",
         "h": "36.0",
-        "txt": "zuf??llige,"
+        "txt": "zufällige,"
       },
       {
         "x": "3703.0",
         "y": "5705.0",
         "w": "243.0",
         "h": "38.0",
-        "txt": "vor??bergehende;",
+        "txt": "vorübergehende;",
         "space-after": true
       },
       {
@@ -19350,7 +19317,7 @@ define([], function(){
         "y": "5808.0",
         "w": "187.0",
         "h": "37.0",
-        "txt": "schw??chlichen"
+        "txt": "schwächlichen"
       },
       {
         "x": "3233.0",
@@ -19514,14 +19481,14 @@ define([], function(){
         "y": "5965.0",
         "w": "254.0",
         "h": "37.0",
-        "txt": "hcraufdr??ckenden"
+        "txt": "hcraufdrückenden"
       },
       {
         "x": "3311.0",
         "y": "5965.0",
         "w": "154.0",
         "h": "36.0",
-        "txt": "S??uglinge"
+        "txt": "Säuglinge"
       },
       {
         "x": "3498.0",
@@ -19549,7 +19516,7 @@ define([], function(){
         "y": "5967.0",
         "w": "100.0",
         "h": "34.0",
-        "txt": "zur??ck-",
+        "txt": "zurück-",
         "space-after": true
       },
       {
@@ -19578,7 +19545,7 @@ define([], function(){
         "y": "6018.0",
         "w": "67.0",
         "h": "34.0",
-        "txt": "mu??"
+        "txt": "muß"
       },
       {
         "x": "3480.0",
@@ -19642,7 +19609,7 @@ define([], function(){
         "y": "6071.0",
         "w": "65.0",
         "h": "35.0",
-        "txt": "Da??"
+        "txt": "Daß"
       },
       {
         "x": "3749.0",
@@ -19763,7 +19730,7 @@ define([], function(){
         "y": "6173.0",
         "w": "145.0",
         "h": "36.0",
-        "txt": "R??ckgang,",
+        "txt": "Rückgang,",
         "space-after": true
       },
       {
@@ -19799,7 +19766,7 @@ define([], function(){
         "y": "6227.0",
         "w": "189.0",
         "h": "36.0",
-        "txt": "Gro??st??dten,"
+        "txt": "Großstädten,"
       },
       {
         "x": "3518.0",
@@ -19827,7 +19794,7 @@ define([], function(){
         "y": "6226.0",
         "w": "109.0",
         "h": "35.0",
-        "txt": "gr????ere"
+        "txt": "größere"
       },
       {
         "x": "3897.0",
@@ -19842,7 +19809,7 @@ define([], function(){
         "y": "6280.0",
         "w": "145.0",
         "h": "37.0",
-        "txt": "v??lkerung"
+        "txt": "völkerung"
       },
       {
         "x": "3195.0",
@@ -19898,7 +19865,7 @@ define([], function(){
         "y": "6277.0",
         "w": "194.0",
         "h": "35.0",
-        "txt": "Mittelst??dten",
+        "txt": "Mittelstädten",
         "space-after": true
       },
       {
@@ -19977,7 +19944,7 @@ define([], function(){
         "y": "6387.0",
         "w": "122.0",
         "h": "30.0",
-        "txt": "??beraus"
+        "txt": "überaus"
       },
       {
         "x": "3177.0",
@@ -19991,7 +19958,7 @@ define([], function(){
         "y": "6387.0",
         "w": "139.0",
         "h": "35.0",
-        "txt": "R??ckgang"
+        "txt": "Rückgang"
       },
       {
         "x": "3519.0",
@@ -20034,7 +20001,7 @@ define([], function(){
         "y": "6442.0",
         "w": "16.0",
         "h": "27.0",
-        "txt": "??"
+        "txt": "ä"
       },
       {
         "x": "3085.0",
@@ -20384,7 +20351,7 @@ define([], function(){
         "y": "470.0",
         "w": "182.0",
         "h": "27.0",
-        "txt": "Handels??",
+        "txt": "Handels»",
         "space-after": true
       },
       {
@@ -20420,7 +20387,7 @@ define([], function(){
         "y": "505.0",
         "w": "120.0",
         "h": "26.0",
-        "txt": "W??hrend"
+        "txt": "Während"
       },
       {
         "x": "1742.0",
@@ -20434,7 +20401,7 @@ define([], function(){
         "y": "505.0",
         "w": "80.0",
         "h": "25.0",
-        "txt": "40u0??"
+        "txt": "40u0ü"
       },
       {
         "x": "1977.0",
@@ -20477,7 +20444,7 @@ define([], function(){
         "y": "535.0",
         "w": "150.0",
         "h": "30.0",
-        "txt": "gesetzlich??"
+        "txt": "gesetzlich«"
       },
       {
         "x": "2036.0",
@@ -20591,7 +20558,7 @@ define([], function(){
         "y": "606.0",
         "w": "101.0",
         "h": "27.0",
-        "txt": "K??ln."
+        "txt": "Köln."
       },
       {
         "x": "1914.0",
@@ -20627,7 +20594,7 @@ define([], function(){
         "y": "640.0",
         "w": "135.0",
         "h": "24.0",
-        "txt": "Aktion??rs"
+        "txt": "Aktionärs"
       },
       {
         "x": "1405.0",
@@ -20662,7 +20629,7 @@ define([], function(){
         "y": "637.0",
         "w": "65.0",
         "h": "24.0",
-        "txt": "K??ln"
+        "txt": "Köln"
       },
       {
         "x": "2065.0",
@@ -20819,7 +20786,7 @@ define([], function(){
           "y": "736.0",
           "w": "233.0",
           "h": "30.0",
-          "txt": "Wertpapierb??rse",
+          "txt": "Wertpapierbörse",
           "space-after": true
         },
         {
@@ -20855,7 +20822,7 @@ define([], function(){
           "y": "773.0",
           "w": "68.0",
           "h": "22.0",
-          "txt": "11???1"
+          "txt": "11—1"
         },
         {
           "x": "1455.0",
@@ -20890,7 +20857,7 @@ define([], function(){
           "y": "771.0",
           "w": "40.0",
           "h": "23.0",
-          "txt": "f??r"
+          "txt": "für"
         },
         {
           "x": "1771.0",
@@ -20904,7 +20871,7 @@ define([], function(){
           "y": "768.0",
           "w": "176.0",
           "h": "29.0",
-          "txt": "regelm??ssige"
+          "txt": "regelmässige"
         },
         {
           "x": "2034.0",
@@ -20926,14 +20893,14 @@ define([], function(){
           "y": "806.0",
           "w": "68.0",
           "h": "20.0",
-          "txt": "??on??t"
+          "txt": "»on«t"
         },
         {
           "x": "1321.0",
           "y": "802.0",
           "w": "111.0",
           "h": "28.0",
-          "txt": "g??ltigen"
+          "txt": "gültigen"
         },
         {
           "x": "1456.0",
@@ -21018,7 +20985,7 @@ define([], function(){
           "y": "831.0",
           "w": "182.0",
           "h": "25.0",
-          "txt": "B??rsenr??ume"
+          "txt": "Börsenräume"
         },
         {
           "x": "1800.0",
@@ -21089,7 +21056,7 @@ define([], function(){
           "y": "862.0",
           "w": "123.0",
           "h": "30.0",
-          "txt": "ge??ffnet.",
+          "txt": "geöffnet.",
           "space-after": true
         }
       ]
@@ -21142,7 +21109,7 @@ define([], function(){
           "y": "1003.0",
           "w": "386.0",
           "h": "22.0",
-          "txt": "f*HcliIneiibnu-Akt.-Ge??."
+          "txt": "f*HcliIneiibnu-Akt.-Ge»."
         },
         {
           "x": "1924.0",
@@ -21178,7 +21145,7 @@ define([], function(){
           "y": "1032.0",
           "w": "103.0",
           "h": "21.0",
-          "txt": "rrfeielt??"
+          "txt": "rrfeielt©"
         },
         {
           "x": "1611.0",
@@ -21284,7 +21251,7 @@ define([], function(){
           "y": "1055.0",
           "w": "193.0",
           "h": "26.0",
-          "txt": "Gesch??ftsjahr"
+          "txt": "Geschäftsjahr"
         },
         {
           "x": "1979.0",
@@ -21320,7 +21287,7 @@ define([], function(){
           "y": "1085.0",
           "w": "85.0",
           "h": "21.0",
-          "txt": "1515.1??"
+          "txt": "1515.1»"
         },
         {
           "x": "1464.0",
@@ -21462,14 +21429,14 @@ define([], function(){
           "y": "1141.0",
           "w": "120.0",
           "h": "22.0",
-          "txt": "???w??hrend"
+          "txt": "■während"
         },
         {
           "x": "1238.0",
           "y": "1141.0",
           "w": "44.0",
           "h": "19.0",
-          "txt": "??ler"
+          "txt": "«ler"
         },
         {
           "x": "1303.0",
@@ -21561,7 +21528,7 @@ define([], function(){
           "y": "1165.0",
           "w": "50.0",
           "h": "22.0",
-          "txt": ",y???K"
+          "txt": ",y?«K"
         },
         {
           "x": "1401.0",
@@ -21575,7 +21542,7 @@ define([], function(){
           "y": "1167.0",
           "w": "63.0",
           "h": "20.0",
-          "txt": "n??'ile"
+          "txt": "n«'ile"
         },
         {
           "x": "1548.0",
@@ -21589,7 +21556,7 @@ define([], function(){
           "y": "1163.0",
           "w": "151.0",
           "h": "25.0",
-          "txt": "??bertragen"
+          "txt": "übertragen"
         },
         {
           "x": "1879.0",
@@ -21618,7 +21585,7 @@ define([], function(){
           "y": "1197.0",
           "w": "300.0",
           "h": "25.0",
-          "txt": "(imeralvers??mnrdan*"
+          "txt": "(imeralversämnrdan*"
         },
         {
           "x": "1534.0",
@@ -21639,7 +21606,7 @@ define([], function(){
           "y": "1197.0",
           "w": "110.0",
           "h": "23.0",
-          "txt": "I???ohliu"
+          "txt": "I’ohliu"
         },
         {
           "x": "1798.0",
@@ -21660,7 +21627,7 @@ define([], function(){
           "y": "1194.0",
           "w": "110.0",
           "h": "21.0",
-          "txt": "K??ln-",
+          "txt": "Köln-",
           "space-after": true
         },
         {
@@ -21703,14 +21670,14 @@ define([], function(){
           "y": "1222.0",
           "w": "41.0",
           "h": "19.0",
-          "txt": "f??r"
+          "txt": "für"
         },
         {
           "x": "2055.0",
           "y": "1221.0",
           "w": "43.0",
           "h": "20.0",
-          "txt": "??las"
+          "txt": "«las"
         },
         {
           "x": "2118.0",
@@ -21725,7 +21692,7 @@ define([], function(){
           "y": "1254.0",
           "w": "156.0",
           "h": "26.0",
-          "txt": "sch??ftsjahr"
+          "txt": "schäftsjahr"
         },
         {
           "x": "1279.0",
@@ -21753,7 +21720,7 @@ define([], function(){
           "y": "1252.0",
           "w": "87.0",
           "h": "22.0",
-          "txt": "wurd??>"
+          "txt": "wurd«>"
         },
         {
           "x": "1577.0",
@@ -21767,7 +21734,7 @@ define([], function(){
           "y": "1251.0",
           "w": "60.0",
           "h": "19.0",
-          "txt": "dies??"
+          "txt": "dies«"
         },
         {
           "x": "1861.0",
@@ -21803,7 +21770,7 @@ define([], function(){
           "y": "1281.0",
           "w": "46.0",
           "h": "20.0",
-          "txt": "??len"
+          "txt": "«len"
         },
         {
           "x": "1278.0",
@@ -21817,7 +21784,7 @@ define([], function(){
           "y": "1278.0",
           "w": "108.0",
           "h": "24.0",
-          "txt": "gew??hlt"
+          "txt": "gewählt"
         },
         {
           "x": "1600.0",
@@ -21867,7 +21834,7 @@ define([], function(){
           "y": "1308.0",
           "w": "86.0",
           "h": "20.0",
-          "txt": "(K??ln)"
+          "txt": "(Köln)"
         },
         {
           "x": "1316.0",
@@ -21902,7 +21869,7 @@ define([], function(){
           "y": "1304.0",
           "w": "93.0",
           "h": "22.0",
-          "txt": "(K??ln),"
+          "txt": "(Köln),"
         },
         {
           "x": "1781.0",
@@ -22058,7 +22025,7 @@ define([], function(){
           "y": "1353.0",
           "w": "36.0",
           "h": "20.0",
-          "txt": "??ei"
+          "txt": "«ei"
         },
         {
           "x": "2108.0",
@@ -22094,7 +22061,7 @@ define([], function(){
           "y": "1383.0",
           "w": "151.0",
           "h": "23.0",
-          "txt": "Gesch??ftes"
+          "txt": "Geschäftes"
         },
         {
           "x": "1589.0",
@@ -22186,7 +22153,7 @@ define([], function(){
           "y": "1406.0",
           "w": "115.0",
           "h": "25.0",
-          "txt": "dar??ber,"
+          "txt": "darüber,"
         },
         {
           "x": "2044.0",
@@ -22289,7 +22256,7 @@ define([], function(){
           "y": "533.0",
           "w": "42.0",
           "h": "21.0",
-          "txt": "de??"
+          "txt": "de»"
         },
         {
           "x": "2621.0",
@@ -22416,7 +22383,7 @@ define([], function(){
           "y": "555.0",
           "w": "202.0",
           "h": "21.0",
-          "txt": "Htttd??I??chew",
+          "txt": "Htttd«I»chew",
           "space-after": true
         },
         {
@@ -22424,7 +22391,7 @@ define([], function(){
           "y": "586.0",
           "w": "329.0",
           "h": "23.0",
-          "txt": "KleMrl.ll??txwcrkp"
+          "txt": "KleMrl.llütxwcrkp"
         },
         {
           "x": "2574.0",
@@ -22438,7 +22405,7 @@ define([], function(){
           "y": "586.0",
           "w": "40.0",
           "h": "21.0",
-          "txt": "f??r"
+          "txt": "für"
         },
         {
           "x": "2813.0",
@@ -22496,7 +22463,7 @@ define([], function(){
           "y": "639.0",
           "w": "120.0",
           "h": "25.0",
-          "txt": "gcmeiile???"
+          "txt": "gcmeiile’"
         },
         {
           "x": "2718.0",
@@ -22546,21 +22513,21 @@ define([], function(){
           "y": "666.0",
           "w": "53.0",
           "h": "20.0",
-          "txt": "de??"
+          "txt": "de«"
         },
         {
           "x": "2312.0",
           "y": "666.0",
           "w": "86.0",
           "h": "21.0",
-          "txt": "A????tt"
+          "txt": "A»«tt"
         },
         {
           "x": "2406.0",
           "y": "668.0",
           "w": "211.0",
           "h": "21.0",
-          "txt": "r????tge??et??e,"
+          "txt": "r»«tge«et»e,"
         },
         {
           "x": "2658.0",
@@ -22610,7 +22577,7 @@ define([], function(){
           "y": "693.0",
           "w": "56.0",
           "h": "21.0",
-          "txt": "ein??"
+          "txt": "ein«"
         },
         {
           "x": "2544.0",
@@ -22631,7 +22598,7 @@ define([], function(){
           "y": "689.0",
           "w": "60.0",
           "h": "20.0",
-          "txt": "??500"
+          "txt": "»500"
         },
         {
           "x": "2968.0",
@@ -22688,7 +22655,7 @@ define([], function(){
           "y": "717.0",
           "w": "152.0",
           "h": "23.0",
-          "txt": "S??dstaaten"
+          "txt": "Südstaaten"
         },
         {
           "x": "2838.0",
@@ -22724,7 +22691,7 @@ define([], function(){
           "y": "743.0",
           "w": "102.0",
           "h": "24.0",
-          "txt": "betr??gt"
+          "txt": "beträgt"
         },
         {
           "x": "2759.0",
@@ -22738,14 +22705,14 @@ define([], function(){
           "y": "739.0",
           "w": "283.0",
           "h": "24.0",
-          "txt": "v??f??Blsl????tllrhe"
+          "txt": "v»f»Blsl»»tllrhe"
         },
         {
           "x": "3124.0",
           "y": "740.0",
           "w": "85.0",
           "h": "20.0",
-          "txt": "H??he"
+          "txt": "Höhe"
         },
         {
           "x": "3228.0",
@@ -22845,7 +22812,7 @@ define([], function(){
           "y": "800.0",
           "w": "38.0",
           "h": "19.0",
-          "txt": "i??K)"
+          "txt": "i«K)"
         },
         {
           "x": "2416.0",
@@ -22887,7 +22854,7 @@ define([], function(){
           "y": "796.0",
           "w": "92.0",
           "h": "23.0",
-          "txt": "Jahre??"
+          "txt": "Jahre»"
         },
         {
           "x": "2989.0",
@@ -22944,7 +22911,7 @@ define([], function(){
           "y": "825.0",
           "w": "85.0",
           "h": "20.0",
-          "txt": "2 Tonnen im Dezember 1024. Die Hsfercrnt?? wild gut I 1.17 (KK) Tonnen errechnet gegen-eine Schatzung von 1 211 **>>0 Tonnen im vorigen und gegen eine solche von 776 tato Tonnen im vorvorigen Jahre. Die voraussichtliche l.einsaalernte bel??uft ??Ich auf 1 820 000 Tonnen gegen 1 ??00 tato Tonnen im Jahre 1925 und gegen 1146 000 Tonnen im Jahre 1924. Kln um Mitternacht Var??ttOBtUenl-cs Dekret des kubanischen Pr??sidenten Machado erm??chtigt das kubanische Landwirtscbatls-, Handels- und Arbetlstninislerluni. die rnckerprodukllon Jeder Fabrik ku heaehrttnken. In dem Dekret wird jedoch geradezu die Ernte aut 4 V?? Millionen Tonnen begrenzt"
+          "txt": "2 Tonnen im Dezember 1024. Die Hsfercrnt« wild gut I 1.17 (KK) Tonnen errechnet gegen-eine Schatzung von 1 211 **>>0 Tonnen im vorigen und gegen eine solche von 776 tato Tonnen im vorvorigen Jahre. Die voraussichtliche l.einsaalernte beläuft »Ich auf 1 820 000 Tonnen gegen 1 «00 tato Tonnen im Jahre 1925 und gegen 1146 000 Tonnen im Jahre 1924. Kln um Mitternacht VaröttOBtUenl-cs Dekret des kubanischen Präsidenten Machado ermächtigt das kubanische Landwirtscbatls-, Handels- und Arbetlstninislerluni. die rnckerprodukllon Jeder Fabrik ku heaehrttnken. In dem Dekret wird jedoch geradezu die Ernte aut 4 Vä Millionen Tonnen begrenzt"
         },
         {
           "x": "2534.0",
@@ -22986,7 +22953,7 @@ define([], function(){
           "y": "820.0",
           "w": "152.0",
           "h": "21.0",
-          "txt": "Hsfercrnt??"
+          "txt": "Hsfercrnt«"
         },
         {
           "x": "3221.0",
@@ -23206,14 +23173,14 @@ define([], function(){
           "y": "899.0",
           "w": "97.0",
           "h": "24.0",
-          "txt": "bel??uft"
+          "txt": "beläuft"
         },
         {
           "x": "3019.0",
           "y": "898.0",
           "w": "55.0",
           "h": "24.0",
-          "txt": "??Ich"
+          "txt": "»Ich"
         },
         {
           "x": "3103.0",
@@ -23270,7 +23237,7 @@ define([], function(){
           "y": "930.0",
           "w": "38.0",
           "h": "20.0",
-          "txt": "??00"
+          "txt": "«00"
         },
         {
           "x": "2505.0",
@@ -23391,7 +23358,7 @@ define([], function(){
           "y": "979.0",
           "w": "222.0",
           "h": "26.0",
-          "txt": "Var??ttOBtUenl-cs"
+          "txt": "VaröttOBtUenl-cs"
         },
         {
           "x": "2835.0",
@@ -23420,7 +23387,7 @@ define([], function(){
           "y": "1010.0",
           "w": "239.0",
           "h": "22.0",
-          "txt": "Pr??sidenten"
+          "txt": "Präsidenten"
         },
         {
           "x": "2484.0",
@@ -23434,7 +23401,7 @@ define([], function(){
           "y": "1008.0",
           "w": "148.0",
           "h": "26.0",
-          "txt": "erm??chtigt"
+          "txt": "ermächtigt"
         },
         {
           "x": "2796.0",
@@ -23598,7 +23565,7 @@ define([], function(){
           "y": "1088.0",
           "w": "21.0",
           "h": "24.0",
-          "txt": "V??"
+          "txt": "Vä"
         },
         {
           "x": "2454.0",
@@ -23671,7 +23638,7 @@ define([], function(){
           "y": "1193.0",
           "w": "268.0",
           "h": "23.0",
-          "txt": "Warenm??rkten.",
+          "txt": "Warenmärkten.",
           "space-after": true
         },
         {
@@ -23849,7 +23816,7 @@ define([], function(){
           "y": "1290.0",
           "w": "10.0",
           "h": "13.0",
-          "txt": "??"
+          "txt": "Ä"
         },
         {
           "x": "3193.0",
@@ -24020,7 +23987,7 @@ define([], function(){
           "y": "1376.0",
           "w": "127.0",
           "h": "25.0",
-          "txt": "Gesch??ft."
+          "txt": "Geschäft."
         },
         {
           "x": "2379.0",
@@ -24147,7 +24114,7 @@ define([], function(){
           "y": "1400.0",
           "w": "176.0",
           "h": "24.0",
-          "txt": "Januar-M??rz"
+          "txt": "Januar-Mürz"
         },
         {
           "x": "2819.0",
@@ -24161,7 +24128,7 @@ define([], function(){
           "y": "1399.0",
           "w": "103.0",
           "h": "23.0",
-          "txt": "K??ufer,"
+          "txt": "Käufer,"
         },
         {
           "x": "3008.0",
@@ -24182,7 +24149,7 @@ define([], function(){
           "y": "1398.0",
           "w": "32.0",
           "h": "20.0",
-          "txt": "lt??"
+          "txt": "ltü"
         },
         {
           "x": "3274.0",
@@ -24211,7 +24178,7 @@ define([], function(){
           "y": "1427.0",
           "w": "103.0",
           "h": "24.0",
-          "txt": "??inoked"
+          "txt": "»inoked"
         },
         {
           "x": "2634.0",
@@ -24253,7 +24220,7 @@ define([], function(){
           "y": "1421.0",
           "w": "103.0",
           "h": "26.0",
-          "txt": "K??ufer,"
+          "txt": "Käufer,"
         },
         {
           "x": "3240.0",
@@ -24319,7 +24286,7 @@ define([], function(){
           "y": "470.0",
           "w": "104.0",
           "h": "25.0",
-          "txt": "K??ufer,"
+          "txt": "Käufer,"
         },
         {
           "x": "3900.0",
@@ -24340,14 +24307,14 @@ define([], function(){
           "y": "466.0",
           "w": "51.0",
           "h": "31.0",
-          "txt": "HV-??"
+          "txt": "HV-Ü"
         },
         {
           "x": "4157.0",
           "y": "468.0",
           "w": "77.0",
           "h": "26.0",
-          "txt": "ben??h",
+          "txt": "benäh",
           "space-after": true
         },
         {
@@ -24355,7 +24322,7 @@ define([], function(){
           "y": "496.0",
           "w": "104.0",
           "h": "25.0",
-          "txt": "k??.ufer."
+          "txt": "kä.ufer."
         },
         {
           "x": "3471.0",
@@ -24376,7 +24343,7 @@ define([], function(){
           "y": "498.0",
           "w": "48.0",
           "h": "24.0",
-          "txt": "18???,"
+          "txt": "18‘,"
         },
         {
           "x": "3809.0",
@@ -24397,7 +24364,7 @@ define([], function(){
           "y": "498.0",
           "w": "105.0",
           "h": "26.0",
-          "txt": "K??ufer,"
+          "txt": "Käufer,"
         },
         {
           "x": "4133.0",
@@ -24433,7 +24400,7 @@ define([], function(){
           "y": "522.0",
           "w": "103.0",
           "h": "23.0",
-          "txt": "K??ufer."
+          "txt": "Käufer."
         },
         {
           "x": "3690.0",
@@ -24454,7 +24421,7 @@ define([], function(){
           "y": "525.0",
           "w": "83.0",
           "h": "22.0",
-          "txt": "??eie."
+          "txt": "»eie."
         },
         {
           "x": "4035.0",
@@ -24476,14 +24443,14 @@ define([], function(){
           "y": "547.0",
           "w": "260.0",
           "h": "27.0",
-          "txt": "'??stuiiHaUsaat,"
+          "txt": "'ästuiiHaUsaat,"
         },
         {
           "x": "3626.0",
           "y": "551.0",
           "w": "157.0",
           "h": "26.0",
-          "txt": "??gyptische,"
+          "txt": "ägyptische,"
         },
         {
           "x": "3806.0",
@@ -24497,7 +24464,7 @@ define([], function(){
           "y": "555.0",
           "w": "45.0",
           "h": "20.0",
-          "txt": "(??r"
+          "txt": "(»r"
         },
         {
           "x": "4029.0",
@@ -24555,14 +24522,14 @@ define([], function(){
           "y": "606.0",
           "w": "79.0",
           "h": "22.0",
-          "txt": "tr??ge."
+          "txt": "trüge."
         },
         {
           "x": "3629.0",
           "y": "604.0",
           "w": "138.0",
           "h": "25.0",
-          "txt": "Singapur??"
+          "txt": "Singapur«"
         },
         {
           "x": "3792.0",
@@ -24605,7 +24572,7 @@ define([], function(){
           "y": "630.0",
           "w": "142.0",
           "h": "22.0",
-          "txt": "Verk??ufer"
+          "txt": "Verkäufer"
         },
         {
           "x": "3666.0",
@@ -24655,14 +24622,14 @@ define([], function(){
           "y": "656.0",
           "w": "149.0",
           "h": "23.0",
-          "txt": "Verk??ufer."
+          "txt": "Verkäufer."
         },
         {
           "x": "3618.0",
           "y": "656.0",
           "w": "93.0",
           "h": "21.0",
-          "txt": "S??dsee"
+          "txt": "Südsee"
         },
         {
           "x": "3735.0",
@@ -24740,7 +24707,7 @@ define([], function(){
           "y": "685.0",
           "w": "145.0",
           "h": "21.0",
-          "txt": "lioli??ndisc",
+          "txt": "lioliändisc",
           "space-after": true
         },
         {
@@ -24762,7 +24729,7 @@ define([], function(){
           "y": "709.0",
           "w": "150.0",
           "h": "22.0",
-          "txt": "Verk??ufnr."
+          "txt": "Verkäufnr."
         },
         {
           "x": "3950.0",
@@ -24891,7 +24858,7 @@ define([], function(){
           "y": "789.0",
           "w": "11.0",
           "h": "18.0",
-          "txt": "??"
+          "txt": "«"
         },
         {
           "x": "3374.0",
@@ -24905,7 +24872,7 @@ define([], function(){
           "y": "788.0",
           "w": "121.0",
           "h": "26.0",
-          "txt": "ordin??r}???"
+          "txt": "ordinär}’"
         },
         {
           "x": "3752.0",
@@ -24990,14 +24957,14 @@ define([], function(){
           "y": "815.0",
           "w": "227.0",
           "h": "26.0",
-          "txt": "unregelm??ssiges"
+          "txt": "unregelmässiges"
         },
         {
           "x": "4045.0",
           "y": "816.0",
           "w": "130.0",
           "h": "23.0",
-          "txt": "Gesch??ft.",
+          "txt": "Geschäft.",
           "space-after": true
         },
         {
@@ -25047,7 +25014,7 @@ define([], function(){
           "y": "842.0",
           "w": "45.0",
           "h": "18.0",
-          "txt": "IM??"
+          "txt": "IM«"
         },
         {
           "x": "3700.0",
@@ -25068,7 +25035,7 @@ define([], function(){
           "y": "842.0",
           "w": "178.0",
           "h": "24.0",
-          "txt": "Januar-M??rz."
+          "txt": "Januar-März."
         },
         {
           "x": "4095.0",
@@ -25153,7 +25120,7 @@ define([], function(){
           "y": "870.0",
           "w": "25.0",
           "h": "19.0",
-          "txt": "1??"
+          "txt": "1«"
         },
         {
           "x": "4026.0",
@@ -25274,7 +25241,7 @@ define([], function(){
           "y": "920.0",
           "w": "71.0",
           "h": "24.0",
-          "txt": "??9/084"
+          "txt": "«9/084"
         },
         {
           "x": "3443.0",
@@ -25380,7 +25347,7 @@ define([], function(){
           "y": "946.0",
           "w": "37.0",
           "h": "26.0",
-          "txt": "G???"
+          "txt": "G„"
         },
         {
           "x": "3581.0",
@@ -25543,7 +25510,7 @@ define([], function(){
           "y": "997.0",
           "w": "74.0",
           "h": "20.0",
-          "txt": "ftei??"
+          "txt": "ftei»"
         },
         {
           "x": "3440.0",
@@ -25663,7 +25630,7 @@ define([], function(){
           "y": "1025.0",
           "w": "148.0",
           "h": "27.0",
-          "txt": "M??rz-April"
+          "txt": "März-April"
         },
         {
           "x": "4020.0",
@@ -25784,7 +25751,7 @@ define([], function(){
           "y": "1088.0",
           "w": "32.0",
           "h": "16.0",
-          "txt": "???,"
+          "txt": "—,"
         },
         {
           "x": "3939.0",
@@ -25798,14 +25765,14 @@ define([], function(){
           "y": "1079.0",
           "w": "66.0",
           "h": "22.0",
-          "txt": "M??rz"
+          "txt": "März"
         },
         {
           "x": "4113.0",
           "y": "1081.0",
           "w": "66.0",
           "h": "23.0",
-          "txt": "76???,"
+          "txt": "76—,"
         },
         {
           "x": "4219.0",
@@ -25827,7 +25794,7 @@ define([], function(){
           "y": "1104.0",
           "w": "146.0",
           "h": "26.0",
-          "txt": "(Schilling??"
+          "txt": "(Schilling»"
         },
         {
           "x": "3654.0",
@@ -25933,7 +25900,7 @@ define([], function(){
           "y": "1133.0",
           "w": "61.0",
           "h": "25.0",
-          "txt": "70/???"
+          "txt": "70/—"
         },
         {
           "x": "4131.0",
@@ -25962,14 +25929,14 @@ define([], function(){
           "y": "1156.0",
           "w": "61.0",
           "h": "19.0",
-          "txt": "80??????"
+          "txt": "80’—"
         },
         {
           "x": "3611.0",
           "y": "1157.0",
           "w": "153.0",
           "h": "23.0",
-          "txt": "Verk??ufer."
+          "txt": "Verkäufer."
         },
         {
           "x": "3799.0",
@@ -26040,7 +26007,7 @@ define([], function(){
           "y": "1186.0",
           "w": "127.0",
           "h": "22.0",
-          "txt": "Verk??ufe",
+          "txt": "Verkäufe",
           "space-after": true
         },
         {
@@ -26069,14 +26036,14 @@ define([], function(){
           "y": "1211.0",
           "w": "60.0",
           "h": "22.0",
-          "txt": "fdH???"
+          "txt": "fdH—"
         },
         {
           "x": "4008.0",
           "y": "1211.0",
           "w": "152.0",
           "h": "25.0",
-          "txt": "Verk??ufer."
+          "txt": "Verkäufer."
         },
         {
           "x": "4184.0",
@@ -26091,7 +26058,7 @@ define([], function(){
           "y": "1235.0",
           "w": "104.0",
           "h": "27.0",
-          "txt": "l???aolfic,"
+          "txt": "l’aolfic,"
         },
         {
           "x": "3472.0",
@@ -26119,7 +26086,7 @@ define([], function(){
           "y": "1237.0",
           "w": "151.0",
           "h": "25.0",
-          "txt": "Verk??ufer,"
+          "txt": "Verkäufer,"
         },
         {
           "x": "3916.0",
@@ -26183,7 +26150,7 @@ define([], function(){
           "y": "1262.0",
           "w": "152.0",
           "h": "26.0",
-          "txt": "Verk??ufer,"
+          "txt": "Verkäufer,"
         },
         {
           "x": "3836.0",
@@ -26240,7 +26207,7 @@ define([], function(){
           "y": "1288.0",
           "w": "152.0",
           "h": "25.0",
-          "txt": "Vei-M??Uter."
+          "txt": "Vei-MäUter."
         },
         {
           "x": "3689.0",
@@ -26396,7 +26363,7 @@ define([], function(){
           "y": "1344.0",
           "w": "100.0",
           "h": "22.0",
-          "txt": "K??ufer."
+          "txt": "Käufer."
         },
         {
           "x": "3993.0",
@@ -26468,7 +26435,7 @@ define([], function(){
           "y": "1405.0",
           "w": "25.0",
           "h": "22.0",
-          "txt": "??"
+          "txt": "»"
         },
         {
           "x": "3431.0",
@@ -26489,7 +26456,7 @@ define([], function(){
           "y": "1400.0",
           "w": "28.0",
           "h": "23.0",
-          "txt": "D??"
+          "txt": "D»"
         },
         {
           "x": "3718.0",
@@ -26560,7 +26527,7 @@ define([], function(){
           "y": "1429.0",
           "w": "68.0",
           "h": "22.0",
-          "txt": "M??fz"
+          "txt": "Mäfz"
         },
         {
           "x": "3499.0",
@@ -26673,7 +26640,7 @@ define([], function(){
           "y": "1596.0",
           "w": "108.0",
           "h": "45.0",
-          "txt": "R??mer"
+          "txt": "Römer"
         },
         {
           "x": "2136.0",
@@ -26687,7 +26654,7 @@ define([], function(){
           "y": "1591.0",
           "w": "109.0",
           "h": "47.0",
-          "txt": "R??mer",
+          "txt": "Römer",
           "space-after": true
         }
       ]
@@ -26741,7 +26708,7 @@ define([], function(){
           "y": "1744.0",
           "w": "201.0",
           "h": "40.0",
-          "txt": "K??mmel",
+          "txt": "Kümmel",
           "space-after": true
         },
         {
@@ -27197,7 +27164,7 @@ define([], function(){
           "y": "1574.0",
           "w": "176.0",
           "h": "36.0",
-          "txt": "gl??ckliche"
+          "txt": "glückliche"
         },
         {
           "x": "2839.0",
@@ -27506,7 +27473,7 @@ define([], function(){
           "y": "1571.0",
           "w": "48.0",
           "h": "21.0",
-          "txt": " 10. d. M.?? I ?? ntschlii'f nach langem schwo* | ren Leiden mein lieber Mann und guter Vater"
+          "txt": " 10. d. M.» I « ntschlii'f nach langem schwo* | ren Leiden mein lieber Mann und guter Vater"
         },
         {
           "x": "3678.0",
@@ -27527,7 +27494,7 @@ define([], function(){
           "y": "1572.0",
           "w": "39.0",
           "h": "25.0",
-          "txt": "M.??",
+          "txt": "M.»",
           "space-after": true
         },
         {
@@ -27542,7 +27509,7 @@ define([], function(){
           "y": "1605.0",
           "w": "5.0",
           "h": "12.0",
-          "txt": "??"
+          "txt": "«"
         },
         {
           "x": "3369.0",
@@ -27652,7 +27619,7 @@ define([], function(){
           "y": "1689.0",
           "w": "42.0",
           "h": "58.0",
-          "txt": "??r."
+          "txt": "ßr."
         },
         {
           "x": "3435.0",
@@ -27896,7 +27863,7 @@ define([], function(){
           "y": "2368.0",
           "w": "173.0",
           "h": "35.0",
-          "txt": "gl??ckliche"
+          "txt": "glückliche"
         },
         {
           "x": "2008.0",
@@ -27932,7 +27899,7 @@ define([], function(){
           "y": "2405.0",
           "w": "236.0",
           "h": "31.0",
-          "txt": "T??chterchPns"
+          "txt": "TöchterchPns"
         },
         {
           "x": "1942.0",
@@ -28033,7 +28000,7 @@ define([], function(){
           "y": "2526.0",
           "w": "178.0",
           "h": "29.0",
-          "txt": "Z??hringerstr."
+          "txt": "Zähringerstr."
         },
         {
           "x": "2064.0",
@@ -28273,7 +28240,7 @@ define([], function(){
           "y": "1794.0",
           "w": "85.0",
           "h": "19.0",
-          "txt": "Kner??",
+          "txt": "Kner»",
           "space-after": true
         },
         {
@@ -28324,7 +28291,7 @@ define([], function(){
           "y": "1844.0",
           "w": "193.0",
           "h": "27.0",
-          "txt": "Ein??scherung"
+          "txt": "Einäscherung"
         },
         {
           "x": "3674.0",
@@ -28346,7 +28313,7 @@ define([], function(){
           "y": "1871.0",
           "w": "133.0",
           "h": "25.0",
-          "txt": "Diensti??g,"
+          "txt": "Dienstiüg,"
         },
         {
           "x": "3519.0",
@@ -28615,7 +28582,7 @@ define([], function(){
           "y": "2329.0",
           "w": "43.0",
           "h": "21.0",
-          "txt": "Di??"
+          "txt": "Di«"
         },
         {
           "x": "2655.0",
@@ -28729,7 +28696,7 @@ define([], function(){
           "y": "2377.0",
           "w": "166.0",
           "h": "24.0",
-          "txt": "B??hmischen"
+          "txt": "Böhmischen"
         },
         {
           "x": "2974.0",
@@ -28751,7 +28718,7 @@ define([], function(){
           "y": "2409.0",
           "w": "78.0",
           "h": "25.0",
-          "txt": "k??lln,"
+          "txt": "kölln,"
         },
         {
           "x": "2647.0",
@@ -28865,7 +28832,7 @@ define([], function(){
           "y": "2456.0",
           "w": "42.0",
           "h": "23.0",
-          "txt": "di??"
+          "txt": "di«"
         },
         {
           "x": "2988.0",
@@ -28894,7 +28861,7 @@ define([], function(){
           "y": "2488.0",
           "w": "180.0",
           "h": "21.0",
-          "txt": "d??chtnisfeier"
+          "txt": "dächtnisfeier"
         },
         {
           "x": "2741.0",
@@ -29174,7 +29141,7 @@ define([], function(){
           "y": "2933.0",
           "w": "57.0",
           "h": "21.0",
-          "txt": "4???0.",
+          "txt": "4—0.",
           "space-after": true
         }
       ]
@@ -29338,7 +29305,7 @@ define([], function(){
           "y": "3347.0",
           "w": "163.0",
           "h": "47.0",
-          "txt": "Hiideo&r??"
+          "txt": "Hiideo&rü"
         },
         {
           "x": "1305.0",
@@ -29382,7 +29349,7 @@ define([], function(){
           "y": "3431.0",
           "w": "186.0",
           "h": "24.0",
-          "txt": "Verm??hlte",
+          "txt": "Vermählte",
           "space-after": true
         }
       ]
@@ -29453,7 +29420,7 @@ define([], function(){
           "y": "3441.0",
           "w": "17.0",
           "h": "21.0",
-          "txt": "???",
+          "txt": "•",
           "space-after": true
         }
       ]
@@ -29575,7 +29542,7 @@ define([], function(){
           "y": "3570.0",
           "w": "204.0",
           "h": "51.0",
-          "txt": "??ssman",
+          "txt": "Össman",
           "space-after": true
         },
         {
@@ -29622,7 +29589,7 @@ define([], function(){
           "y": "3713.0",
           "w": "237.0",
           "h": "23.0",
-          "txt": "Verm??hlte.",
+          "txt": "Vermählte.",
           "space-after": true
         },
         {
@@ -29879,7 +29846,7 @@ define([], function(){
           "y": "4260.0",
           "w": "170.0",
           "h": "23.0",
-          "txt": "Verm??hlte",
+          "txt": "Vermählte",
           "space-after": true
         },
         {
@@ -29923,7 +29890,7 @@ define([], function(){
           "y": "4314.0",
           "w": "139.0",
           "h": "22.0",
-          "txt": "Schloss????."
+          "txt": "Schloss»«."
         },
         {
           "x": "1298.0",
@@ -30019,7 +29986,7 @@ define([], function(){
           "y": "4473.0",
           "w": "144.0",
           "h": "25.0",
-          "txt": "gl??ckliche"
+          "txt": "glückliche"
         },
         {
           "x": "1448.0",
@@ -30048,14 +30015,14 @@ define([], function(){
           "y": "4498.0",
           "w": "186.0",
           "h": "28.0",
-          "txt": "T??cl erchcn??"
+          "txt": "Töcl erchcnÄ"
         },
         {
           "x": "1428.0",
           "y": "4497.0",
           "w": "123.0",
           "h": "22.0",
-          "txt": "2H??rion"
+          "txt": "2H»rion"
         },
         {
           "x": "1571.0",
@@ -30091,7 +30058,7 @@ define([], function(){
           "y": "4523.0",
           "w": "241.0",
           "h": "25.0",
-          "txt": "Hohen??taufenstr."
+          "txt": "Hohen«taufenstr."
         },
         {
           "x": "1578.0",
@@ -30166,7 +30133,7 @@ define([], function(){
           "y": "4649.0",
           "w": "41.0",
           "h": "21.0",
-          "txt": "Dl??"
+          "txt": "Dl©"
         },
         {
           "x": "1306.0",
@@ -30310,7 +30277,7 @@ define([], function(){
           "y": "4886.0",
           "w": "136.0",
           "h": "26.0",
-          "txt": "gl??ckliche"
+          "txt": "glückliche"
         },
         {
           "x": "1356.0",
@@ -30513,7 +30480,7 @@ define([], function(){
           "y": "5124.0",
           "w": "138.0",
           "h": "25.0",
-          "txt": "gl??ckliche"
+          "txt": "glückliche"
         },
         {
           "x": "1518.0",
@@ -30542,14 +30509,14 @@ define([], function(){
           "y": "5152.0",
           "w": "99.0",
           "h": "26.0",
-          "txt": "kr??ftig."
+          "txt": "kräftig."
         },
         {
           "x": "1431.0",
           "y": "5150.0",
           "w": "178.0",
           "h": "24.0",
-          "txt": "T??chterchens",
+          "txt": "Töchterchens",
           "space-after": true
         },
         {
@@ -30774,7 +30741,7 @@ define([], function(){
           "y": "2696.0",
           "w": "68.0",
           "h": "24.0",
-          "txt": "??inft"
+          "txt": "»inft"
         },
         {
           "x": "2310.0",
@@ -30860,7 +30827,7 @@ define([], function(){
           "y": "2759.0",
           "w": "103.0",
           "h": "31.0",
-          "txt": "??ruder,"
+          "txt": "ßruder,"
         },
         {
           "x": "1976.0",
@@ -31007,7 +30974,7 @@ define([], function(){
           "y": "2975.0",
           "w": "50.0",
           "h": "37.0",
-          "txt": "??S"
+          "txt": "öS"
         },
         {
           "x": "2766.0",
@@ -31035,14 +31002,14 @@ define([], function(){
           "y": "2999.0",
           "w": "32.0",
           "h": "20.0",
-          "txt": "??"
+          "txt": "»"
         },
         {
           "x": "3503.0",
           "y": "2991.0",
           "w": "57.0",
           "h": "28.0",
-          "txt": "W??"
+          "txt": "W»"
         },
         {
           "x": "3569.0",
@@ -31308,7 +31275,7 @@ define([], function(){
           "y": "3320.0",
           "w": "187.0",
           "h": "29.0",
-          "txt": "Ein??scherung"
+          "txt": "Einäscherung"
         },
         {
           "x": "2075.0",
@@ -31931,7 +31898,7 @@ define([], function(){
           "y": "4441.0",
           "w": "108.0",
           "h": "25.0",
-          "txt": "erf??llen"
+          "txt": "erfüllen"
         },
         {
           "x": "2068.0",
@@ -31988,7 +31955,7 @@ define([], function(){
           "y": "4485.0",
           "w": "162.0",
           "h": "33.0",
-          "txt": "Begr??nders"
+          "txt": "Begründers"
         },
         {
           "x": "1999.0",
@@ -32436,7 +32403,7 @@ define([], function(){
           "y": "5188.0",
           "w": "187.0",
           "h": "32.0",
-          "txt": "Ein??scherung"
+          "txt": "Einäscherung"
         },
         {
           "x": "2075.0",
@@ -32637,7 +32604,7 @@ define([], function(){
           "y": "2749.0",
           "w": "116.0",
           "h": "27.0",
-          "txt": "Gr??nder"
+          "txt": "Gründer"
         },
         {
           "x": "3712.0",
@@ -32811,7 +32778,7 @@ define([], function(){
           "y": "3153.0",
           "w": "221.0",
           "h": "30.0",
-          "txt": "Pflichterf??llung"
+          "txt": "Pflichterfüllung"
         },
         {
           "x": "3257.0",
@@ -32825,7 +32792,7 @@ define([], function(){
           "y": "3155.0",
           "w": "108.0",
           "h": "27.0",
-          "txt": "gr??sster"
+          "txt": "grösster"
         },
         {
           "x": "3466.0",
@@ -32847,7 +32814,7 @@ define([], function(){
           "y": "3199.0",
           "w": "97.0",
           "h": "28.0",
-          "txt": "g??tiger"
+          "txt": "gütiger"
         },
         {
           "x": "3047.0",
@@ -33331,7 +33298,7 @@ define([], function(){
           "y": "4095.0",
           "w": "209.0",
           "h": "27.0",
-          "txt": "kaufm??nnische"
+          "txt": "kaufmännische"
         },
         {
           "x": "3505.0",
@@ -33417,7 +33384,7 @@ define([], function(){
           "y": "4185.0",
           "w": "146.0",
           "h": "30.0",
-          "txt": "bef??higten"
+          "txt": "befähigten"
         },
         {
           "x": "3029.0",
@@ -33431,7 +33398,7 @@ define([], function(){
           "y": "4182.0",
           "w": "176.0",
           "h": "32.0",
-          "txt": "IfaUchl??geu,"
+          "txt": "IfaUchlägeu,"
         },
         {
           "x": "3270.0",
@@ -33589,7 +33556,7 @@ define([], function(){
           "y": "4360.0",
           "w": "150.0",
           "h": "28.0",
-          "txt": "s??nlichkeit"
+          "txt": "sönlichkeit"
         },
         {
           "x": "3046.0",
@@ -33960,7 +33927,7 @@ define([], function(){
           "y": "5066.0",
           "w": "113.0",
           "h": "29.0",
-          "txt": "j??hriges"
+          "txt": "jähriges"
         },
         {
           "x": "2975.0",
@@ -33974,7 +33941,7 @@ define([], function(){
           "y": "5063.0",
           "w": "222.0",
           "h": "32.0",
-          "txt": "hochgesch??tztes"
+          "txt": "hochgeschätztes"
         },
         {
           "x": "3275.0",
@@ -34273,7 +34240,7 @@ define([], function(){
           "y": "2204.0",
           "w": "130.0",
           "h": "27.0",
-          "txt": "Schw??ge-",
+          "txt": "Schwäge-",
           "space-after": true
         },
         {
@@ -34379,7 +34346,7 @@ define([], function(){
           "y": "2415.0",
           "w": "192.0",
           "h": "27.0",
-          "txt": "Ein??scherung"
+          "txt": "Einäscherung"
         },
         {
           "x": "3696.0",
@@ -34527,7 +34494,7 @@ define([], function(){
           "y": "1599.0",
           "w": "59.0",
           "h": "22.0",
-          "txt": "fr??h"
+          "txt": "früh"
         },
         {
           "x": "4145.0",
@@ -34788,7 +34755,7 @@ define([], function(){
           "y": "1960.0",
           "w": "198.0",
           "h": "25.0",
-          "txt": "Ein??scherung:"
+          "txt": "Einäscherung:"
         },
         {
           "x": "4159.0",
@@ -34928,7 +34895,7 @@ define([], function(){
           "y": "2136.0",
           "w": "178.0",
           "h": "23.0",
-          "txt": "Flanztsk??"
+          "txt": "Flanztsk»"
         },
         {
           "x": "4099.0",
@@ -34979,7 +34946,7 @@ define([], function(){
           "y": "2191.0",
           "w": "87.0",
           "h": "21.0",
-          "txt": "Hon??"
+          "txt": "Hon«"
         },
         {
           "x": "4194.0",
@@ -35037,7 +35004,7 @@ define([], function(){
           "y": "2244.0",
           "w": "81.0",
           "h": "27.0",
-          "txt": "j??disc",
+          "txt": "jüdisc",
           "space-after": true
         },
         {
@@ -35502,7 +35469,7 @@ define([], function(){
           "y": "2936.0",
           "w": "96.0",
           "h": "37.0",
-          "txt": "L??w",
+          "txt": "Löw",
           "space-after": true
         }
       ]
@@ -35585,14 +35552,14 @@ define([], function(){
           "y": "3065.0",
           "w": "63.0",
           "h": "21.0",
-          "txt": "11a??"
+          "txt": "11a©"
         },
         {
           "x": "4050.0",
           "y": "3065.0",
           "w": "181.0",
           "h": "22.0",
-          "txt": "IR??%veuthal",
+          "txt": "IR»%veuthal",
           "space-after": true
         },
         {
@@ -35614,7 +35581,7 @@ define([], function(){
           "y": "3094.0",
           "w": "72.0",
           "h": "22.0",
-          "txt": "b??rg,"
+          "txt": "bürg,"
         },
         {
           "x": "4148.0",
@@ -35838,7 +35805,7 @@ define([], function(){
           "y": "3421.0",
           "w": "129.0",
           "h": "37.0",
-          "txt": "Riwk??",
+          "txt": "Riwk«",
           "space-after": true
         }
       ]
@@ -35891,7 +35858,7 @@ define([], function(){
           "y": "3505.0",
           "w": "150.0",
           "h": "22.0",
-          "txt": "ItlwkoF??t",
+          "txt": "ItlwkoFüt",
           "space-after": true
         },
         {
@@ -36241,7 +36208,7 @@ define([], function(){
           "y": "4118.0",
           "w": "101.0",
           "h": "21.0",
-          "txt": "Dienst??",
+          "txt": "Dienst»",
           "space-after": true
         },
         {
@@ -36280,7 +36247,7 @@ define([], function(){
           "y": "4232.0",
           "w": "51.0",
           "h": "24.0",
-          "txt": "F??r"
+          "txt": "Für"
         },
         {
           "x": "3975.0",
@@ -36384,7 +36351,7 @@ define([], function(){
           "y": "4367.0",
           "w": "97.0",
           "h": "26.0",
-          "txt": "??oliv"
+          "txt": "»oliv"
         },
         {
           "x": "4192.0",
@@ -36423,7 +36390,7 @@ define([], function(){
           "y": "4482.0",
           "w": "50.0",
           "h": "23.0",
-          "txt": "F??r"
+          "txt": "Für"
         },
         {
           "x": "4005.0",
@@ -36662,7 +36629,7 @@ define([], function(){
           "y": "4910.0",
           "w": "101.0",
           "h": "23.0",
-          "txt": "Kart??",
+          "txt": "Kart©",
           "space-after": true
         },
         {
@@ -36670,7 +36637,7 @@ define([], function(){
           "y": "4937.0",
           "w": "49.0",
           "h": "22.0",
-          "txt": "F??r"
+          "txt": "Für"
         },
         {
           "x": "4008.0",
@@ -36706,7 +36673,7 @@ define([], function(){
           "y": "4967.0",
           "w": "90.0",
           "h": "19.0",
-          "txt": "nahm??"
+          "txt": "nahm«"
         },
         {
           "x": "4212.0",
@@ -36975,7 +36942,7 @@ define([], function(){
           "y": "5341.0",
           "w": "108.0",
           "h": "27.0",
-          "txt": "B??chste"
+          "txt": "Bächste"
         },
         {
           "x": "4154.0",
@@ -37034,8 +37001,7 @@ define([], function(){
         return {'transcript': transcript2};
       }
       else{
-        console.log('mockdata manifest!');
-        return manifest;
+        console.log('Transcription mock-data: do nothing');
       }
     }
   };

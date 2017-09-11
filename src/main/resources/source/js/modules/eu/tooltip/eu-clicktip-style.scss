@@ -104,7 +104,7 @@ $clicktip-bg:    $eu-blue;
     }
 
     a[data-role='remove']::after {
-      content: '???';
+      content: '✕';
     }
 
     &::after {

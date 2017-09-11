@@ -28,7 +28,7 @@
     },
     {
       "name": "mock_ajax",
-      "value": "{ 'omissions' : ['portal_hierarchy']}"
+      "value": "{ 'omissions' : ['portal_hierarchy'], 'mappings': [{'pattern': 'hierarchy/', 'resolveTo': 'portal_hierarchy'}, {'pattern': 'annotations.json', 'resolveTo': 'portal_annotations'}]}"
     }
   ],
 
@@ -638,17 +638,14 @@
         "institution_logo": "/images/sample/beeld-en-geluid.png"
       },
       "annotations_later": true,
-      "XXXannotations":
-      {
-        "title": "Annotations",
-        "info": "javascript:alert('link to info');",
-        "sections": [{
-          "title": "Relations",
-          "items": [{"url": "http://www.wikidata.org/entity/Q15847665", "text": "http://www.wikidata.org/entity/Q15847665", "title": false}]
-        }]
+      "view_more": {
+        "img_url": "/images/sample/object_thumbnail.jpg",
+        "url": "javascript:alert('follow link...')",
+        "label": "View more",
+        "text": "Johannes Vermeer"
       },
-
       "people": {
+        "section_id": "people",
         "title": "People",
         "sections": [
           {
@@ -683,6 +680,7 @@
       },
       "concepts":
       {
+        "section_id": "concepts",
         "title": "Categories",
         "sections": [
           {
@@ -714,16 +712,18 @@
         ]
       },
       "description": {
+        "section_id": "description",
         "title": "Description",
         "sections": [{
           "title": false,
           "items": [
             {"text": "Girl pouring milk into bowl", "url":false},
-            {"text": "A maidservant pours milk, entirely absorbed in her work. Except for the stream of milk, everything else is still. Vermeer took this simple everyday activity and made it the subject of an impressive painting ??? the woman stands like a statue in the brightly lit room. Vermeer also had an eye for how light by means of hundreds of colourful dots plays over the surface of objects.", "url":false}
+            {"text": "A maidservant pours milk, entirely absorbed in her work. Except for the stream of milk, everything else is still. Vermeer took this simple everyday activity and made it the subject of an impressive painting – the woman stands like a statue in the brightly lit room. Vermeer also had an eye for how light by means of hundreds of colourful dots plays over the surface of objects.", "url":false}
           ]
         }]
       },
       "properties": {
+        "section_id": "properties",
         "title": "Properties",
         "sections": [
           {
@@ -743,6 +743,7 @@
         ]
       },
       "provenance": {
+        "section_id": "provenance",
         "title": "Source",
         "sections": [
           {
@@ -778,6 +779,7 @@
       },
 
       "places": {
+        "section_id": "location",
         "title": "Place",
         "sections": [
           {
@@ -799,6 +801,7 @@
         ]
       },
       "refs_rels": {
+        "section_id": "refs_rels",
         "title": "References and Relationships",
         "sections": [
           {
@@ -813,6 +816,7 @@
       },
 
       "dates": {
+        "section_id": "times",
         "title": "Times",
         "sections": [
           {
@@ -861,6 +865,7 @@
       "meta_additional":
       {
         "present": true,
+        "section_id": "map",
         "geo":
         {
           "long_and_lat": true,
@@ -991,9 +996,9 @@
               {
                   "key": "Period Term",
                   "vals": [
-                    {"key": "(fr)", "val": "[4e quart 18e si??cle]"},
+                    {"key": "(fr)", "val": "[4e quart 18e siècle]"},
                     {"key": "(en)", "val": "[4 quarter of the 18th century]"},
-                    {"key": "(ru)", "val": "[4-?? ???????????????? 18-???? ????????]"}
+                    {"key": "(ru)", "val": "[4-я четверть 18-го века]"}
                   ],
                   "multi": true
               }

@@ -446,7 +446,7 @@
         {
           "featured":           true,
           "hide_branding_text": true,
-          "title":              "Tidskrift f??r den eleganta werlden 1851",
+          "title":              "Tidskrift för den eleganta werlden 1851",
           "url":                "javascript:alert('Link to featured promotion');",
           "category_label":     "App",
           "bg_image":           "../../images/sample/channel_hero_fashion.jpg"
